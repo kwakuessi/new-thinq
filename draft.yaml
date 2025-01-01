@@ -1,0 +1,101 @@
+models:
+  ShippingMethod:
+    name: string
+    description: string nullable
+    timestamps: true
+    relationships:
+      hasMany: Booking, Order
+
+  Customer:
+    name: string
+    email: string
+    photo: string nullable
+    phone: string nullable
+    birthday: date
+    gender: enum:male, female
+    user_id: id foreign:users nullable
+    timestamps: true
+    relationships:
+      belongsTo: User
+
+  Address:
+    address: string
+    city: string nullable
+    state: string nullable
+    country: string
+    zip_code: string nullable
+    timestamps: true
+    relationships:
+      belongsTo: Customer
+
+  Booking:
+    booking_code: string
+    customer_id: id foreign:customers
+    shipping_method_id: id foreign:shipping_methods
+    status: enum:pending, complete, en_route
+    timestamps: true
+    relationships:
+      belongsTo: ShippingMethod, Customer
+
+  Order:
+    order_code: string
+    customer_id: id foreign:customers
+    shipping_method_id: id foreign:shipping_methods
+    status: enum:pending, complete, en_route
+    total_price: decimal nullable
+    order_type: enum:shipment, customer_order
+    # payment_status: enum:unpaid, patial paid
+    timestamps: true
+    relationships:
+      belongsTo: Customer, ShippingMethod
+      hasMany: OrderLine
+
+  OrderLine:
+    order_id: id foreign:orders
+    inventory_id: id foreign:inventories
+    total_weight: integer nullable
+    quantity: integer
+    unit_price: decimal
+    timestamps: true
+    relationships:
+      belongsTo: Order
+
+  Category:
+    name: string
+    description: string nullable
+    timestamps: true
+    relationships:
+      hasMany: SubCategory
+
+  SubCategory:
+    name: string
+    description: string nullable
+    category_id: id foreign:categories
+    timestamps: true
+    relationships:
+      belongsTo: Category
+      hasMany: Inventory
+
+  Inventory:
+    name: string
+    description: string nullable
+    unit: string
+    slug: string
+    featured_image: string nullable
+    weight: integer nullable
+    quantity: integer nullable
+    price: decimal nullable
+    type: enum:physical, digital nullable
+    weight_unit: enum:kg, g nullable
+    height_value: decimal nullable
+    height_unit: enum:cm, m nullable
+    width_value: decimal nullable
+    width_unit: enum:cm, m nullable
+    depth_value: decimal nullable
+    depth_unit: enum:cm, m nullable
+    volume_value: decimal nullable
+    volume_unit: nullable
+    sub_category_id: id foreign:sub_categories
+    timestamps: true
+    relationships:
+      belongsTo: SubCategory

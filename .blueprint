@@ -1,0 +1,40 @@
+created:
+    - database/factories/ShippingMethodFactory.php
+    - database/factories/CustomerFactory.php
+    - database/factories/AddressFactory.php
+    - database/factories/BookingFactory.php
+    - database/factories/OrderFactory.php
+    - database/factories/OrderLineFactory.php
+    - database/factories/CategoryFactory.php
+    - database/factories/SubCategoryFactory.php
+    - database/factories/InventoryFactory.php
+    - database/migrations/2025_01_01_024934_create_shipping_methods_table.php
+    - database/migrations/2025_01_01_024935_create_customers_table.php
+    - database/migrations/2025_01_01_024936_create_addresses_table.php
+    - database/migrations/2025_01_01_024937_create_bookings_table.php
+    - database/migrations/2025_01_01_024938_create_orders_table.php
+    - database/migrations/2025_01_01_024939_create_order_lines_table.php
+    - database/migrations/2025_01_01_024940_create_categories_table.php
+    - database/migrations/2025_01_01_024941_create_sub_categories_table.php
+    - database/migrations/2025_01_01_024942_create_inventories_table.php
+    - app/Models/ShippingMethod.php
+    - app/Models/Customer.php
+    - app/Models/Address.php
+    - app/Models/Booking.php
+    - app/Models/Order.php
+    - app/Models/OrderLine.php
+    - app/Models/Category.php
+    - app/Models/SubCategory.php
+    - app/Models/Inventory.php
+models:
+    Customers: { name: string, email: string, photo: 'string nullable', gender: string, phone: 'string nullable', birthday: 'date nullable' }
+    User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string nullable' }
+    ShippingMethod: { name: string, description: 'string nullable', timestamps: timestamps, relationships: { hasMany: 'Booking, Order' } }
+    Customer: { name: string, email: string, photo: 'string nullable', phone: 'string nullable', birthday: date, gender: 'enum:male, female', user_id: 'id foreign:users nullable', timestamps: timestamps, relationships: { belongsTo: User } }
+    Address: { address: string, city: 'string nullable', state: 'string nullable', country: string, zip_code: 'string nullable', user_id: 'id foreign:users', timestamps: timestamps, relationships: { belongsTo: Customer } }
+    Booking: { booking_code: string, customer_id: 'id foreign:customers', shipping_method_id: 'id foreign:shipping_methods', status: 'enum:pending, complete, en_route', timestamps: timestamps, relationships: { belongsTo: 'ShippingMethod, Customer' } }
+    Order: { order_code: string, customer_id: 'id foreign:customers', shipping_method_id: 'id foreign:shipping_methods', status: 'enum:pending, complete, en_route', total_price: 'decimal nullable', order_type: 'enum:shipment, customer_order', timestamps: timestamps, relationships: { belongsTo: 'Customer, ShippingMethod', hasMany: OrderLine } }
+    OrderLine: { order_id: 'id foreign:orders', inventory_id: 'id foreign:inventories', total_weight: 'integer nullable', quantity: integer, unit_price: decimal, timestamps: timestamps, relationships: { belongsTo: Order } }
+    Category: { name: string, description: 'string nullable', timestamps: timestamps, relationships: { hasMany: SubCategory } }
+    SubCategory: { name: string, description: 'string nullable', category_id: 'id foreign:categories', timestamps: timestamps, relationships: { belongsTo: Category, hasMany: Inventory } }
+    Inventory: { name: string, description: 'string nullable', unit: string, slug: string, featured_image: 'string nullable', weight: 'integer nullable', quantity: 'integer nullable', price: 'decimal nullable', type: 'enum:physical, digital nullable', weight_unit: 'enum:kg, g nullable', height_value: 'decimal nullable', height_unit: 'enum:cm, m nullable', width_value: 'decimal nullable', width_unit: 'enum:cm, m nullable', depth_value: 'decimal nullable', depth_unit: 'enum:cm, m nullable', volume_value: 'decimal nullable', volume_unit: nullable, sub_category_id: 'id foreign:sub_categories', timestamps: timestamps, relationships: { belongsTo: SubCategory } }
