@@ -46,9 +46,9 @@ class Order extends Model
 
 
 
-    public function customer(): BelongsTo
+    public function user(): BelongsTo
     {
-        return $this->belongsTo(Customer::class);
+        return $this->belongsTo(User::class);
     }
 
     public function shippingMethod(): BelongsTo
@@ -58,7 +58,7 @@ class Order extends Model
 
     public function address(): BelongsTo
     {
-        return $this->belongsTo(Address::class, 'address_id');
+        return $this->belongsTo(Address::class);
     }
 
     /** @return HasMany<OrderLine> */

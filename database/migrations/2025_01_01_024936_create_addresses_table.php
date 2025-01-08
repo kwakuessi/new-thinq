@@ -19,7 +19,7 @@ return new class extends Migration {
             $table->string('country')->nullable();
             $table->string('zip_code')->nullable();
             $table->string('phone')->nullable();
-            $table->foreignId('customer_id')->constrained()->nullOnDelete();
+            $table->foreignId('user_id')->constrained()->nullOnDelete();
             $table->timestamps();
         });
 

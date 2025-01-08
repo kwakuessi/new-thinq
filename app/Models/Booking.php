@@ -2,9 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Enum\OrderStatus;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Booking extends Model
 {
@@ -19,6 +20,7 @@ class Booking extends Model
         'booking_code',
         'customer_id',
         'shipping_method_id',
+        'address_id',
         'status',
     ];
 
@@ -31,6 +33,8 @@ class Booking extends Model
         'id' => 'integer',
         'customer_id' => 'integer',
         'shipping_method_id' => 'integer',
+        'address_id' => 'integer',
+        'status' => OrderStatus::class,
     ];
 
     public function shippingMethod(): BelongsTo
@@ -38,8 +42,13 @@ class Booking extends Model
         return $this->belongsTo(ShippingMethod::class);
     }
 
-    public function customer(): BelongsTo
+    public function address(): BelongsTo
     {
-        return $this->belongsTo(Customer::class);
+        return $this->belongsTo(Address::class, 'address_id');
+    }
+
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
     }
 }

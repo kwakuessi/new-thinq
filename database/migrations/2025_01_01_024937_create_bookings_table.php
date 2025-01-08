@@ -15,8 +15,9 @@ return new class extends Migration {
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
             $table->string('booking_code');
-            $table->foreignId('customer_id')->constrained();
+            $table->foreignId('user_id')->constrained();
             $table->foreignId('shipping_method_id')->constrained();
+            $table->foreignId('address_id')->constrained();
             $table->enum('status', ["pending", "complete", "en_route"]);
             $table->timestamps();
         });

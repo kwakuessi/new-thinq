@@ -29,8 +29,8 @@ class AddressResource extends Resource
                 Forms\Components\TextInput::make('zip_code'),
                 Forms\Components\TextInput::make('phone')
                     ->tel(),
-                Forms\Components\Select::make('customer_id')
-                    ->relationship('customer', 'name')
+                Forms\Components\Select::make('user_id')
+                    ->relationship('user', 'name')
                     ->required(),
             ]);
     }

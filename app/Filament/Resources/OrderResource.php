@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use App\Models\User;
 use Filament\Forms;
 use Filament\Tables;
 use App\Models\Order;
@@ -49,8 +50,8 @@ class OrderResource extends Resource
                             ->unique(Order::class, 'number', ignoreRecord: true)
                             ->required(),
 
-                        Forms\Components\Select::make('customer_id')
-                            ->relationship('customer', 'name')
+                        Forms\Components\Select::make('user_id')
+                            ->relationship('user', 'email')
                             ->live()
                             ->required()
                             ->createOptionForm([
@@ -64,6 +65,9 @@ class OrderResource extends Resource
                                     ->email()
                                     ->maxLength(255)
                                     ->unique(),
+                                Forms\Components\TextInput::make('password')
+                                    ->password()
+                                    ->required(),
 
                                 Forms\Components\TextInput::make('phone')
                                     ->maxLength(255),
@@ -90,7 +94,7 @@ class OrderResource extends Resource
 
                         Forms\Components\Select::make('address_id')
                             ->options(fn(Get $get): Collection => Address::query()
-                                ->where('customer_id', $get('customer_id'))
+                                ->where('user_id', $get('user_id'))
                                 ->pluck('country', 'id'))
                             ->live()
 
@@ -101,9 +105,9 @@ class OrderResource extends Resource
                                 Forms\Components\TextInput::make('zip_code'),
                                 Forms\Components\TextInput::make('phone')
                                     ->tel(),
-                                Forms\Components\Select::make('customer')
+                                Forms\Components\Select::make('user')
                                     ->options(function () {
-                                        return Customer::all()->pluck('name', 'id');
+                                        return User::all()->pluck('name', 'id');
                                     })
 
                                     ->required()
@@ -152,6 +156,25 @@ class OrderResource extends Resource
                                     ->label('Last modified at')
                                     ->content(fn(Order $record): ?string => $record->updated_at?->diffForHumans()),
                             ])
+                            ->columnSpan(['lg' => 1])
+                            ->hidden(fn(?Order $record) => $record === null),
+
+                        Forms\Components\Section::make()
+                            ->schema([
+                                Forms\Components\Placeholder::make('customer_id')
+                                    ->label('Location:')
+                                    ->content(function (Order $record): ?string {
+                                        return $record->address?->state . ', ' . $record->address?->city . ', ' . $record->address?->country;
+                                    })->inlineLabel(),
+
+                                Forms\Components\Placeholder::make('customer_id')
+                                    ->label('Phone:')
+                                    ->content(function (Order $record): ?string {
+                                        return $record->address?->phone;
+                                    })->inlineLabel(),
+
+                            ])
+                            ->label('Address Deta')
                             ->columnSpan(['lg' => 1])
                             ->hidden(fn(?Order $record) => $record === null),
 

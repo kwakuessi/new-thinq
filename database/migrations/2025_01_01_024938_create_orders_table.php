@@ -15,8 +15,7 @@ return new class extends Migration {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->string('order_code');
-            $table->foreignId('customer_id')->constrained()->nullOnDelete();
-            $table->foreignId('address_id')->constrained()->nullOnDelete();
+            $table->foreignId('user_id')->constrained()->nullOnDelete();
             $table->foreignId('shipping_method_id')->constrained()->nullOnDelete();
             $table->enum('status', ["pending", "complete", "en_route"]);
             $table->integer('total_price')->nullable();
