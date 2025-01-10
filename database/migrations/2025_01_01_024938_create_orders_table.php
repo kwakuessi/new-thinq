@@ -17,6 +17,9 @@ return new class extends Migration {
             $table->string('order_code');
             $table->foreignId('user_id')->constrained()->nullOnDelete();
             $table->foreignId('shipping_method_id')->constrained()->nullOnDelete();
+            $table->foreignId('address_id')->constrained()->nullOnDelete();
+
+            
             $table->enum('status', ["pending", "complete", "en_route"]);
             $table->integer('total_price')->nullable();
             $table->enum('order_type', ["shipment", "customer_order"]);

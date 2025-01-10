@@ -2,8 +2,8 @@
 
 namespace App\Filament\Resources;
 
-use App\Models\User;
 use Filament\Forms;
+use App\Models\User;
 use Filament\Tables;
 use App\Models\Address;
 use App\Models\Booking;
@@ -21,6 +21,7 @@ use Filament\Forms\Components\Actions\Action;
 use App\Filament\Resources\BookingResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\BookingResource\RelationManagers;
+use App\Filament\Resources\BookingResource\Widgets\BookingOverview;
 
 class BookingResource extends Resource
 {
@@ -171,7 +172,7 @@ class BookingResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('booking_code')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('customer.name')
+                Tables\Columns\TextColumn::make('user.name')
                     ->numeric()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('shippingMethod.name')
@@ -189,6 +190,7 @@ class BookingResource extends Resource
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
+            ->defaultSort('created_at', 'desc')
             ->filters([
                 //
             ])
@@ -217,6 +219,13 @@ class BookingResource extends Resource
             'create' => Pages\CreateBooking::route('/create'),
             'view' => Pages\ViewBooking::route('/{record}'),
             'edit' => Pages\EditBooking::route('/{record}/edit'),
+        ];
+    }
+
+    public static function getWidgets(): array
+    {
+        return [
+            BookingOverview::class,
         ];
     }
 }

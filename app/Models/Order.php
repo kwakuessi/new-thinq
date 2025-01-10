@@ -25,6 +25,7 @@ class Order extends Model
         'status',
         'total_price',
         'order_type',
+        'user_id',
     ];
 
     // protected $table = 'orders';
@@ -40,7 +41,7 @@ class Order extends Model
         'customer_id' => 'integer',
         'shipping_method_id' => 'integer',
         'address_id' => 'integer',
-        // 'total_price' => 'decimal',
+        'user_id' => 'integer',
         'status' => OrderStatus::class,
     ];
 

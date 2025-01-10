@@ -2,17 +2,16 @@
 
 namespace App\Filament\Resources;
 
-use Filament\Forms;
-use Filament\Tables;
-use Filament\Forms\Form;
-use App\Models\Inventory;
-use Filament\Tables\Table;
-use Illuminate\Support\Str;
-use Filament\Resources\Resource;
-use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\InventoryResource\Pages;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\InventoryResource\RelationManagers;
+use App\Models\Inventory;
+use Filament\Forms;
+use Filament\Forms\Form;
+use Filament\Resources\Resource;
+use Filament\Tables;
+use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class InventoryResource extends Resource
 {
@@ -25,49 +24,21 @@ class InventoryResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
-                    ->required()
-                    ->maxLength(255)
-                    ->live(onBlur: true)
-                    ->afterStateUpdated(function (string $operation, $state, Forms\Set $set) {
-                        if ($operation !== 'create') {
-                            return;
-                        }
-
-                        $set('slug', Str::slug($state));
-                    }),
-
-                Forms\Components\TextInput::make('slug')
-                    ->disabled()
-                    ->dehydrated()
-                    ->required()
-                    ->maxLength(255)
-                    ->unique(Inventory::class, 'slug', ignoreRecord: true),
-
-                Forms\Components\Select::make('sub_category_id')
-                    ->label('Category')
-                    ->relationship('subCategory', 'name')
                     ->required(),
-
                 Forms\Components\TextInput::make('description'),
-
-                Forms\Components\TextInput::make('price')
-                    ->numeric()
-                    ->prefix('GHS'),
-
-                Forms\Components\Select::make('unit')
-                    ->options([
-                        'kg' => 'Kilogram',
-                        'g' => 'Gram',
-                    ])
+                Forms\Components\TextInput::make('unit')
                     ->required(),
-
+                Forms\Components\TextInput::make('slug')
+                    ->required(),
                 Forms\Components\FileUpload::make('featured_image')
                     ->image(),
                 // Forms\Components\TextInput::make('weight')
                 //     ->numeric(),
                 Forms\Components\TextInput::make('quantity')
                     ->numeric(),
-
+                Forms\Components\TextInput::make('price')
+                    ->numeric()
+                    ->prefix('$'),
                 // Forms\Components\TextInput::make('type'),
                 // Forms\Components\TextInput::make('weight_unit'),
                 // Forms\Components\TextInput::make('height_value')
@@ -82,7 +53,9 @@ class InventoryResource extends Resource
                 // Forms\Components\TextInput::make('volume_value')
                 //     ->numeric(),
                 // Forms\Components\TextInput::make('volume_unit'),
-
+                Forms\Components\Select::make('sub_category_id')
+                    ->relationship('subCategory', 'name')
+                    ->required(),
             ]);
     }
 
@@ -92,10 +65,13 @@ class InventoryResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
-                // Tables\Columns\TextColumn::make('unit')
-                //     ->searchable(),
-                Tables\Columns\TextColumn::make('slug'),
-                // Tables\Columns\ImageColumn::make('featured_image'),
+                Tables\Columns\TextColumn::make('description')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('unit')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('slug')
+                    ->searchable(),
+                Tables\Columns\ImageColumn::make('featured_image'),
                 // Tables\Columns\TextColumn::make('weight')
                 //     ->numeric()
                 //     ->sortable(),

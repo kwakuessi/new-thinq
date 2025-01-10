@@ -44,11 +44,6 @@ class Inventory extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'price' => 'decimal',
-        'height_value' => 'decimal',
-        'width_value' => 'decimal',
-        'depth_value' => 'decimal',
-        'volume_value' => 'decimal',
         'sub_category_id' => 'integer',
     ];
 

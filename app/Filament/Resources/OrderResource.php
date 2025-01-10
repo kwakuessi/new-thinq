@@ -2,8 +2,8 @@
 
 namespace App\Filament\Resources;
 
-use App\Models\User;
 use Filament\Forms;
+use App\Models\User;
 use Filament\Tables;
 use App\Models\Order;
 use App\Enum\OrderType;
@@ -26,13 +26,16 @@ use Filament\Forms\Components\Actions\Action;
 use App\Filament\Resources\OrderResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\OrderResource\RelationManagers;
+use App\Filament\Resources\OrderResource\Widgets\OrdersStatsOverview;
 use App\Filament\Resources\OrderResource\RelationManagers\OrderLinesRelationManager;
 
 class OrderResource extends Resource
 {
     protected static ?string $model = Order::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'pepicon-pen-circle';
+
+   
 
     public static function form(Form $form): Form
     {
@@ -92,12 +95,13 @@ class OrderResource extends Resource
                                     ->modalWidth('lg');
                             }),
 
-                        Forms\Components\Select::make('address_id')
+                        Forms\Components\Select::make('address_id' )
                             ->options(fn(Get $get): Collection => Address::query()
                                 ->where('user_id', $get('user_id'))
                                 ->pluck('country', 'id'))
+                               
                             ->live()
-
+                            // ->relationship('address', 'address_id')
                             ->createOptionForm([
                                 Forms\Components\TextInput::make('city'),
                                 Forms\Components\TextInput::make('state'),
@@ -105,7 +109,8 @@ class OrderResource extends Resource
                                 Forms\Components\TextInput::make('zip_code'),
                                 Forms\Components\TextInput::make('phone')
                                     ->tel(),
-                                Forms\Components\Select::make('user')
+                                Forms\Components\Select::make('user_id')
+                                
                                     ->options(function () {
                                         return User::all()->pluck('name', 'id');
                                     })
@@ -192,7 +197,7 @@ class OrderResource extends Resource
             ->columns([
 
 
-                Tables\Columns\TextColumn::make('customer.name')
+                Tables\Columns\TextColumn::make('user.name')
                     ->numeric()
                     ->sortable(),
 
@@ -323,6 +328,13 @@ class OrderResource extends Resource
             'create' => Pages\CreateOrder::route('/create'),
             'view' => Pages\ViewOrder::route('/{record}'),
             'edit' => Pages\EditOrder::route('/{record}/edit'),
+        ];
+    }
+
+    public static function getWidgets(): array
+    {
+        return [
+            OrdersStatsOverview::class,
         ];
     }
 }
