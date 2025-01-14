@@ -15,7 +15,8 @@
         "codeat3/blade-pepicons": "^1.5",
         "filament/filament": "^3.2",
         "laravel/framework": "^11.31",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "ralphjsmit/laravel-filament-media-library": "^3.8"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -73,9 +74,16 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "ralphjsmit/packages": true
         }
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://satis.ralphjsmit.com"
+        }
+    ],
     "minimum-stability": "stable",
     "prefer-stable": true
 }
