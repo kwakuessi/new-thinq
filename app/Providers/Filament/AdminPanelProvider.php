@@ -16,7 +16,6 @@ use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
-use RalphJSmit\Filament\MediaLibrary\FilamentMediaLibrary;
 use Leandrocfe\FilamentApexCharts\FilamentApexChartsPlugin;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 
@@ -57,10 +56,10 @@ class AdminPanelProvider extends PanelProvider
                 DispatchServingFilamentEvent::class,
             ])
             ->plugins([
-                FilamentMediaLibrary::make(),
+                // FilamentMediaLibrary::make(),
                 FilamentApexChartsPlugin::make()
             ])
-            
+
             ->authMiddleware([
                 Authenticate::class,
             ]);
