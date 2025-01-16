@@ -25,7 +25,7 @@ class ListBookings extends ListRecords
             'Air Freight' => Tab::make()->query(fn ($query) => $query->where('order_type', 'customer_order'))->icon('ri-plane-fill'),
             'Sea Freight' => Tab::make()->query(fn ($query) => $query->where('order_type', 'shipment'))->icon('ri-ship-line'),
             'Rail Freight' => Tab::make()->query(fn ($query) => $query->where('order_type', 'shipment')),
-            'Road Freight' => Tab::make()->query(fn ($query) => $query->where('order_type', 'shipment')),
+            'Road Freight' => Tab::make()->query(fn ($query) => $query->where('order_type', 'shipment'))->icon('heroicon-o-truck'),
             'Container' => Tab::make()->query(fn ($query) => $query->where('order_type', 'shipment')),
             
         ];
