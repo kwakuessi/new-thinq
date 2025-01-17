@@ -1,5 +1,5 @@
  <footer class="py-12 bg-[#003C97]">
-     <div class="mx-auto max-w-7xl pt-[100px]">
+     <div class="mx-auto max-w-8xl pt-[100px]">
             <div class="container text-white mx-auto  px-6 grid grid-cols-2 md:grid-cols-5 gap-8">
                 <!-- Our Company -->
                 <div>

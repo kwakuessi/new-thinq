@@ -9,3 +9,6 @@ Route::get('/', function () {
 Route::get('/contact-us', function () {
     return view('contact-us');
 });
+Route::get('/home', function () {
+    return view('home');
+});

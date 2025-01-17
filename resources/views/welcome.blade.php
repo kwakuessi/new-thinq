@@ -1,5 +1,5 @@
 <x-layout>
-    
+
      <!-- Banner -->
  <h1 class="text-black">============= Banner =============</h1>
     <x-thumb.thinq_banner>
@@ -8,8 +8,8 @@
         </x-slot:image>
         <x-slot:content>
             Shaping our vision to being a leader in providing
-             innovative solutions in procurement, 
-             <br/>supply chain and logistics with our  
+             innovative solutions in procurement,
+             <br/>supply chain and logistics with our
             </span><span class="text-[#003c97] text-2xl font-medium font-['Lexend'] leading-9">Sphere360</span>
             <span class="text-[#003c97] text-2xl font-light font-['Lexend'] leading-9">  degree efficiency technology system.
         </x-slot:content>
@@ -59,6 +59,17 @@
 <h1 class="text-black">============= Thumb Clients =============</h1>
 <x-thumb.thumb-clients></x-thumb.thumb-clients>
 
+<br/>
+<br/>
 
+<!-- Thumb Service  -->
+<h1 class="text-black">============= Thumb Clients =============</h1>
+<x-thumb.thumb-solution></x-thumb.thumb-solution>
+
+
+<!-- Icon Title Services  -->
+<x-titles.icont-title>
+    <x-slot:title>Key services</x-slot:title>
+</x-titles.icont-title>
 
 </x-layout>
