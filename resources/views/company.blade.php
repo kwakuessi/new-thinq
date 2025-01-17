@@ -21,7 +21,7 @@
        </x-slot:button>
    </x-thumb.thinq_banner>
 
-   <section class="w-full h-full mx-auto max-w-7xl relative pt-20">
+   <section class="w-full h-full mx-auto max-w-7xl relative py-20">
      <div class=" space-y-10">
 
         <div class="w-[1280px] h-[3700.89px] relative">
@@ -146,6 +146,7 @@
             <div class="left-[926.57px] top-[3456.77px] absolute text-[#ff0000] text-xs font-light font-['Lexend'] leading-[30.66px]">Shop now</div>
             <div class="left-[964.04px] top-[2996.04px] absolute text-[#003c97] text-xl font-normal font-['Lexend'] leading-[18.74px]">Returns<br/>Exchange</div>
             <div class="w-[53.65px] h-[53.65px] left-[896.77px] top-[2987.52px] absolute rounded-full border-4 border-[#003c97]"></div>
+            
             <div class="left-[272.52px] top-[2996.04px] absolute text-[#003c97] text-xl font-normal font-['Lexend'] leading-[18.74px]">Customed<br/>Boxing</div>
             <div class="w-[53.65px] h-[53.65px] left-[205.24px] top-[2987.52px] absolute rounded-full border-4 border-[#003c97]"></div>
             <div class="left-[627.65px] top-[2996.04px] absolute text-[#003c97] text-xl font-normal font-['Lexend'] leading-[18.74px]">Global<br/>Delivery</div>
@@ -158,7 +159,7 @@
             <div class="w-[48.54px] h-[0px] left-[889.10px] top-[714.52px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
             <div class="left-[887.40px] top-[692.38px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Buy from Store</div>
             <div class="w-[238.46px] h-[340.65px] left-[2.55px] top-[572.30px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[187.36px] h-[174.58px] left-[32.36px] top-[647.24px] absolute" src="https://via.placeholder.com/187x175" />
+            <img class="w-[187.36px] h-[174.58px] left-[32.36px] top-[647.24px] absolute" src="{{URL::asset('assets/thumb-nails/AdobeStock-UHKqMBNmSc 1.png')}}" />
             <div class="left-[73.24px] top-[866.11px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
             <div class="left-[103.90px] top-[878.88px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
             <div class="w-[110.71px] h-[48.54px] left-[67.28px] top-[714.52px] absolute bg-[#dde8f0]/80"></div>
