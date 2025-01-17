@@ -23,7 +23,7 @@
     </head>
     <body class="font-Lexend font-light text-md antialiased dark:text-white/50">
     <x-nav.nav/>
->
+
         {{ $slot }}
 
 

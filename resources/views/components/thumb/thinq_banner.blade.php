@@ -1,4 +1,4 @@
-<div class="w-[1920px] h-[680px] relative">
+<div class="w-auto h-[680px] relative">
     {{ $image }}
     <div class="w-[970px] h-[72px] left-[219px] top-[330px] absolute">
       <div class="left-0 top-0 absolute"><span class="text-[#003c97] text-2xl font-light font-['Lexend'] leading-9">{{ $content }}</span></div>
