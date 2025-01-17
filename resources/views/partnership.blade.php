@@ -142,7 +142,7 @@
               </div>
               <div class="w-[134.89px] left-[-0px] top-[92.96px] absolute text-[#1d4289] text-[14.82px] font-normal font-['Lexend'] leading-[14.82px]">Container Booking</div>
             </div>
-            <img class="w-[1268.14px] h-[398.01px] left-[11.86px] top-[2903.16px] absolute" src="https://via.placeholder.com/1268x398" />
+            <img class="w-[1268.14px] h-[398.01px] left-[11.86px] top-[2903.16px] absolute" src="{{URL::asset('assets/thumb-nails/WRLD MAP 1.png')}}" />
             <div class="w-[759.58px] h-[233.55px] left-[388.37px] top-[2960.23px] absolute">
               <div class="w-[32.49px] h-[27.50px] left-[95.73px] top-[167.09px] absolute">
                 <div class="w-[21.78px] h-[21.78px] left-0 top-0 absolute bg-gradient-to-tl from-[#fbba61] to-white rounded-full"></div>
@@ -231,10 +231,10 @@
             <div class="w-[222.35px] h-[242.36px] left-[602.57px] top-[1353.38px] absolute rounded-lg border border-[#00243d]"></div>
             <div class="w-[222.35px] h-[242.36px] left-[309.81px] top-[1353.38px] absolute rounded-lg border border-[#00243d]"></div>
             <div class="w-[222.35px] h-[242.36px] left-[894.59px] top-[1353.38px] absolute rounded-lg border border-[#00243d]"></div>
-            <img class="w-[222.35px] h-[146.75px] left-[20.01px] top-[1353.38px] absolute rounded-tl-lg rounded-tr-lg" src="https://via.placeholder.com/222x147" />
-            <img class="w-[222.35px] h-[146.75px] left-[894.59px] top-[1353.38px] absolute rounded-tl-lg rounded-tr-lg" src="https://via.placeholder.com/222x147" />
-            <img class="w-[222.35px] h-[146.75px] left-[602.57px] top-[1353.38px] absolute rounded-tl-lg rounded-tr-lg" src="https://via.placeholder.com/222x147" />
-            <img class="w-[222.35px] h-[146.75px] left-[309.81px] top-[1353.38px] absolute rounded-tl-lg rounded-tr-lg" src="https://via.placeholder.com/222x147" />
+            <img class="w-[222.35px] h-[146.75px] left-[20.01px] top-[1353.38px] absolute rounded-tl-lg rounded-tr-lg" src="{{URL::asset('assets/thumb-nails/Graphics-07 1.png')}}" />
+            <img class="w-[222.35px] h-[146.75px] left-[894.59px] top-[1353.38px] absolute rounded-tl-lg rounded-tr-lg" src="{{URL::asset('assets/thumb-nails/Graphics-10 1.png')}}" />
+            <img class="w-[222.35px] h-[146.75px] left-[602.57px] top-[1353.38px] absolute rounded-tl-lg rounded-tr-lg" src="{{URL::asset('assets/thumb-nails/Graphics-09 1.png')}}" />
+            <img class="w-[222.35px] h-[146.75px] left-[309.81px] top-[1353.38px] absolute rounded-tl-lg rounded-tr-lg" src="{{URL::asset('assets/thumb-nails/Graphics-08 1.png')}}" />
             <div class="left-[34.09px] top-[1518.66px] absolute text-[#1d4289] text-xs font-normal font-['Lexend']">Transportation services</div>
             <div class="w-[76.34px] h-[64.62px] left-[5.19px] top-[1786.22px] absolute">
               <div class="w-[51.16px] h-[51.16px] left-0 top-0 absolute bg-gradient-to-tl from-[#fbba61] to-white rounded-full"></div>
@@ -257,14 +257,14 @@
               <div class="w-[83.38px] left-0 top-0 absolute text-white text-lg font-normal font-['Lexend'] leading-[17.79px]">Company</div>
               <div class="w-[167.50px] h-[16.31px] left-[-0px] top-[21.49px] absolute text-white text-xs font-light font-['Lexend']">Enterprise/Company cargo</div>
             </div>
-            <img class="w-[274.23px] h-[246.81px] left-[294.24px] top-[1927.78px] absolute" src="https://via.placeholder.com/274x247" />
-            <img class="w-[274.97px] h-[246.81px] left-[568.48px] top-[1927.78px] absolute" src="https://via.placeholder.com/275x247" />
-            <img class="w-[273.49px] h-[246.81px] left-[843.45px] top-[1927.78px] absolute" src="https://via.placeholder.com/273x247" />
-            <img class="w-[274.97px] h-[246.07px] left-[568.48px] top-[2174.59px] absolute" src="https://via.placeholder.com/275x246" />
-            <img class="w-[273.49px] h-[246.07px] left-[843.45px] top-[2174.59px] absolute" src="https://via.placeholder.com/273x246" />
-            <img class="w-[275.72px] h-[247.55px] left-[20.01px] top-[2173.11px] absolute" src="https://via.placeholder.com/276x248" />
-            <img class="w-[274.23px] h-[246.81px] left-[20.01px] top-[1927.78px] absolute" src="https://via.placeholder.com/274x247" />
-            <img class="w-[272.75px] h-[246.07px] left-[295.73px] top-[2174.59px] absolute" src="https://via.placeholder.com/273x246" />
+            <img class="w-[274.23px] h-[246.81px] left-[294.24px] top-[1927.78px] absolute" src="{{URL::asset('assets/thumb-nails/Spherelogistics - Sea Freight 1.png')}}" />
+            <img class="w-[274.97px] h-[246.81px] left-[568.48px] top-[1927.78px] absolute" src="{{URL::asset('assets/thumb-nails/Spherelogistics - Road Freight 1.png')}}" />
+            <img class="w-[273.49px] h-[246.81px] left-[843.45px] top-[1927.78px] absolute" src="{{URL::asset('assets/thumb-nails/Spherelogistics - Rail Freight 1.png')}}" />
+            <img class="w-[274.97px] h-[246.07px] left-[568.48px] top-[2174.59px] absolute" src="{{URL::asset('assets/thumb-nails/Spherelogistics - Project Logistics 1.png')}}" />
+            <img class="w-[273.49px] h-[246.07px] left-[843.45px] top-[2174.59px] absolute" src="{{URL::asset('assets/thumb-nails/Spherelogistics - Contract Logistics 1.png')}}" />
+            <img class="w-[275.72px] h-[247.55px] left-[20.01px] top-[2173.11px] absolute" src="{{URL::asset('assets/thumb-nails/Spherelogistics - Customs Solution 1.png')}}" />
+            <img class="w-[274.23px] h-[246.81px] left-[20.01px] top-[1927.78px] absolute" src="{{URL::asset('assets/thumb-nails/Spherelogistics - Air Freight 1.png')}}" />
+            <img class="w-[272.75px] h-[246.07px] left-[295.73px] top-[2174.59px] absolute" src="{{URL::asset('assets/thumb-nails/Spherelogistics - Lead Logistics 1.png')}}" />
             <div class="w-[274.97px] h-[151.94px] left-[568.48px] top-[2693.41px] absolute bg-gradient-to-b from-[#e7eff4] to-[#0a459d]"></div>
             <div class="w-[274.23px] h-[151.94px] left-[294.24px] top-[2845.35px] absolute bg-gradient-to-b from-[#e7eff4] to-[#0a459d]"></div>
             <div class="w-[273.49px] h-[151.94px] left-[843.45px] top-[2845.35px] absolute bg-gradient-to-b from-[#e7eff4] to-[#0a459d]"></div>
