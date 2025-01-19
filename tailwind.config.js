@@ -14,6 +14,10 @@ export default {
             fontFamily: {
                 sans: ['Lexend', ...defaultTheme.fontFamily.sans],
             },
+            backgroundImage: {
+            'home-bg': "url('ThinQSphere Homepage.png')",
+      }
+
         },
     },
     plugins: [],
