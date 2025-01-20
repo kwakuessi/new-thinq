@@ -4,21 +4,16 @@
     <x-slot:image>
         <img class="w-full h-auto left-0 top-0 absolute object-cover" src="{{ asset('assets/banners/procurement-banner.png') }}" />
     </x-slot:image>
-    <x-slot:content>
-        Shaping our vision to being a leader in providing
-            innovative solutions in procurement,
-            <br/>supply chain and logistics with our
-        </span><span class="text-[#003c97] text-2xl font-medium font-['Lexend'] leading-9">Sphere360</span>
-        <span class="text-[#003c97] text-2xl font-light font-['Lexend'] leading-9">  degree efficiency technology system.
-    </x-slot:content>
     <x-slot:title>
         Procurement Perfected, <br/>Logistics Redefined
     </x-slot:title>
-    <x-slot:button>
-        <x-buttons.banner-btn>
-            <x-slot:btnname>Get Started</x-slot:btnname>
-        </x-buttons.banner-btn>
-    </x-slot:button>
+    <x-slot:content>
+    Shaping our vision to being a leader in providing innovative solutions
+    in procurement, supply chain and logistics with our
+    <span class="font-medium text-blue-900">Sphere360</span>
+    degree efficiency technology system.
+    </x-slot:content>
+
 </x-thumb.thinq_banner>
 
 
