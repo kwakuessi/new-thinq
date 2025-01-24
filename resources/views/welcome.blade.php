@@ -2,7 +2,7 @@
     <!-- Banner -->
 <x-thumb.thinq_banner>
     <x-slot:image>
-        <img class="w-full h-auto left-0 top-0 absolute object-cover" src="{{ asset('assets/banners/procurement-banner.png') }}" />
+        <img class="w-full h-auto left-0 absolute object-cover -z-10" src="{{ asset('assets/banners/procurement-banner.png') }}" />
     </x-slot:image>
     <x-slot:title>
         Procurement Perfected, <br/>Logistics Redefined
@@ -258,38 +258,38 @@
             <div class="flex flex-col max-md:max-w-full">
                 <div class="flex flex-col w-full max-md:max-w-full">
                     <div class="flex flex-wrap gap-5 items-start w-full max-md:max-w-full">
+                        <img
+                            src="{{ asset('assets/thumb-nails/automotive.png') }}"
+                            alt="Automotiv" class="Automotive grow shrink aspect-[0.72] min-w-[240px] w-[204px]" />
                         <img loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/6a7e8bb28c09ace15a8db05e0ec482ca3cac153f75e639c672995d8d0b9e905b?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
-                            alt="" class="object-contain grow shrink aspect-[0.72] min-w-[240px] w-[204px]" />
+                            src="{{ asset('assets/thumb-nails/tool.png') }}"
+                            alt="Tools" class="object-contain grow shrink aspect-[0.72] min-w-[240px] w-[205px]" />
                         <img loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/9e8cc99e47d82a13d50ee3b889344ba7905ecf1dde8d49deaf373cb5ecf4ae71?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
-                            alt="" class="object-contain grow shrink aspect-[0.72] min-w-[240px] w-[205px]" />
+                            src="{{ asset('assets/thumb-nails/agriculture.png') }}"
+                            alt="Agriculture" class="object-contain grow shrink aspect-[0.72] min-w-[240px] w-[203px]" />
                         <img loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/188e6375d701ad3574730943f2c8d7c712d05315726fde4647fd604a910c8b48?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
-                            alt="" class="object-contain grow shrink aspect-[0.72] min-w-[240px] w-[203px]" />
+                            src="{{ asset('assets/thumb-nails/phamacy.png') }}"
+                            alt="Pharmaceutical" class="object-contain grow shrink aspect-[0.72] min-w-[240px] w-[204px]" />
                         <img loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/9817b8ac49e0c05e7f313112239d32b68f176da5a98022691d33f469058b17b4?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
-                            alt="" class="object-contain grow shrink aspect-[0.72] min-w-[240px] w-[204px]" />
+                            src="{{ asset('assets/thumb-nails/machinery.png') }}"
+                            alt="Manchinery" class="object-contain grow shrink aspect-[0.72] min-w-[240px] w-[204px]" />
                         <img loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/dd6849ed1ef6b4034979eaec018be558ca1cafc91bd0be87ad2d05f5f4bb9bc4?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
-                            alt="" class="object-contain grow shrink aspect-[0.72] min-w-[240px] w-[204px]" />
+                            src="{{ asset('assets/thumb-nails/aluminium.png') }}"
+                            alt="Aluminium" class="object-contain grow shrink aspect-[0.72] min-w-[240px] w-[205px]" />
                         <img loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e9aa5d37c7f2939bb7de0e6644281f00d92b65d0855d400871d47b03c54193e?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
-                            alt="" class="object-contain grow shrink aspect-[0.72] min-w-[240px] w-[205px]" />
+                            src="{{ asset('assets/thumb-nails/media.png') }}"
+                            alt="Media" class="object-contain grow shrink aspect-[0.72] min-w-[240px] w-[204px]" />
                         <img loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/add9fd2a641600209315e5edf6b16469f1c9b04fd172787ec2863d33fd299009?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
-                            alt="" class="object-contain grow shrink aspect-[0.72] min-w-[240px] w-[204px]" />
-                        <img loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/09cdda16db2d3c1a20ba2b55626c5e9dc186e04409d4209e38182a3d7d62e078?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
-                            alt="" class="object-contain grow shrink aspect-[0.72] min-w-[240px] w-[205px]" />
+                            src="{{ asset('assets/thumb-nails/leather.png') }}"
+                            alt="Leather" class="object-contain grow shrink aspect-[0.72] min-w-[240px] w-[205px]" />
                     </div>
                     <div
                         class="flex gap-10 justify-between items-center self-center mt-11 max-w-full w-[100px] max-md:mt-10">
                         <img loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/eeb824e358dc87bb7f7f21b03507ad3530479e8b482e0513a0481ca49d270f72?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
+                            src="{{ asset('assets/icons/arrow-left.svg') }}"
                             alt="" class="object-contain shrink-0 self-stretch my-auto aspect-square w-[30px]" />
                         <img loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/99ff8fb85b33702941838467dd04d785ef6e4972fac0a6b9695c9fee69f486a6?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
+                            src="{{ asset('assets/icons/arrow-right.svg') }}"
                             alt="" class="object-contain shrink-0 self-stretch my-auto aspect-square w-[30px]" />
                     </div>
                 </div>
