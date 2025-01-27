@@ -29,3 +29,8 @@ Route::get('/company', function () {
 Route::get('/collaboration', function () {
     return view('collaboration');
 });
+
+Route::get('/procurement', function () {
+    return view('procurement');
+});
+
