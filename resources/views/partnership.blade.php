@@ -3,7 +3,7 @@
         [
             'title' => 'Quality Assurance',
             'description' => 'We ensure that every procurement has strict quality checks and assurances
-                                                                                                                                                                                                                                                                        with rigorous testing at every production stage.',
+                                                                                                                                                                                                                                                                            with rigorous testing at every production stage.',
             'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/3597c50efd05fe3a1222d2bb768217196ed1538d74f54a3ff4346bea1ee1b15f?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'
         ],
 
@@ -34,7 +34,7 @@
         ['title' => 'Info Inquiry', 'icon' => ''],
         [
             'title' => 'Eligibility
-                                                                                                Assessment',
+                                                                                                    Assessment',
             'icon' => ''
         ],
         ['title' => 'Contract Agreement', 'icon' => ''],
@@ -60,23 +60,23 @@
         ],
         [
             'title' => 'Financial
-                        Assessment',
+                            Assessment',
             'icon' => ''
         ],
         [
             'title' => 'Supplier
-                        Assessment',
+                            Assessment',
             'icon' => ''
         ],
         ['title' => 'Risk Review', 'icon' => ''],
         [
             'title' => 'Contract
-                        Agreement',
+                            Agreement',
             'icon' => ''
         ],
         [
             'title' => 'System
-                        Onboarding',
+                            Onboarding',
             'icon' => ''
         ],
     ];
@@ -84,37 +84,37 @@
     $HealthPharmas = [
         [
             'title' => 'Manufacturing
-                Agreement',
+                    Agreement',
             'icon' => ''
         ],
         [
             'title' => 'Factory
-                Inspection',
+                    Inspection',
             'icon' => ''
         ],
         [
             'title' => 'Dossier
-                Preparation',
+                    Preparation',
             'icon' => ''
         ],
         [
             'title' => 'Product
-                Packaging Design',
+                    Packaging Design',
             'icon' => ''
         ],
         [
             'title' => 'Registration
-                Submission',
+                    Submission',
             'icon' => ''
         ],
         [
             'title' => 'Registration
-                Approval',
+                    Approval',
             'icon' => ''
         ],
         [
             'title' => 'System
-                Onboarding',
+                    Onboarding',
             'icon' => ''
         ],
     ];
@@ -336,7 +336,7 @@
     <!--  -->
 
     <section class='max-w-6xl mx-auto mt-[80px] px-4 sm:px-6 lg:px-8'>
-        <div class="flex flex-wrap items-end">
+        <div class="flex flex-wrap lg:justify-between items-end">
             <div class="flex flex-col text-blue-900 min-w-[240px] w-[633px] max-md:max-w-full">
                 <h2 class="text-3xl leading-8 max-md:max-w-full">
                     Join us to elevate the standards of your business
@@ -362,6 +362,101 @@
                 </div>
             </button>
         </div>
+
+        <div class="flex flex-wrap pt-[105px] justify-between items-start text-blue-900" role="region"
+            aria-label="Partner Testimonials">
+            <div class="px-3 pt-0.5 pb-6 text-3xl w-fit" role="heading" aria-level="2">Partner Testimonials</div>
+            <div class="text-xl font-light leading-7 w-[589px] max-md:max-w-full">
+                We prioritize our partners and distributors, focusing on quality, affordability, and delivery of
+                unmatched value and support through our seamless supply chain.
+            </div>
+        </div>
+
+
+        <div class="flex flex-col pt-[80px] max-w-[990px]" role="region" aria-label="Customer Testimonials">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 items-center w-full max-md:max-w-full">
+
+                @foreach($partnerTestimonials as $partnerTestimonial)
+
+                    <div class="flex relative grow shrink gap-2.5 items-start self-stretch p-2.5 my-auto min-h-[246px] min-w-[240px] w-[201px]"
+                        role="article">
+                        <div class="flex absolute right-0 bottom-0 z-0 gap-2.5 items-center p-2.5 ">
+                            <img loading="lazy" src="{{URL::asset($partnerTestimonial['icon'])}}"
+                                alt={{$partnerTestimonial['name']}} />
+                        </div>
+                        <div class="flex z-0 shrink-0 self-stretch my-auto rounded-full h-[226px] w-[226px]"></div>
+                        <div
+                            class="flex absolute z-0 flex-col items-center text-white bottom-[37px] right-[69px] w-[108px]">
+                            <div class="text-sm leading-none">{{$partnerTestimonial['name']}}</div>
+                            <div class="text-xs font-light leading-3 text-center">
+                                {{$partnerTestimonial['description']}}
+                            </div>
+                        </div>
+                    </div>
+
+                @endforeach
+
+            </div>
+            <div class="flex flex-wrap gap-4 items-start self-start mt-9 text-xl leading-7 text-blue-900 max-md:max-w-full"
+                role="blockquote">
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/fe4d2cd41b8c5810c4d3a4abefc97099a160389b69c8ed46077ab6fdaf0aedbf?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
+                    class="object-contain shrink-0 aspect-[1.19] w-[19px]" alt="Quote icon" />
+                <div class="w-[679px] max-md:max-w-full">
+                    <span class="font-light">
+                        In the construction industry, delays are costly.
+                    </span>
+                    <span class="font-medium">ThinQSphere</span>
+                    <span class="font-light">
+                        has become an invaluable partner, ensuring our heavy machinery and parts
+                        arrive when and where we need them. Their proactive communication and
+                        streamlined processes have made them an essential part of our projects'
+                        success
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- supply chain services -->
+
+    <section class='max-w-6xl mx-auto mt-[80px] px-4 sm:px-6 lg:px-8'>
+        <div class="flex flex-wrap pt-[105px] justify-between items-start text-blue-900" role="region"
+            aria-label="Partner Testimonials">
+            <div class="px-3 pt-0.5 pb-6 text-3xl w-fit" role="heading" aria-level="2">Partner Testimonials</div>
+            <div class="text-xl font-light leading-7 w-[589px] max-md:max-w-full">
+                We prioritize our partners and distributors, focusing on quality, affordability, and delivery of
+                unmatched value and support through our seamless supply chain.
+            </div>
+        </div>
+
+        <div class='grid grid-cols-2 lg:grid-cols-4 gap-5 mt-10' role="list" aria-label="Supply Chain Services">
+            @foreach($supplyChainServices as $supplyChainService)
+
+                <div class="flex flex-col text-blue-900 max-w-[219px]">
+                    <div class="flex flex-col pb-5 w-full rounded-xl border border-blue-900 border-solid" role="article">
+                        <img loading="lazy" src="{{URL::asset($supplyChainService['icon'])}}"
+                            alt={{$supplyChainService['name']}} class="object-contain w-full rounded-t-xl aspect-[1.51]" />
+                        <div class="flex flex-col self-center mt-3.5 w-full max-w-[184px] px-2">
+                            <h2 class="text-xs lg:text-sm text-sky-950">{{$supplyChainService['name']}}</h2>
+                            <p class="mt-2.5 text-xs font-light h-[85px]">
+                                {{$supplyChainService['description']}}
+                            </p>
+                            <div class="flex gap-1 items-center self-start mt-2.5 text-xs leading-tight whitespace-nowrap"
+                                role="button" tabindex="0" aria-label="Explore Customs Services">
+                                <span class="self-stretch my-auto w-[38px]">Explore</span>
+                                <img loading="lazy"
+                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/8d3ad36d8bb31fbd5af7530c0b4938f524ae4ec15dd9ca34b88890febac47512?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
+                                    alt="" class="object-contain shrink-0 self-stretch my-auto w-1.5 aspect-square" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            @endforeach
+        </div>
+
+
     </section>
 
 
