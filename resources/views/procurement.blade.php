@@ -1,3 +1,89 @@
+
+<div class="flex flex-col justify-center items-center px-24 py-28 max-md:px-5 max-md:py-24" role="main"
+    aria-labelledby="hero-heading">
+    <div class="flex flex-wrap gap-10 justify-center items-center max-md:max-w-full">
+        <div
+            class="flex flex-col justify-center self-stretch my-auto font-light text-white min-w-[240px] w-[708px] max-md:max-w-full">
+            <h1 id="hero-heading"
+                class="text-5xl leading-[60px] max-md:max-w-full max-md:text-4xl max-md:leading-[56px]">
+                Empowering Businesses, From Procurement to Delivery Simplified
+            </h1>
+            <p class="mt-8 text-2xl leading-10 max-md:max-w-full">
+                Innovative solutions to streamline your supply chain, delivering
+                unparalleled efficiency, cost savings, and visibility to boost strategic
+                reach.
+            </p>
+            <button
+                class="flex flex-col justify-center px-7 py-5 mt-8 w-40 max-w-full text-base leading-none text-blue-900 bg-white min-h-[52px] rounded-[40px] max-md:px-5 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-900"
+                aria-label="Get Started">
+                <div class="flex gap-1.5 items-start">
+                    <span class="w-[89px]">Get Started</span>
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/883f4a0eb9bff0b101aee0b2ee1ed99698bdb73b87738158384799f33d4ad162?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
+                        class="object-contain shrink-0 w-3 aspect-square" alt="" aria-hidden="true" />
+                </div>
+            </button>
+        </div>
+        <nav class="flex flex-col justify-center self-stretch my-auto w-[58px]" aria-label="Quick actions">
+            <div class="flex flex-col justify-center w-full">
+                <button
+                    class="flex gap-2.5 justify-center items-center px-3.5 py-3.5 w-full bg-gray-100 rounded-md border border-blue-900 border-solid min-h-[50px] hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-900"
+                    aria-label="Booking">
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/82d31be52542dea1b6570eda74ec143940e537e2e068a16691ec4ba749a1a124?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
+                        class="object-contain self-stretch my-auto aspect-[0.88] w-[22px]" alt="" aria-hidden="true" />
+                </button>
+                <div class="mt-1.5 text-xs font-light text-gray-100">Booking</div>
+            </div>
+            <div class="flex flex-col justify-center mt-5 w-full">
+                <button
+                    class="flex gap-2.5 justify-center items-center px-3 py-3.5 w-full bg-gray-100 rounded-md border border-blue-900 border-solid min-h-[50px] hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-900"
+                    aria-label="Order">
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/d74fbd8e9bc787eed1af5e5ae59abd25b7da2979ad8a0a04925621138773f655?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
+                        class="object-contain self-stretch my-auto aspect-[1.04] w-[26px]" alt="" aria-hidden="true" />
+                </button>
+                <div class="mt-1.5 text-xs font-light text-center text-gray-100">
+                    Order
+                </div>
+            </div>
+            <div class="flex flex-col justify-center mt-5 w-full">
+                <button
+                    class="flex gap-2.5 justify-center items-center px-3.5 py-3.5 w-full bg-gray-100 rounded-md border border-blue-900 border-solid min-h-[50px] hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-900"
+                    aria-label="Tracking">
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/1ce6b3715416900f1535968c641cd2aa2570799177d9e833b7b2c572a609499c?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
+                        class="object-contain self-stretch my-auto aspect-[0.88] w-[22px]" alt="" aria-hidden="true" />
+                </button>
+                <div class="mt-1.5 text-xs font-light text-gray-100">Tracking</div>
+            </div>
+            <div class="flex flex-col justify-center mt-5 w-full">
+                <button
+                    class="flex gap-2.5 justify-center items-start px-3.5 py-3.5 w-full bg-gray-100 rounded-md border border-blue-900 border-solid min-h-[50px] hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-900"
+                    aria-label="Quotation">
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/a4dc64fc277c92deb11eab2be94a95fc1f7de767e6a6d1ca5e3292e3f7f6119d?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
+                        class="object-contain aspect-[0.88] w-[22px]" alt="" aria-hidden="true" />
+                </button>
+                <div class="mt-1 text-xs font-light text-gray-100">Quotation</div>
+            </div>
+            <div class="flex flex-col justify-center mt-5 w-full">
+                <button
+                    class="flex gap-2.5 justify-center items-center px-3.5 py-3.5 w-full bg-gray-100 rounded-md border border-blue-900 border-solid min-h-[50px] hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-900"
+                    aria-label="Customer Services">
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/ca323a6b6260ae0aeaf640f932455d1f774ec1b7a37d26ac0e20f23a0e9d5a43?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
+                        class="object-contain self-stretch my-auto w-6 aspect-[1.04]" alt="" aria-hidden="true" />
+                </button>
+                <div class="mt-1.5 text-xs font-light leading-3 text-center text-gray-100">
+                    Customer
+                    <br />
+                    Services
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
 <x-layout>
 
 <div class="bg-[#DDE8F0]">
@@ -143,7 +229,7 @@
         <div class="mt-20 text-2xl leading-none text-sky-950 max-md:mt-10">Supply Chain</div>
       </div>
     </div>
-    <div class="flex absolute z-0 flex-col w-56 max-w-full text-base font-light leading-none text-white bottom-[-98px] left-[419px]">
+    <div class="flex absolute z-0 flex-col w-56 max-w-full text-base font-light leading-none text-white bottom-[-98px]">
       <button class="flex flex-col justify-center px-6 py-4 w-full bg-sky-950 max-w-[224px] min-h-[56px] rounded-[40px] max-md:px-5 hover:bg-sky-900 focus:outline-none focus:ring-2 focus:ring-sky-600" aria-label="Request Proposal">
         <div class="flex gap-2 items-center">
           <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/99548511d1ce437ec14297e39c97193b8f3b8441e187ecf7c5c77336e11616dc?apiKey=b1bd84c8cfcf466eb7283d9b13fee064&" class="object-contain shrink-0 self-stretch my-auto aspect-[0.79] w-[19px]" alt="" />
@@ -236,7 +322,7 @@
 </section>
 
 <div class="flex flex-col">
-  <div class="flex flex-col items-center w-full max-md:max-w-full">
+  <div class="flex flex-col bg-[#DDE8F0] lg:bg-[#FFFFFF] p-6 rounded items-center w-full max-md:max-w-full">
     <div class="flex  flex-wrap gap-10 items-center w-full max-md:max-w-full">
       <div class="self-stretch my-auto text-3xl font-medium leading-9 text-sky-950 w-[572px] max-md:max-w-full">
         <span class="text-zinc-500">Expert in deep supply chain</span>
@@ -321,14 +407,216 @@
 
   </div>
 </div>
+<!--  -->
 
-
+<div class="flex relative flex-col items-start bg-white">
+  <div class="flex z-0 flex-wrap gap-10 justify-between items-end max-w-full text-blue-900 w-[684px]">
+    <h2 class="text-3xl font-medium min-w-[240px] w-[270px]">Successful Cases</h2>
+    <div class="flex gap-1.5 items-center text-base" role="button" tabindex="0">
+      <div class="self-stretch my-auto w-[180px]">Discover Opportunities</div>
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f3d9e964cf22bcc40a9e2deacff03656061780442968e707cd2ea31d462c6b2d?apiKey=7a62a3bc0ec34c60a1ee6236375d4957&" class="object-contain shrink-0 self-stretch my-auto aspect-[1.12] w-[9px]" alt="" />
+    </div>
+  </div>
+  <div class="flex z-0 flex-wrap gap-10 items-center self-stretch mt-16 w-full max-md:mt-10 max-md:max-w-full">
+    <article class="flex flex-col grow shrink justify-center self-stretch px-6 py-5 my-auto rounded-xl bg-slate-200 bg-opacity-60 min-h-[209px] min-w-[240px] w-[307px] max-md:px-5">
+      <div class="flex flex-col w-full max-w-[313px]">
+        <div class="flex gap-1 items-center self-start text-xs leading-3 text-blue-900">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/098c321c9e5e993ba2bc24057d4e3dcf1e62dcb5e30f335308894cfc908f526c?apiKey=7a62a3bc0ec34c60a1ee6236375d4957&" class="object-contain shrink-0 self-stretch my-auto aspect-[1.4] w-[7px]" alt="" />
+          <div class="my-auto w-[149px]">Procurement & Supply Chain<br />Transformation</div>
+        </div>
+        <div class="flex gap-7 items-center mt-28 w-full max-md:mt-10">
+          <div class="flex gap-2.5 items-center self-stretch my-auto">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c71f391afe9073dbeb018d3d3ee9929d3ec5f37c08842be0fea8e51827196b32?apiKey=7a62a3bc0ec34c60a1ee6236375d4957&" class="object-contain shrink-0 self-stretch my-auto rounded-full aspect-[1.03] w-[35px]" alt="David Baker profile picture" />
+            <div class="flex flex-col items-start self-stretch pr-3.5 my-auto rounded-none w-[67px]">
+              <div class="text-base leading-none text-blue-900">David Baker</div>
+              <!-- <div class="z-10 text-xs leading-3 font-[250] text-neutral-400">CEO Baker Capital</div> -->
+            </div>
+          </div>
+          <div class="shrink-0 self-stretch my-auto h-0 border border-solid border-sky-950 w-[173px]" role="separator"></div>
+        </div>
+      </div>
+    </article>
+    <article class="flex flex-col grow shrink self-stretch px-3 pt-3 pb-5 my-auto text-blue-900 rounded-xl bg-slate-200 bg-opacity-60 min-h-[209px] min-w-[240px] w-[272px]">
+      <div class="flex flex-col w-full max-w-[301px]">
+        <div class="flex gap-1 items-center self-start text-xs leading-3">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/40089bdb85e8825e449a2681e09ef9499197f38fb9f9f11b4eeb82ccc4e98024?apiKey=7a62a3bc0ec34c60a1ee6236375d4957&" class="object-contain shrink-0 self-stretch my-auto aspect-[1.4] w-[7px]" alt="" />
+          <div class="flex-1 shrink gap-2.5 self-stretch my-auto w-[149px]">Procurement & Supply Chain<br />Transformation</div>
+        </div>
+        <div class="flex flex-col justify-center p-2.5 mt-28 w-full text-base leading-none max-md:mt-10">
+          <div class="flex gap-6 items-center w-full">
+            <div class="flex gap-2.5 items-center self-stretch my-auto">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/70765ab09862bf23329258f3460e97d264db0f90b2ee82a30c1f6a8179fd0417?apiKey=7a62a3bc0ec34c60a1ee6236375d4957&" class="object-contain shrink-0 self-stretch my-auto rounded-full aspect-square w-[34px]" alt="David Baker profile picture" />
+              <div class="self-stretch my-auto w-[67px]">David Baker</div>
+            </div>
+            <div class="shrink-0 self-stretch my-auto h-0 border border-solid border-sky-950 w-[145px]" role="separator"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="flex flex-col grow shrink justify-center self-stretch px-6 py-5 my-auto rounded-xl bg-slate-200 bg-opacity-60 min-h-[209px] min-w-[240px] w-[238px] max-md:px-5">
+      <div class="flex flex-col w-full max-w-[244px]">
+        <div class="flex gap-1 items-center self-start text-xs leading-3 text-blue-900">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1e82d55f590a6071b25bf04ef5b1fe742e8b728c36e8d1996c4f3db149720870?apiKey=7a62a3bc0ec34c60a1ee6236375d4957&" class="object-contain shrink-0 self-stretch my-auto aspect-[1.4] w-[7px]" alt="" />
+          <div class="my-auto w-[149px]">Procurement & Supply Chain<br />Transformation</div>
+        </div>
+        <div class="flex gap-4 items-center mt-28 w-full max-md:mt-10">
+          <div class="flex gap-2.5 items-center self-stretch my-auto">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/05f0814174c134ad5d03c07daaa067c9ebfa9cb210d7fceb170a92b542f3bcba?apiKey=7a62a3bc0ec34c60a1ee6236375d4957&" class="object-contain shrink-0 self-stretch my-auto rounded-full aspect-[1.03] w-[35px]" alt="David Baker profile picture" />
+            <div class="flex flex-col items-start self-stretch pr-3.5 my-auto rounded-none w-[67px]">
+              <div class="text-base leading-none text-blue-900">David Baker</div>
+              <!-- <div class="z-10 text-xs leading-3 font-[250] text-neutral-400">CEO Baker Capital</div> -->
+            </div>
+          </div>
+          <div class="shrink-0 self-stretch my-auto h-0 border border-solid border-sky-950 w-[117px]" role="separator"></div>
+        </div>
+      </div>
+    </article>
+  </div>
+  <nav class="flex absolute z-0 flex-col bottom-[-74px] right-[495px]" aria-label="Slide navigation">
+    <div class="flex gap-4 items-center">
+      <button class="flex shrink-0 self-stretch my-auto w-2.5 h-2.5 rounded-full bg-slate-900" aria-current="true" aria-label="Slide 1"></button>
+      <button class="flex shrink-0 self-stretch my-auto h-2.5 rounded-full bg-stone-400 w-[9px]" aria-label="Slide 2"></button>
+      <button class="flex shrink-0 self-stretch my-auto w-2.5 h-2.5 rounded-full bg-stone-400" aria-label="Slide 3"></button>
+      <button class="flex shrink-0 self-stretch my-auto w-2.5 h-2.5 rounded-full bg-stone-400" aria-label="Slide 4"></button>
+    </div>
+  </nav>
 </div>
-
 
 <!--  -->
 
+<!-- <div class="flex flex-col">
+  <div class="flex flex-wrap items-start w-full max-md:max-w-full">
+    <div
+      class="grow shrink text-3xl font-medium leading-9 text-sky-950 w-[598px] max-md:max-w-full"
+      role="heading"
+      aria-level="2"
+    >
+      <span class="">From rapid sprints for short-term gains</span>
+      <span class="text-zinc-500">
+        to transformation for competitive advantage we're here to get you there.
+      </span>
+      <br />
+    </div>
+    <button
+      class="flex flex-col grow shrink justify-center px-6 py-4 text-base font-light leading-none text-white bg-sky-950 min-h-[56px] rounded-[40px] w-[179px] max-md:px-5 hover:bg-sky-900 focus:outline-none focus:ring-2 focus:ring-sky-700"
+      aria-label="Request Proposal"
+    >
+      <div class="flex gap-2 items-center">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/88eeda80d8f44987983745c2ccc4e84792b7f0b7cbf0ab505ee2e96fa6c6e00d?placeholderIfAbsent=true&apiKey=7a62a3bc0ec34c60a1ee6236375d4957"
+          class="object-contain shrink-0 self-stretch my-auto aspect-[0.86] w-[19px]"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="self-stretch my-auto w-[135px]">Request Proposal</div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/df68c653a1aef3bbbceea90618332cd0e2223d5928541cdcf5fb71dc0196f227?placeholderIfAbsent=true&apiKey=7a62a3bc0ec34c60a1ee6236375d4957"
+          class="object-contain shrink-0 self-stretch my-auto aspect-square w-[9px]"
+          alt=""
+          aria-hidden="true"
+        />
+      </div>
+    </button>
+  </div>
+  <div
+    class="flex flex-wrap items-center mt-20 w-full text-4xl font-light text-white max-md:mt-10 max-md:max-w-full"
+  >
+    <div
+      class="flex flex-col grow shrink justify-center items-start self-stretch px-16 py-24 my-auto min-h-[256px] min-w-[240px] w-[686px] max-md:px-5 max-md:max-w-full"
+      role="heading"
+      aria-level="2"
+    >
+      <div class="z-10 px-3.5 pt-3 pb-0 max-w-full w-[364px] max-md:pb-2.5">
+        Talk to an industry expert
+      </div>
+    </div>
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/7014540646ad7d1cd30d1809fd80cfee0e52a7aa4f308347d236102b5f331765?placeholderIfAbsent=true&apiKey=7a62a3bc0ec34c60a1ee6236375d4957"
+      class="object-contain grow shrink self-stretch my-auto aspect-[1.28] min-w-[240px] w-[262px]"
+      alt="Industry expert illustration"
+    />
+  </div>
+</div> -->
 
+<div class="flex flex-col">
+  <div class="flex flex-wrap justify-between items-start w-full max-md:max-w-full">
+    <div
+      class="grow shrink text-3xl font-medium leading-9 text-sky-950 w-[598px] max-md:max-w-full"
+      role="heading"
+      aria-level="2"
+    >
+      <span>From rapid sprints for short-term gains</span>
+      <span class="text-zinc-500">
+        to <br class="hidden md:block"/> transformation for competitive advantage <br class="hidden md:block"/> we're here to get you there.
+      </span>
+      
+    </div>
+    <button
+      class="flex flex-col w-fit shrink justify-center px-6 py-4 text-base font-light leading-none text-white bg-sky-950 min-h-[56px] rounded-[40px]  max-md:px-5 hover:bg-sky-900 focus:outline-none focus:ring-2 focus:ring-sky-700"
+      aria-label="Request Proposal"
+    >
+      <div class="flex gap-2 items-center">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/aeb6e3c38b981505adc6f3dab2e2df82fb5fb87f787fa747c135d8b9cc672c52?placeholderIfAbsent=true&apiKey=7a62a3bc0ec34c60a1ee6236375d4957"
+          class="object-contain shrink-0 self-stretch my-auto aspect-[0.79] w-[19px]"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="self-stretch my-auto w-[135px]">Request Proposal</div>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/8ffed5abcb7e204bea339e11b48fea66a42dd42cc96e8abc3115405a0dc84366?placeholderIfAbsent=true&apiKey=7a62a3bc0ec34c60a1ee6236375d4957"
+          class="object-contain shrink-0 self-stretch my-auto aspect-square w-[9px]"
+          alt=""
+          aria-hidden="true"
+        />
+      </div>
+    </button>
+  </div>
+  <div
+    class="flex flex-wrap items-center mt-20 w-full text-4xl font-light text-white max-md:mt-10 max-md:max-w-full"
+  >
+    <div
+      class="flex flex-col grow shrink self-stretch min-w-[240px] w-[686px] max-md:max-w-full"
+    >
+      <div
+        class="flex relative flex-col px-16 pt-28 pb-14 w-full min-h-[256px] max-md:px-5 max-md:pt-24 max-md:max-w-full"
+        role="region"
+        aria-label="Expert consultation section"
+      >
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/92e2137cae33e30b503efeed21c367afd2aa27e67e42fdce83650a39a0cabf46?placeholderIfAbsent=true&apiKey=7a62a3bc0ec34c60a1ee6236375d4957"
+          class="object-cover h-[309px] absolute top-0 inset-0 size-full"
+          alt="Background image for expert consultation section"
+        />
+        <!-- <span class="relative z-10">Talk to an industry expert</span> -->
+        <div class="flex relative flex-col min-w-[240px] ">
+                    <div class="flex absolute -bottom-3 -left-6 z-0 flex-col px-3 -pt-1 pb-0.5 h-[50px] w-[59px]"
+                        role="presentation" aria-hidden="true">
+                        <div class="flex shrink-0 w-full h-10 rounded-full"><img loading="lazy"
+                            src="{{ asset('assets/icons/backdrop.png') }}"
+                            alt="Quality Assurance icon" class="object-contain aspect-[1.2] w-[42px]" /></div>
+                    </div>
+                    <div class="z-0 text-3xl font-medium " role="heading" aria-level="2">Talk to an industry expert
+                    </div>
+                </div>
+      </div>
+    </div>
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/1745b5491186c3cb3a56997f389b1ebb0017b4e4434be3ba11a134cb2948512a?placeholderIfAbsent=true&apiKey=7a62a3bc0ec34c60a1ee6236375d4957"
+      class="object-contain grow shrink self-stretch my-auto aspect-[1.28] min-w-[240px] w-[262px]"
+      alt="Industry expertise illustration"
+    />
+  </div>
+</div>
 
 </div>
+</div>
 </x-layout>
+
