@@ -1,18 +1,64 @@
+@php
+$navlinks = [
+        ['title' => 'Booking', 'icon' => "assets/icons/booking.png"],
+        ['title' => 'Order', 'icon' => "assets/icons/order.png"],
+        ['title' => 'Tracking', 'icon' => "assets/icons/tracking.png"],
+        ['title' => 'Quotation', 'icon' => "assets/icons/quotation.png"],
+        ['title' => 'Call us', 'icon' => "assets/icons/call.png"],
+        ['title' => 'Proposal', 'icon' => "assets/icons/proposal.png"],
+
+    ];
+@endphp
+
+
 <x-layout >
     <!-- Banner -->
 <x-thumb.thinq_banner>
     <x-slot:image>
-        <img class="w-full h-auto left-0 absolute object-cover -z-10" src="{{ asset('assets/banners/procurement-banner.png') }}" />
+        <img class="object-cover absolute inset-0 size-full" src="{{ asset('assets/banners/procurement-banner.png') }}" alt="Cargo ship at sea representing international logistics" />
     </x-slot:image>
     <x-slot:title>
-        Procurement Perfected, <br/>Logistics Redefined
+    <h1 class="text-[#003C97] text-5xl leading-[58px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px]">
+    Procurement Perfected, <br/>Logistics Redefined
+    </h1>
     </x-slot:title>
+    <x-slot:btntitle>Register</x-slot:btntitle>
     <x-slot:content>
+
+    <p class="text-[#003C97]  mt-5 text-xl leading-8 max-md:max-w-full">
     Shaping our vision to being a leader in providing innovative solutions
     in procurement, supply chain and logistics with our
-    <span class="font-medium text-blue-900">Sphere360</span>
+    <span class="font-medium text-blue-900 text-[#003C97]">Sphere360</span>
     degree efficiency technology system.
+    </p>
+ 
     </x-slot:content>
+
+    <x-slot:iconnave>
+
+<nav class="hidden md:flex flex-wrap gap-10 items-start self-stretch my-auto"
+    role="navigation" aria-label="Quick actions">
+    <div class="grid grid-cols-3">
+        <div class="col-span-2"></div>
+        <div>
+        <ul class="grid grid-cols-3 gap-4">
+            @foreach($navlinks as $navlink)
+                <button class="flex flex-col grow shrink w-[38px]" aria-label={{$navlink['title']}}>
+                    <div
+                class="flex gap-10 items-center self-center px-3 py-2.5 w-10 rounded-md border border-[#003C97] border-solid min-h-[40px]">
+                        <img loading="lazy" src="{{URL::asset($navlink['icon'])}}" alt={{$navlink['title']}}
+                            class="object-contain self-stretch my-auto aspect-[0.85] w-[17px]" />
+                    </div>
+                    <span class="mt-1.5 text-xs text-center text-[#003C97]">{{$navlink['title']}}</span>
+                </button>
+            @endforeach
+        </ul>
+        </div>
+        </div>
+</nav>
+
+
+</x-slot:iconnave>
 
 </x-thumb.thinq_banner>
 
@@ -77,128 +123,138 @@
             </div>
 
         </div>
-       <section id="Focusing on quality" class="py-20">
+
+
 
        
-        <div class="flex relative flex-col px-10 py-20 max-md:px-5">
+        <section id="Focusing on quality" class="py-20">
+
+       
+<div class=" relative max-md:px-5">
+    <img loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/56e7855a1c1b0142e05b95c52c475611d0c6c79aa9048b9a7c55f7922d6755be?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
+        alt="Decorative background pattern"
+        class="object-contain hidden md:absolute right-0 bottom-0 z-0 aspect-[1.26] h-[854px] w-[1080px] max-md:max-w-full" />
+    <div class=" elative z-0  max-md:max-w-full">
+        <div class="grid lg:grid-cols-2 lg:grid-cols-3  z-0 items-start w-full max-md:max-w-full">
+            <div class="bg-[#FFFFFF] p-10 rounded-tl-lg ">
             <img loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/56e7855a1c1b0142e05b95c52c475611d0c6c79aa9048b9a7c55f7922d6755be?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
-                alt="Decorative background pattern"
-                class="object-contain hidden md:absolute right-0 bottom-0 z-0 aspect-[1.26] h-[854px] w-[1080px] max-md:max-w-full" />
-            <div class="flex bg-[#DDE8F0] lg:bg-[#FFFFFF] p-6 rounded relative z-0 flex-col w-full max-w-[998px] max-md:max-w-full">
-                <div class="flex z-0 flex-wrap gap-10 items-start w-full max-md:max-w-full">
-                    <div class="flex  flex-col grow shrink min-w-[240px] w-[216px]">
-                        <img loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/5c58458c4fa7fb9ab07c4372d344d2d54c65e26ebf4904a3f5306e94b5e002af?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
-                            alt="Quality Assurance icon" class="object-contain aspect-[1.2] w-[42px]" />
-                        <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
-                            Quality Assurance
-                        </div>
-                        <div class="mt-3.5 text-base font-light leading-6 text-sky-800">
-                            We ensure that every procurement has strict quality checks and
-                            assurances with rigorous testing at every production stage.
-                        </div>
-                    </div>
+                    src="{{ asset('assets/icons/quality.svg') }}"
+                    alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
+                <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
+                    Quality Assurance
+                </div>
+                
+                <div class="mt-3.5 text-base font-light leading-6 text-sky-800">
+                    We ensure that every procurement has strict quality checks and
+                    assurances with rigorous testing at every production stage.
+                    <br>
+                    <br>
+                </div>
+            </div>
 
-                    <div class="flex flex-col grow shrink min-w-[240px] w-[234px]">
-                        <img loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/abb27608870a9c431b7f2b828ecb73d31a5ea5fda396538c78d9cf760bf3d1ff?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
-                            alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
-                        <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
-                            Recognized Brands
-                        </div>
-                        <div class="mt-3.5 text-base font-light leading-6 text-sky-800">
-                            Globally recognized brands that meet international and regional
-                            standards, complying with industry standards, and certifications to
-                            validate quality.
-                        </div>
-                    </div>
+            <div class=" bg-[#FFFFFF] p-10">
+            <img loading="lazy"
+                    src="{{ asset('assets/icons/recognize.svg') }}"
+                    alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
+                <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
+                    Recognized Brands
+                </div>
+                
+                <div class="mt-3.5 text-base font-light leading-6 text-sky-800">
+                    Globally recognized brands that meet international and regional
+                    standards, complying with industry standards, and certifications to
+                    validate quality.
+                </div>
+            </div>
 
-                    <div class="flex flex-col grow shrink min-w-[240px] w-[249px]">
-                        <div class="flex gap-2.5 items-center min-h-[35px] w-[42px]" role="img"
-                            aria-label="Transparent Manufacturing icon">
-                            <div class="flex self-stretch my-auto min-h-[35px] w-[42px]"></div>
-                        </div>
-                        <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
-                            Transparent Manufacturing
-                        </div>
-                        <div class="mt-3.5 text-base font-light leading-6 text-sky-800">
-                            Open communication about manufacturing and sourcing methods, ensuring
-                            ethical and sustainable supply chains.
-                        </div>
-                    </div>
+            <div class="bg-[#FFFFFF] p-10 rounded-tr-lg ">
+                <img loading="lazy"
+                    src="{{ asset('assets/icons/transport.png') }}"
+                    alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
+                <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
+                    Transparent Manufacturing
+                </div>
+                <div class="mt-3.5 text-base font-light leading-6 text-sky-800">
+                    Open communication about manufacturing and sourcing methods, ensuring
+                    ethical and sustainable supply chains.
 
-                    <div class="flex flex-col grow shrink min-w-[240px] w-[227px]">
-                        <div class="flex gap-2.5 items-center min-h-[35px] w-[42px]" role="img"
-                            aria-label="Customization icon">
-                            <div class="flex self-stretch my-auto min-h-[36px] w-[42px]"></div>
-                        </div>
-                        <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
-                            Customization
-                        </div>
-                        <div class="mt-3.5 text-base font-light leading-6 text-sky-800">
-                            Offering customization with unique configurations or features tailored
-                            to meet specific needs or preferences of customers.
-                        </div>
-                    </div>
+                </div>
+            </div>
 
-                    <div class="flex flex-col grow shrink min-w-[240px] w-[268px]">
-                        <img loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/1931e7ce5d3c4a1de299bb5a196968c6008601bbb9c19d975bd92abb1505aa1b?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
-                            alt="Innovation and Technology icon" class="object-contain aspect-[1.17] w-[42px]" />
-                        <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
-                            Innovation & Technology
-                        </div>
-                        <div class="mt-3.5 text-base font-light leading-6 text-sky-800">
-                            Ensuring that manufacturers or producers utilizes cutting edge
-                            technology in their production processes to meet evolving customer
-                            demands.
-                        </div>
-                    </div>
+            <div class=" bg-[#FFFFFF] p-10">
+            <img loading="lazy"
+                    src="{{ asset('assets/icons/customization.png') }}"
+                    alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
+                <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
+                    Customization
+                </div>
+                <div class="mt-3.5 text-base font-light leading-6 text-sky-800">
+                    Offering customization with unique configurations or features tailored
+                    to meet specific needs or preferences of customers.
 
-                    <div class="flex flex-col grow shrink min-w-[240px] w-[249px]">
-                        <div class="flex gap-2.5 items-center min-h-[35px] w-[42px]" role="img"
-                            aria-label="Cost-Effective Solutions icon">
-                            <div class="flex self-stretch my-auto min-h-[36px] w-[42px]"></div>
-                        </div>
-                        <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
-                            Cost-Effective Solutions
-                        </div>
-                        <div class="mt-3.5 text-base font-light leading-6 text-sky-800">
-                            Offering the best balance of quality and cost through the
-                            implementation of cost-efficient productions with value-added
-                            services.
-                        </div>
-                    </div>
+                </div>
+            </div>
 
-                    <div class="flex flex-col grow shrink min-w-[240px] w-[227px]">
-                        <div class="flex gap-2.5 items-center min-h-[35px] w-[42px]" role="img"
-                            aria-label="Wide Range Industries icon">
-                            <div class="flex self-stretch my-auto min-h-[35px] w-[42px]"></div>
-                        </div>
-                        <div class="mt-3 text-xl font-medium leading-relaxed text-blue-900">
-                            Wide Range Industries
-                        </div>
-                        <div class="mt-3 text-base font-light leading-6 text-sky-800">
-                            Source products from diverse range of industries, ensuring superior
-                            quality and affordability.
-                        </div>
-                    </div>
+            <div class="bg-[#FFFFFF] p-10">
+            <img loading="lazy"
+                    src="{{ asset('assets/icons/innovation.png') }}"
+                    alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
+                <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
+                    Innovation & Technology
+                </div>
+                <div class="mt-3.5 text-base font-light leading-6 text-sky-800">
+                    Ensuring that manufacturers or producers utilizes cutting edge
+                    technology in their production processes to meet evolving customer
+                    demands.
 
-                    <div class="flex flex-col grow shrink min-w-[240px] w-[268px]">
-                        <div class="flex flex-col min-h-[35px] w-[42px]" role="img" aria-label="Reliable Delivery icon">
-                            <div class="flex w-full min-h-[35px]"></div>
-                        </div>
-                        <div class="mt-3 text-xl font-medium leading-relaxed text-blue-900">
-                            Reliable Delivery
-                        </div>
-                        <div class="mt-3 text-base font-light leading-6 text-sky-800">
-                            Streamlined logistics to ensure on-time delivery with flexible return
-                            and exchange policies.
-                        </div>
-                    </div>
 
-                    <div class="flex flex-col grow shrink min-w-[240px] w-[268px]">
+                </div>
+            </div>
+
+            <div class="   m bg-[#FFFFFF] p-10">
+                    <img loading="lazy"
+                    src="{{ asset('assets/icons/cost.png') }}"
+                    alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
+                <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
+                    Cost-Effective Solutions
+                </div>
+                <div class="mt-3.5 text-base font-light leading-6 text-sky-800">
+                    Offering the best balance of quality and cost through the
+                    implementation of cost-efficient productions with value-added
+                    services.
+                </div>
+            </div>
+
+            <div class="bg-[#FFFFFF] p-10 rounded-bl-lg ">
+            <img loading="lazy"
+                    src="{{ asset('assets/icons/wide.png') }}"
+                    alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
+                <div class="mt-3 text-xl font-medium leading-relaxed text-blue-900">
+                    Wide Range Industries
+                </div>
+                <div class="mt-3 text-base font-light leading-6 text-sky-800">
+                    Source products from diverse range of industries, ensuring superior
+                    quality and affordability.
+                </div>
+            </div>
+
+            <div class="bg-[#FFFFFF] p-10 rounded-br-lg ">
+            <img loading="lazy"
+                    src="{{ asset('assets/icons/reliable.png') }}"
+                    alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
+                <div class="mt-3 text-xl font-medium leading-relaxed text-blue-900">
+                    Reliable Delivery
+                </div>
+                <div class="mt-3 text-base font-light leading-6 text-sky-800">
+                    Streamlined logistics to ensure on-time delivery with ible return
+                    and exchange policies.
+
+                </div>
+            </div>
+
+              <div class="flex flex-col grow shrink min-w-[240px] w-[268px] mt-10 place-items-start self-start lg:place-items-end lg:self-end">
+                    
                     <button
                     class="flex flex-col px-6 py-4 w-56 max-w-full h-14 text-base font-light leading-none text-white bg-sky-950 bottom-[-92px] min-h-[56px] right-[-27px] rounded-[40px] max-md:px-5"
                     tabindex="0">
@@ -212,12 +268,13 @@
                             alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[0.9] w-[9px]" />
                     </div>
                     </button>
-                    </div>
+                    
                 </div>
-              
-            </div>
         </div>
-       </section>
+      
+    </div>
+</div>
+</section>
 
         <!-- Service Industry -->
 
@@ -234,6 +291,8 @@
                     <div class="z-0 text-3xl font-medium text-blue-900" role="heading" aria-level="2">Service Industry
                     </div>
                 </div>
+
+
                 <div class="flex flex-col text-base min-w-[240px] w-[620px] max-md:max-w-full">
                     <div class="font-light leading-7 text-sky-800 max-md:max-w-full">
                         We offer quality from diverse sectors with the best materials and
@@ -257,7 +316,7 @@
         <div class="flex flex-col px-7 max-md:pl-5">
             <div class="flex flex-col max-md:max-w-full">
                 <div class="flex flex-col w-full max-md:max-w-full">
-                    <div class="flex flex-wrap gap-5 items-start w-full max-md:max-w-full">
+                    <div class="flex flex-wrap gap-10 items-start w-full max-md:max-w-full">
                         <img
                             src="{{ asset('assets/thumb-nails/automotive.png') }}"
                             alt="Automotiv" class="Automotive grow shrink aspect-[0.72] min-w-[240px] w-[204px]" />
@@ -338,6 +397,70 @@
 
         <div class="flex flex-col px-4 py-20">
             <div class="flex flex-col w-full max-md:max-w-full">
+
+
+            <div class="flex flex-col justify-center px-4 py-10">
+            <div class="flex justify-between flex-wrap gap-10 items-start mt-1 max-md:max-w-full">
+                <div class="flex relative flex-col min-w-[240px] w-[265px]">
+                    <div class="flex absolute -bottom-3 -left-6 z-0 flex-col px-3 -pt-1 pb-0.5 h-[50px] w-[59px]"
+                        role="presentation" aria-hidden="true">
+                        <div class="flex shrink-0 w-full h-10 rounded-full"><img loading="lazy"
+                            src="{{ asset('assets/icons/backdrop.png') }}"
+                            alt="Quality Assurance icon" class="object-contain aspect-[1.2] w-[42px]" /></div>
+                    </div>
+                    <div class="z-0 text-3xl font-medium text-blue-900" role="heading" aria-level="2">Customer Testimonies
+                    </div>
+                </div>
+
+
+                <div class="flex flex-col text-base min-w-[240px] w-[620px] max-md:max-w-full">
+                    <div class="font-light leading-7 text-sky-800 max-md:max-w-full">
+                        We offer quality from diverse sectors with the best materials and
+                        service from expert manufacturers and producers to meet your business
+                        needs
+                    </div>
+                    <a href="#explore-services"
+                        class="flex gap-1 items-center self-start mt-5 text-blue-900 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2">
+                        <span class="self-stretch my-auto w-[201px]">
+                            Explore service industries
+                        </span>
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f3d9e964cf22bcc40a9e2deacff03656061780442968e707cd2ea31d462c6b2d?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
+                            class="object-contain shrink-0 self-stretch my-auto aspect-[1.12] w-[9px]"
+                            alt="Arrow indicating link to explore service industries" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
                 <div class="flex flex-wrap gap-10 items-center self-start max-md:max-w-full">
                     <div class="flex relative flex-col items-start self-stretch  min-w-[240px] w-[356px]">
                         <div class="flex absolute -top-2 z-0 flex-col pb-3 h-[50px] left-[-17px] w-[59px]">
@@ -349,9 +472,8 @@
                             Customer Testimonies
                         </div>
 
-                        
                     </div>
-                    <div class="flex flex-col self-stretch my-auto text-base min-w-[240px] w-[592px] max-md:max-w-full">
+                    <div class="flex flex-col self-stretch my-auto text-base min-w-[240px] w-[620px] max-md:max-w-full">
                         <div class="font-light leading-7 text-sky-800 max-md:max-w-full">
                             Become part of our revolutionary enterprise and experience our <span
                                 class="font-medium">Sphere360</span> degree technology that ensures seamless procurement
@@ -366,6 +488,8 @@
                         </div>
                     </div>
                 </div>
+
+
                 <div class="flex flex-wrap items-center  w-full max-md:max-w-full">
                     <div
                         class="flex flex-col self-stretch my-auto rounded-none min-w-[240px] w-[626px] max-md:max-w-full">

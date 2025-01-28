@@ -18,16 +18,12 @@ Route::get('/partnership', function () {
     return view('partnership');
 });
 
-Route::get('/contact-us', function () {
-    return view('contact-us');
+Route::get('/logistics', function () {
+    return view('logistics');
 });
 
-Route::get('/company', function () {
-    return view('company');
-});
-
-Route::get('/collaboration', function () {
-    return view('collaboration');
+Route::get('/ecommerce', function () {
+    return view('ecommerce');
 });
 
 Route::get('/procurement', function () {
