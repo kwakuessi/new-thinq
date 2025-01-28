@@ -97,56 +97,77 @@
     <!-- Hero section -->
 
     <section>
-        <div class="flex flex-col ">
-            <div
-                class="flex relative flex-col justify-center items-center px-16 py-28 w-full min-h-[530px] max-md:px-5 max-md:py-24 max-md:max-w-full">
-                <img loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/bb3178d9028bf3895fee75a6e7c72b12c5894ce292363e4de3dbcfcbd86465b4?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
-                    alt="Cargo ship at sea representing international logistics"
-                    class="object-cover absolute inset-0 size-full" />
-                <div class="flex relative flex-wrap gap-10 items-center mb-0 max-md:mb-2.5 max-md:max-w-full">
-                    <div
-                        class="flex flex-col self-stretch my-auto font-light text-white min-w-[240px] w-[718px] max-md:max-w-full">
-                        <h1 class="text-5xl leading-[58px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px]">
-                            Reliable Cargo Protection, Logistics Service Excellence
-                        </h1>
-                        <p class="mt-5 text-xl leading-8 max-md:max-w-full">
-                            Unlocking value at every step of the supply chain with world-class
-                            network, technology and service in international transportation
-                            logistics
-                        </p>
-                        <button
-                            class="flex flex-col justify-center px-8 py-5 mt-5 w-40 max-w-full text-base leading-none text-blue-900 bg-white min-h-[52px] rounded-[40px] max-md:px-5"
-                            aria-label="Book now">
-                            <div class="flex gap-2 items-center">
-                                <span class="self-stretch my-auto w-[75px]">Book now</span>
-                                <img loading="lazy"
-                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/883f4a0eb9bff0b101aee0b2ee1ed99698bdb73b87738158384799f33d4ad162?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
-                                    alt="" class="object-contain shrink-0 self-stretch my-auto w-3 aspect-square" />
-                            </div>
-                        </button>
-                    </div>
-                    <nav class="hidden md:flex flex-wrap gap-5 items-start self-stretch my-auto w-[177px]"
-                        role="navigation" aria-label="Quick actions">
-                        <ul class="grid grid-cols-3 gap-4">
-                            @foreach($navlinks as $navlink)
-                                <button class="flex flex-col grow shrink w-[38px]" aria-label={{$navlink['title']}}>
-                                    <div
-                                        class="flex gap-2.5 items-center self-center px-3 py-2.5 w-10 rounded-md border border-white border-solid min-h-[40px]">
-                                        <img loading="lazy" src="{{URL::asset($navlink['icon'])}}" alt={{$navlink['title']}}
-                                            class="object-contain self-stretch my-auto aspect-[0.85] w-[17px]" />
-                                    </div>
-                                    <span class="mt-1.5 text-xs text-center text-white">{{$navlink['title']}}</span>
-                                </button>
 
-                            @endforeach
-                        </ul>
+
+    <!-- Banner -->
+    <x-thumb.thinq_banner>
+    <x-slot:image>
+        <img class="object-cover absolute inset-0 size-full" src="{{ asset('assets/banners/logistics.png') }}" alt="Cargo ship at sea representing international logistics" />
+    </x-slot:image>
+    <x-slot:title>
+    <h1 class="text-5xl leading-[58px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px]">
+    Reliable Cargo Protection, Logistics Service Excellence
+    </h1>
+    </x-slot:title>
+    <x-slot:btntitle>Register</x-slot:btntitle>
+    <x-slot:content>
+
+    <p class="mt-5 text-xl leading-8 max-md:max-w-full">
+        Unlocking value at every step of the supply chain with world-class
+        network, technology and service in international transportation
+        logistics
+    </p>
+
+    </x-slot:content>
+
+    <x-slot:iconnave>
+
+    <nav class="hidden md:flex flex-wrap gap-5 items-start self-stretch my-auto"
+                        role="navigation" aria-label="Quick actions">
+                        <div class="grid grid-cols-3">
+          <div class="col-span-2"></div>
+          <div>
+            <ul class="grid grid-cols-3 gap-4">
+            @foreach($navlinks as $navlink)
+            <button class="flex flex-col grow shrink w-[38px]" aria-label={{$navlink['title']}}>
+            <div
+            class="flex gap-2.5 items-center self-center px-3 py-2.5 w-10 rounded-md border border-white border-solid min-h-[40px]">
+            <img loading="lazy" src="{{URL::asset($navlink['icon'])}}" alt={{$navlink['title']}}
+            class="object-contain self-stretch my-auto aspect-[0.85] w-[17px]" />
+            </div>
+            <span class="mt-1.5 text-xs text-center text-white">{{$navlink['title']}}</span>
+            </button>
+
+            @endforeach
+            </ul>
+            </div>
+            </div>
 
 
                     </nav>
-                </div>
-            </div>
-        </div>
+    </x-slot:iconnave>
+
+</x-thumb.thinq_banner>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- Tracking card -->
 
