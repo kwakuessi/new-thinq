@@ -172,6 +172,7 @@ $navlinks = [
         </div>
         <div class="mt-5 text-2xl text-center text-sky-950">Sourcing</div>
       </div>
+
       <div class="flex flex-col mt-20 max-md:mt-10">
         <div class="flex gap-2.5 items-center p-2.5 w-full">
           <div class="flex flex-col flex-1 shrink justify-center items-center self-stretch px-7 my-auto basis-0 bg-sky-950 h-[133px] min-h-[133px] rounded-[67px] w-[133px] max-md:px-5">
@@ -180,37 +181,41 @@ $navlinks = [
         </div>
         <div class="text-2xl text-right text-sky-950">Negotiation</div>
       </div>
+
       <div class="flex flex-col mt-20 max-md:mt-10">
         <div class="flex gap-2.5 items-center p-2.5 w-full">
           <div class="flex relative flex-1 shrink items-start self-stretch px-9 py-10 my-auto basis-0 bg-sky-950 h-[133px] min-h-[133px] rounded-[67px] w-[133px] max-md:px-5">
-            <div class="flex z-0 shrink-0 my-auto h-[55px] w-[65px]"></div>
+          <img loading="lazy" src="{{ asset('assets/icons/compliance.png') }}" class="object-contain z-0 shrink-0 my-auto aspect-square w-[70px]" alt="Production process icon" />
+
+          <div class="flex z-0 shrink-0 my-auto h-[55px] w-[65px]"></div>
             <div class="flex absolute z-0 shrink-0 self-start bottom-[30px] h-[70px] left-[34px] w-[63px]"></div>
           </div>
         </div>
         <div class="text-2xl text-center text-sky-950">Compliance</div>
       </div>
+
       <div class="flex flex-col mt-16 max-md:mt-10">
         <div class="flex relative gap-2.5 items-start px-8 py-8 bg-sky-950 h-[133px] min-h-[133px] rounded-[67px] w-[133px] max-md:px-5">
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e299f29709292870492b4336a0e1cb08cc6152ca2579763dd3ecd9d8346ad47c?apiKey=b1bd84c8cfcf466eb7283d9b13fee064&" class="object-contain z-0 shrink-0 my-auto aspect-square w-[70px]" alt="Production process icon" />
+          <img loading="lazy" src="{{ asset('assets/icons/production.png') }}" class="object-contain z-0 shrink-0 my-auto aspect-square w-[70px]" alt="Production process icon" />
           <div class="flex absolute z-0 flex-col self-start pb-3 bottom-[39px] h-[55px] right-[33px] w-[65px]">
             <div class="flex shrink-0 w-11 rounded-full h-[43px]"></div>
           </div>
         </div>
-        <div class="mt-9 text-2xl text-sky-950">Production</div>
+        <div class="mt-5 text-2xl text-sky-950">Production</div>
       </div>
-      <div class="flex flex-col self-stretch">
+
+      <div class="flex flex-col mt-5">
         <div class="flex gap-2.5 items-center p-2.5 w-full">
-          <div class="flex relative gap-2.5 items-start self-stretch my-auto bg-sky-950 h-[133px] min-h-[133px] rounded-[67px] w-[133px]">
-            <div class="flex absolute z-0 flex-col pb-3 bottom-[39px] h-[55px] right-[33px] w-[65px]">
-              <div class="flex shrink-0 w-11 rounded-full h-[43px]"></div>
-            </div>
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a5cf044b2c779f7137422d0628ec35c832880314e74dae9138e44a529e5d3010?apiKey=b1bd84c8cfcf466eb7283d9b13fee064&" class="object-contain absolute z-0 shrink-0 aspect-square bottom-[31px] h-[70px] right-[31px] w-[70px]" alt="Supply Chain process icon" />
+          <div class="flex flex-1 shrink gap-2.5 items-center self-stretch px-8 py-8 my-auto basis-0 bg-sky-950 h-[133px] min-h-[133px] rounded-[67px] w-[133px] max-md:px-5">
+            <img loading="lazy" src="{{ asset('assets/icons/supply-chain.png') }}"  class="object-contain self-stretch my-auto aspect-square w-[70px]" alt="Initiation process icon" />
           </div>
         </div>
-        <div class="mt-20 text-2xl leading-none text-sky-950 max-md:mt-10">Supply Chain</div>
+        <div class="mt-14 text-2xl text-center text-sky-950 max-md:mt-10">Supply Chain</div>
       </div>
+
     </div>
-    <div class="flex absolute z-0 flex-col w-56 max-w-full text-base font-light leading-none text-white bottom-[-98px]">
+
+    <div class="grid grid-cols-1 place-items-center mt-20">
       <button class="flex flex-col justify-center px-6 py-4 w-full bg-sky-950 max-w-[224px] min-h-[56px] rounded-[40px] max-md:px-5 hover:bg-sky-900 focus:outline-none focus:ring-2 focus:ring-sky-600" aria-label="Request Proposal">
         <div class="flex gap-2 items-center">
           <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/99548511d1ce437ec14297e39c97193b8f3b8441e187ecf7c5c77336e11616dc?apiKey=b1bd84c8cfcf466eb7283d9b13fee064&" class="object-contain shrink-0 self-stretch my-auto aspect-[0.79] w-[19px]" alt="" />
@@ -219,6 +224,7 @@ $navlinks = [
         </div>
       </button>
     </div>
+
   </div>
 </div>
 
@@ -302,13 +308,14 @@ $navlinks = [
 
 </section>
 
-<div class="flex flex-col">
+<div class="mb-[157px] flex flex-col">
   <div class="flex flex-col bg-[#DDE8F0] lg:bg-[#FFFFFF] p-6 rounded items-center w-full max-md:max-w-full">
-    <div class="flex  flex-wrap gap-10 items-center w-full max-md:max-w-full">
-      <div class="self-stretch my-auto text-3xl font-medium leading-9 text-sky-950 w-[572px] max-md:max-w-full">
+    <div class="grid grid-cols-3 gap-10 items-center w-full max-md:max-w-full">
+      <div class="span-cols-2 self-stretch my-auto text-3xl font-medium leading-9 text-sky-950 w-[572px] max-md:max-w-full">
         <span class="text-zinc-500">Expert in deep supply chain</span>
         operations capability and experience
       </div>
+      <div></div>
       <div class="flex flex-col self-stretch my-auto text-xl leading-7 text-blue-900 w-[200px]">
         <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a82242e4163e5f0f27fa3acc6f857786dab44a20e2b7bc2f5f3a335c3e8a1e74?apiKey=b1bd84c8cfcf466eb7283d9b13fee064&" class="object-contain aspect-[1.2] w-[42px]" alt="Planning Icon" />
         <div class="mt-2">
@@ -390,7 +397,7 @@ $navlinks = [
 </div>
 <!--  -->
 
-<div class="flex relative flex-col items-start bg-white">
+<div class="flex relative flex-col items-start">
   <div class="flex z-0 flex-wrap gap-10 justify-between items-end max-w-full text-blue-900 w-[684px]">
     <h2 class="text-3xl font-medium min-w-[240px] w-[270px]">Successful Cases</h2>
     <div class="flex gap-1.5 items-center text-base" role="button" tabindex="0">
@@ -399,7 +406,7 @@ $navlinks = [
     </div>
   </div>
   <div class="flex z-0 flex-wrap gap-10 items-center self-stretch mt-16 w-full max-md:mt-10 max-md:max-w-full">
-    <article class="flex flex-col grow shrink justify-center self-stretch px-6 py-5 my-auto rounded-xl bg-slate-200 bg-opacity-60 min-h-[209px] min-w-[240px] w-[307px] max-md:px-5">
+    <article class="bg-[#DDE8F0] flex flex-col grow shrink justify-center self-stretch px-6 py-5 my-auto rounded-xl bg-slate-200 bg-opacity-60 min-h-[209px] min-w-[240px] w-[307px] max-md:px-5">
       <div class="flex flex-col w-full max-w-[313px]">
         <div class="flex gap-1 items-center self-start text-xs leading-3 text-blue-900">
           <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/098c321c9e5e993ba2bc24057d4e3dcf1e62dcb5e30f335308894cfc908f526c?apiKey=7a62a3bc0ec34c60a1ee6236375d4957&" class="object-contain shrink-0 self-stretch my-auto aspect-[1.4] w-[7px]" alt="" />
