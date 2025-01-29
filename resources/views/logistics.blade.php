@@ -39,12 +39,13 @@
     ];
 
     $Industries = [
-        ['title' => 'Automotive', 'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/a539f66a6f0a1b590d59768c7484939d33f587b67a8d3f12818a2e21a9055bd3?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
-        ['title' => 'Technology', 'icon' => ''],
-        ['title' => 'Pharma & Healthcare', 'icon' => ''],
-        ['title' => 'Fashion & Lifestyle', 'icon' => ''],
-        ['title' => 'Chemicals', 'icon' => ''],
-        ['title' => 'Retail', 'icon' => ''],
+        ['title' => 'Automotive', 'icon' => 'assets/icons/automotive-v.png'],
+        ['title' => 'Chemicals', 'icon' => 'assets/icons/chemicals-v.png'],
+        ['title' => 'Technology', 'icon' => 'assets/icons/technology-v.png'],
+        ['title' => 'Retail', 'icon' => 'assets/icons/retail-v.png'],
+        ['title' => 'Perishables', 'icon' => 'assets/icons/perishables-v.png'],
+        ['title' => 'Pharma & Healthcare', 'icon' => 'assets/icons/health-v.png'],
+
 
 
     ];
@@ -57,13 +58,17 @@
             'description' => 'Discover Sphere360  degree efficiency transportation offer for small and large scale businesses. ',
             'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/394fe78383e82fc64f6391a265423592f046d8f3d96e13f714df9c98b18e09d6?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'
         ],
-        ['title' => 'Supply Chain Services', 'description' => 'We simplify your entire supply chain, handling all aspects of complexities with our AI powered technology.', 'icon' => ''],
+        ['title' => 'Supply Chain Services', 
+        'description' => 'We simplify your entire supply chain, handling all aspects of complexities with our AI powered technology.', 
+        'icon' => 'assets/thumb-nails/supply-t.png'],
         [
             'title' => 'Digitized Solutions',
             'description' => 'Our customized online solutions streamline container bookings, product orders, tracking shipment etc.',
-            'icon' => ''
+            'icon' => 'assets/thumb-nails/digitized-t.png'
         ],
-        ['title' => 'Custom Compliance', 'description' => 'Our expert team ensure customs compliance, navigating regulations, and paperwork efficiently.', 'icon' => ''],
+        ['title' => 'Custom Compliance', 
+        'description' => 'Our expert team ensure customs compliance, navigating regulations, and paperwork efficiently.', 
+        'icon' => 'assets/thumb-nails/custom-t.png'],
 
     ];
 
@@ -206,7 +211,7 @@
 
     <!-- Strategic Industries -->
 
-    <section class='max-w-4xl mx-auto mt-[80px] w-full px-4'>
+    <section class='max-w-7xl mx-auto mt-[80px]'>
         <div class="text-xl font-light text-blue-900 " role="region" aria-labelledby="strategic-industries-title">
             <h2 id="strategic-industries-title" class="max-w-full text-3xl w-[319px]">Strategic Industries</h2>
             <div class="self-stretch mt-14 leading-7 max-md:mt-10 max-w-[659px]">
@@ -215,14 +220,14 @@
                 logistic transportation needs.
             </div>
 
-            <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 ">
+            <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-[55px]">
                 @foreach($Industries as $induxtry)
-                    <div class="flex gap-2.5 items-center px-4 py-6 mt-14 max-w-full leading-none text-center whitespace-nowrap bg-sky-100 rounded-xl min-h-[220px] w-[163px] max-md:mt-10"
+                    <div class="flex items-center  leading-none text-center"
                         tabindex="0" role="article">
-                        <div class="flex flex-col self-stretch my-auto w-[131px]">
-                            <img loading="lazy" src="{{URL::asset($induxtry['icon'])}}"
-                                class="object-contain w-full aspect-[0.96]" alt={{$induxtry['title']}} />
-                            <div class="mt-4">{{$induxtry['title']}}</div>
+                        <div class="my-auto">
+                            <img class="cover" loading="lazy" src="{{URL::asset($induxtry['icon'])}}"
+                                class="object-contain" alt={{$induxtry['title']}} />
+                            <div class="text-[16px] -mt-8">{{$induxtry['title']}}</div>
                         </div>
                     </div>
                 @endforeach
@@ -293,7 +298,7 @@
     </section>
 
     <!-- Logistics Solutions -->
-    <section class='max-w-4xl mx-auto mt-[162px] w-full px-4'>
+    <section class='max-w-7xl mx-auto mt-[162px] w-full px-4'>
         <div class="flex flex-col">
             <div class="flex flex-wrap gap-10 items-center w-full text-blue-900 max-md:max-w-full" role="region"
                 aria-label="Logistics Solutions Overview">
@@ -323,19 +328,11 @@
                                         class="object-contain shrink-0 self-stretch my-auto aspect-square w-[5px]" alt="" />
                                 </div>
                             </div>
-                            <div class="flex z-10 flex-col self-center mt-0 max-w-full w-[175px]">
+                            <div class="flex z-10 flex-col self-center mt-0 max-w-full w-[250px]">
 
                                 <p class="mt-10 text-xs font-light text-blue-900">
                                     {{$Solution['description']}}
-                                    <!-- Discover
-                                                                                                                                                                                                                                                                                                                                    <span class="font-medium">Sphere360</span>
-                                                                                                                                                                                                                                                                                                                                    degree
-                                                                                                                                                                                                                                                                                                                                    <br />
-                                                                                                                                                                                                                                                                                                                                    efficiency transportation offer
-                                                                                                                                                                                                                                                                                                                                    <br />
-                                                                                                                                                                                                                                                                                                                                    for small and large scale
-                                                                                                                                                                                                                                                                                                                                    <br />
-                                                                                                                                                                                                                                                                                                                                    businesses. -->
+                                    <!-- Discover                                                                                                                                                                                                                                                                                               businesses. -->
                                 </p>
                             </div>
                         </div>
@@ -349,14 +346,14 @@
 
     <!-- Logistic Expertise -->
 
-    <section class='max-w-4xl mx-auto mt-[162px] w-full px-4'>
+    <section class='max-w-7xl mx-auto mt-[162px] w-full px-4'>
         <div class="flex flex-col">
             <div class="flex flex-wrap gap-10 items-center w-full text-blue-900 max-md:max-w-full" role="region"
                 aria-label="Logistics Solutions Overview">
                 <div class="grow shrink self-stretch my-auto text-3xl min-w-[240px] w-[235px]">
                     <h2>Logistic Expertise</h2>
                 </div>
-                <p class="grow shrink self-stretch my-auto text-base leading-7 w-[561px] max-md:max-w-full">
+                <p class="grow shrink self-stretch my-auto text-base leading-7 w-[565px] max-md:max-w-full">
                     ThinQSphere project logistics customizes solutions for cross-border transportation, ensuring safety
                     and secure execution of critical and complex projects worldwide.
                 </p>
@@ -366,7 +363,7 @@
                 <ul class="grid grid-cols-2 md:grid-cols-4  ">
                     @foreach($Expertise as $Expert)
                         <img loading="lazy" src="{{URL::asset($Expert['image'])}}"
-                            class="object-contain grow shrink aspect-[1.12] " alt='' />
+                            class="grow shrink aspect-[1.12] " alt='' />
                     @endforeach
                 </ul>
 
@@ -377,7 +374,7 @@
 
     <!--Expert Solutions  -->
 
-    <section class='max-w-4xl mx-auto mt-[94px] w-full px-4'>
+    <section class='max-w-7xl mx-auto mt-[94px] w-full px-4'>
         <div class="flex flex-col space-y-[71px]">
             <div class="flex flex-wrap gap-10 items-center w-full text-blue-900 max-md:max-w-full" role="region"
                 aria-label="Logistics Solutions Overview">
@@ -475,13 +472,13 @@
 
     <!-- Sphere Insights -->
 
-    <section class='max-w-4xl mx-auto mt-[94px] w-full px-4'>
+    <section class='max-w-7xl mx-auto mt-[94px] w-full px-4'>
         <div class="flex flex-col">
             <div class="text-3xl text-blue-900 max-md:max-w-full" role="heading" aria-level="2">Sphere Insights</div>
             <div class="flex flex-wrap items-center mt-8 w-full max-md:max-w-full">
                 <div
                     class="grow shrink self-stretch my-auto text-base leading-7 text-blue-900 w-[556px] max-md:max-w-full">
-                    Access the latest articles, trends and research to guide your strategy and
+                    Access the latest articles, trends and research to guide your strategy and<br>
                     keep you updated on what's new in the supply chain world.
                 </div>
                 <div
