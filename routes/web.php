@@ -30,3 +30,7 @@ Route::get('/procurement', function () {
     return view('procurement');
 });
 
+Route::get('/supplychain', function () {
+    return view('supplychain');
+});
+
