@@ -34,3 +34,7 @@ Route::get('/supplychain', function () {
     return view('supplychain');
 });
 
+Route::get('/company', function () {
+    return view('company');
+});
+
