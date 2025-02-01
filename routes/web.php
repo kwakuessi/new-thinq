@@ -26,6 +26,9 @@ Route::get('/ecommerce', function () {
     return view('ecommerce');
 });
 
+Route::get('/company', function () {
+    return view('company');
+});
 Route::get('/procurement', function () {
     return view('procurement');
 });

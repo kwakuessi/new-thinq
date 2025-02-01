@@ -118,6 +118,25 @@
             'icon' => ''
         ],
     ];
+    $partnerTestimonials = [
+        ['name' => 'Philip McCarthy', 'description' => 'Procurement Director CityPharma', 'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/5483596b968307c9a4e73a849caaab7ebb21ee07635230571ffb069130f393b6?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
+
+        ['name' => 'Dr. Philip Sikayena', 'description' => 'Director of Construction Urban Planners Inc.', 'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/ca60119c3ef5b6b9bffbec05cac722182f9a3ca266934f39186b7f8920d5b716?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
+
+        ['name' => 'Richard Hajerson', 'description' => 'Snr. Managing Partner Dulbrich LLC', 'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/36cf8f29720d02bd739d335b11d91fce04d68f6c97647fc2a27e3a5f4f05369c?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
+
+        ['name' => 'Roberto Adriantini', 'description' => 'CEO, AgroBranch', 'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/c538e9b7ef829815ad7813ee1eaba824ea123b20ae2b7de92d15abc9bdd349f5?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
+    ];
+
+    $supplyChainServices = [
+        ['name' => 'Customs Services', 'description' => 'Seamlessly incorporate customs into your full supply chain logistics. Our experienced team works with you to streamline processes.', 'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/6d9a5431802b981b80031e98dffa6ead0f645486b43bd6c219b3ef983e532c75?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
+
+        ['name' => 'Supply Chain Management', 'description' => 'Our team of supply chain experts collaborate with you to pinpoint critical areas for improvement, driving business objectives.', 'icon' => ''],
+
+        ['name' => 'E-Commerce Logistics', 'description' => 'Optimise your end-to-end e-commerce logistics with our efficiency artificial intelligence technology to fulfill orders last-mile and cross-border delivery.', 'icon' => ''],
+
+        ['name' => 'Contract Logistics', 'description' => 'Complete warehousing and distribution requirements, efficiently managed through our strategic network of storage facilities worldwide.', 'icon' => ''],
+    ];
 @endphp
 
 <x-layout>
@@ -125,45 +144,34 @@
 
     <!-- Hero section e-commerce-banner -->
 
-    <section>
-        <div class=" flex-col ">
-            <div
-                class=" relative items-center px-16 py-28 w-full min-h-[530px] max-md:px-5 max-md:py-24 max-md:max-w-full">
-                <img loading="lazy" src="{{URL::asset('assets/thinq-partnership.png')}}"
-                    alt="Cargo ship at sea representing international logistics"
-                    class="object-cover absolute inset-0 size-full" />
-                <div class=" relative  mb-0 max-md:mb-2.5 max-md:max-w-full">
-                    <div
-                        class=" flex-col self-stretch my-auto font-light text-white min-w-[240px] w-4xl max-md:max-w-full">
-                        <h1 class="text-5xl leading-[58px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px]">
-                            A collaborative business model <br />
-                            that creates reliable relationship
-                        </h1>
-                        <p class="mt-5 text-xl leading-8 max-md:max-w-full">
-                            A unique business model, creating value for our manufacturers
-                            <br />
-                            and distributors, simplified
-                        </p>
-                        <button
-                            class="flex flex-col justify-center px-8 py-5 mt-5 w-40 max-w-full text-base leading-none text-blue-900 bg-white min-h-[52px] rounded-[40px] max-md:px-5"
-                            aria-label="Book now">
-                            <div class="flex gap-2 items-center">
-                                <span class="self-stretch my-auto w-[85px]">Partner us</span>
-                                <img loading="lazy"
-                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/883f4a0eb9bff0b101aee0b2ee1ed99698bdb73b87738158384799f33d4ad162?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
-                                    alt="" class="object-contain shrink-0 self-stretch my-auto w-3 aspect-square" />
-                            </div>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <x-thumb.thinq_banner>
+    <x-slot:image>
+        <img class="object-cover absolute inset-0 size-full" src="{{ asset('assets/banners/ThinQSphere Partnership.png') }}" alt="Cargo ship at sea representing international logistics" />
+    </x-slot:image>
+    <x-slot:title>
+    <h1 class="text-5xl leading-[58px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px]">
+    A collaborative business model that creates reliable relationship
+    </h1>
+    </x-slot:title>
+    <x-slot:btntitle>Register</x-slot:btntitle>
+    <x-slot:content>
 
-    </section>
+    <p class="mt-5 text-xl leading-8 max-md:max-w-full">
+    A unique business model, creating value for our manufacturers
+    and distributors, simplified
+    </p>
+
+    </x-slot:content>
+
+    <x-slot:iconnave></x-slot:iconnave>
+
+</x-thumb.thinq_banner>
+
+
 
     <!-- Chose us -->
 
-    <section class='max-w-6xl mx-auto mt-[80px] px-4 sm:px-6 lg:px-8'>
+    <section class='max-w-7xl mx-auto mt-[80px] px-4 sm:px-6 lg:px-8'>
         <div class="flex flex-wrap justify-between items-start text-blue-900" role="region"
             aria-label="Choose Us Section">
             <div class="px-3 pt-0.5 pb-6 text-3xl w-[173px]" role="heading" aria-level="2">Choose us</div>
@@ -197,7 +205,7 @@
 
     <!--  -->
 
-    <section class='max-w-6xl mx-auto mt-[80px] px-4 sm:px-6 lg:px-8 '>
+    <section class='max-w-7xl mx-auto mt-[80px] px-4 sm:px-6 lg:px-8 '>
         <ul class="grid grid-cols-2 md:grid-cols-3  gap-5 md:gap-10 mt-10" role="list" aria-label="Choose us">
             @foreach($chooseus as $us)
 
@@ -236,7 +244,7 @@
 
 
     <!-- Partnership process -->
-    <section class='max-w-6xl mx-auto mt-[80px] px-4 sm:px-6 lg:px-8'>
+    <section class='max-w-7xl mx-auto mt-[80px] px-4 sm:px-6 lg:px-8'>
         <div class="flex flex-wrap justify-between items-start text-blue-900" role="region"
             aria-label="Partnership process">
             <div class="px-3 pt-0.5 pb-6 text-3xl w-fit" role="heading" aria-level="2">Partnership process</div>
@@ -335,7 +343,7 @@
 
     <!--  -->
 
-    <section class='max-w-6xl mx-auto mt-[80px] px-4 sm:px-6 lg:px-8'>
+    <section class='max-w-7xl mx-auto mt-[80px] px-4 sm:px-6 lg:px-8'>
         <div class="flex flex-wrap lg:justify-between items-end">
             <div class="flex flex-col text-blue-900 min-w-[240px] w-[633px] max-md:max-w-full">
                 <h2 class="text-3xl leading-8 max-md:max-w-full">
