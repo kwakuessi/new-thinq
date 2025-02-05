@@ -15,7 +15,12 @@ export default {
                 sans: ['Lexend', ...defaultTheme.fontFamily.sans],
             },
             backgroundImage: {
-            'home-bg': "url('ThinQSphere Homepage.png')",
+            'log_dev': "url('http://127.0.0.1:8000/assets/thumb-nails/Logistics-development.png')",
+            'our_ev': "url('http://127.0.0.1:8000/assets/thumb-nails/our-environment.png')",
+            'dig': "url('http://127.0.0.1:8000/assets/thumb-nails/digitizing.png')",
+            'log_dev_2': "url('http://127.0.0.1:8000/assets/thumb-nails/Logistics-development-2.png')",
+
+
       }
 
         },
