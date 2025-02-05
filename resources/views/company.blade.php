@@ -1,251 +1,402 @@
+@php
+
+    $Strategicvisions = [
+        [
+            'title' => 'Our values',
+            'description' => ' We are driven by our collaborators\' success and progress.',
+            'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/37ad07792fc6dff1bdb775d219aac2d654744069dbaa5f1d21bccf4925ed7e10?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'
+        ],
+
+        [
+            'title' => 'Vision',
+            'description' => 'To be a global benchmark for integrated supply chain management,
+                                                                                                                                        renowned for pioneering innovation, fostering ethical business
+                                                                                                                                        practices, and championing sustainability.',
+            'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/37ad07792fc6dff1bdb775d219aac2d654744069dbaa5f1d21bccf4925ed7e10?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'
+        ],
+
+        [
+            'title' => 'Mission',
+            'description' => 'Our mission is to empower businesses by providing seamless, end-to-end
+                                                                                                                                        services in procurement, logistics, and distribution, delivering
+                                                                                                                                        unparalleled value.',
+            'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/37ad07792fc6dff1bdb775d219aac2d654744069dbaa5f1d21bccf4925ed7e10?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'
+        ],
+    ]
+
+@endphp
+
+
 <x-layout>
+    <x-slot name="title">Company</x-slot>
 
-    <x-thumb.thinq_banner>
-       <x-slot:image>
-           <img class="w-full h-full left-0 top-0 absolute object-cover" src="{{ asset('assets/banners/procurement-banner.png') }}" />
-       </x-slot:image>
-       <x-slot:content>
-           Shaping our vision to being a leader in providing
-            innovative solutions in procurement, 
-            <br/>supply chain and logistics with our  
-           </span><span class="text-[#003c97] text-2xl font-medium font-['Lexend'] leading-9">Sphere360</span>
-           <span class="text-[#003c97] text-2xl font-light font-['Lexend'] leading-9">  degree efficiency technology system.
-       </x-slot:content>
-       <x-slot:title>
-           Procurement Perfected, <br/>Logistics Redefined
-       </x-slot:title>
-       <x-slot:button>
-           <x-buttons.banner-btn>
-               <x-slot:btnname>Get Started</x-slot:btnname>
-           </x-buttons.banner-btn>
-       </x-slot:button>
-   </x-thumb.thinq_banner>
+    <section class='max-w-6xl mx-auto pt-[121px] px-4 sm:px-6 lg:px-8'>
+        <div class="flex flex-col lg:justify-center px-4 py-px" role="region" aria-label="About Us Section">
+            <div class="flex flex-wrap gap-10 justify-between items-start max-md:max-w-full">
+                <div class="flex relative flex-col w-[171px]">
+                    <div class="flex absolute -bottom-3.5 z-0 flex-col px-3 pt-2 pb-0.5 h-[50px] left-[-17px] w-[59px]"
+                        aria-hidden="true">
+                        <div class="flex shrink-0 w-full h-10 rounded-full"></div>
+                    </div>
+                    <h2 class="z-0 text-3xl text-blue-900">About us</h2>
+                </div>
+                <div class="text-xl font-light leading-7 text-sky-800 w-[713px] max-md:max-w-full">
+                    <span class="font-medium text-blue-900">ThinQSphere</span>
+                    <span class="text-blue-900">
+                        company was founded by the idea of combining
+                    </span>
+                    <span class="text-blue-900">&quot;Think&quot;</span>
+                    <span class="text-blue-900">
+                        (representing innovation, strategy, and intelligence) and
+                    </span>
+                    <span class="text-blue-900">&quot;Sphere&quot;</span>
+                    <span class="text-blue-900">
+                        (symbolizing global reach, interconnectedness, and a holistic approach).
+                    </span>
+                    <br />
+                    <span class="text-blue-900">
+                        It aligns with the company's vision of providing an integrated,
+                        efficient, and comprehensive approach to supply chain management, from
+                        procurement to logistics and distribution with an artificial
+                        intelligence automation system
+                    </span>
+                    <span class="font-medium text-blue-900">(Sphere360)</span>
+                    <span class="text-blue-900">.</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-   <section class="w-full h-full mx-auto max-w-7xl relative py-20">
-     <div class=" space-y-10">
+    <!--  -->
 
-        <div class="w-[1280px] h-[3700.89px] relative">
-            <div class="left-[368.76px] top-[144.78px] absolute text-[#ff0302] text-xl font-normal font-['Lexend'] leading-tight">Women</div>
-            <div class="left-[488.84px] top-[144.78px] absolute text-[#898995] text-xl font-light font-['Lexend'] leading-tight">Men</div>
-            <div class="left-[575.70px] top-[144.78px] absolute text-[#898995] text-xl font-light font-['Lexend'] leading-tight">Kids</div>
-            <div class="left-[664.27px] top-[144.78px] absolute text-[#898995] text-xl font-light font-['Lexend'] leading-tight">Accessories</div>
-            <div class="left-[823.53px] top-[144.78px] absolute text-[#898995] text-xl font-light font-['Lexend'] leading-tight">Jewelry</div>
-            <div class="w-[238.46px] h-[340.65px] left-[2.55px] top-[211.20px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[126.04px] h-[218.87px] left-[63.02px] top-[253.79px] absolute" src="{{URL::asset('assets/thumb-nails/AdobeStock-TEpMPbUyiW 9.png')}}" />
-            <div class="w-10 h-10 left-[15.33px] top-[227.39px] absolute bg-[#ff0050] rounded-full"></div>
-            <div class="w-[25.55px] h-[9.37px] left-[22.99px] top-[242.71px] absolute text-white text-[10.22px] font-medium font-['Inter'] leading-[10.22px]">New!</div>
-            <div class="left-[73.24px] top-[505.02px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[103.90px] top-[517.79px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[66.43px] top-[353.43px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[121.78px] top-[353.43px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[58.76px] top-[331.28px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Request Catalog</div>
-            <div class="w-[238.46px] h-[340.65px] left-[2.55px] top-[1294.48px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[126.04px] h-[218.87px] left-[63.02px] top-[1337.06px] absolute" src="{{URL::asset('assets/thumb-nails/AdobeStock-vIKkuQ4M8m 1.png')}}" />
-            <div class="left-[73.24px] top-[1588.29px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[103.90px] top-[1601.06px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[66.43px] top-[1436.70px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[121.78px] top-[1436.70px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[58.76px] top-[1414.56px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Request Catalog</div>
-            <div class="w-[238.46px] h-[340.65px] left-[258.04px] top-[569.74px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[126.04px] h-[218.87px] left-[318.51px] top-[612.32px] absolute" src="{{URL::asset('assets/thumb-nails/AdobeStock-vIKkuQ4M8m 1.png')}}" />
-            <div class="left-[328.73px] top-[863.55px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[359.39px] top-[876.33px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[322.77px] top-[711.96px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[378.12px] top-[711.96px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[376.42px] top-[689.82px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Buy from Store</div>
-            <div class="w-[238.46px] h-[340.65px] left-[513.53px] top-[211.20px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[126.04px] h-[218.87px] left-[574px] top-[253.79px] absolute" src="{{URL::asset('assets/thumb-nails/AdobeStock-UHKqMBNmSc 1.png')}}" />
-            <div class="left-[584.22px] top-[505.02px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[614.88px] top-[517.79px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[578.26px] top-[353.43px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[633.61px] top-[353.43px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[631.91px] top-[331.28px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Buy from Store</div>
-            <div class="w-[238.46px] h-[340.65px] left-[1024.51px] top-[211.20px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[126.04px] h-[218.87px] left-[1084.98px] top-[253.79px] absolute" src="{{URL::asset('assets/thumb-nails/AdobeStock-TEpMPbUyiW 9.png')}}" />
-            <div class="left-[1095.20px] top-[505.02px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[1125.85px] top-[517.79px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[1089.23px] top-[353.43px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[1144.59px] top-[353.43px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[1142.89px] top-[331.28px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Buy from Store</div>
-            <div class="w-[238.46px] h-[340.65px] left-[769.02px] top-[1294.48px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[126.04px] h-[218.87px] left-[829.49px] top-[1337.06px] absolute" src="{{URL::asset('assets/thumb-nails/AdobeStock-vIKkuQ4M8m 1.png')}}" />
-            <div class="left-[839.71px] top-[1588.29px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[870.37px] top-[1601.06px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[833.75px] top-[1436.70px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[889.10px] top-[1436.70px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[887.40px] top-[1414.56px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Buy from Store</div>
-            <div class="w-[238.46px] h-[340.65px] left-[1024.51px] top-[933.39px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[126.04px] h-[218.87px] left-[1084.98px] top-[975.97px] absolute" src="{{URL::asset('assets/thumb-nails/AdobeStock-UHKqMBNmSc 1.png')}}" />
-            <div class="left-[1095.20px] top-[1227.20px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[1125.85px] top-[1239.97px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[1089.23px] top-[1075.61px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[1144.59px] top-[1075.61px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[1142.89px] top-[1053.47px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Buy from Store</div>
-            <div class="w-[238.46px] h-[340.65px] left-[769.02px] top-[211.20px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[126.04px] h-[218.87px] left-[829.49px] top-[253.79px] absolute" src="{{URL::asset('assets/thumb-nails/AdobeStock-TEpMPbUyiW 9.png')}}" />
-            <div class="left-[839.71px] top-[505.02px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[870.37px] top-[517.79px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[832.89px] top-[353.43px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[888.25px] top-[353.43px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[825.23px] top-[331.28px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Request Catalog</div>
-            <div class="w-[238.46px] h-[340.65px] left-[513.53px] top-[933.39px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[126.04px] h-[218.87px] left-[574px] top-[975.97px] absolute" src="{{URL::asset('assets/thumb-nails/AdobeStock-UHKqMBNmSc 1.png')}}" />
-            <div class="left-[584.22px] top-[1227.20px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[614.88px] top-[1239.97px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[577.41px] top-[1075.61px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[632.76px] top-[1075.61px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[569.74px] top-[1053.47px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Request Catalog</div>
-            <div class="w-[29.67px] h-[29.67px] left-[676.19px] top-[3645.83px] absolute bg-gradient-to-tl from-[#fbba61] to-white rounded-full"></div>
-            <div class="w-[29.67px] h-[29.67px] left-[686.70px] top-[3653.96px] absolute origin-top-left rotate-[-8.58deg] bg-gradient-to-tl from-white via-[#facdbf] to-[#f15928] rounded-full"></div>
-            <div class="w-[125.19px] h-[37.47px] left-[688.04px] top-[3645.83px] absolute text-[#1d4289] text-[34.07px] font-normal font-['Lexend'] leading-[34.07px]">105+</div>
-            <div class="w-[93.68px] left-[689.74px] top-[3679.89px] absolute text-[#898995] text-xs font-light font-['Lexend'] leading-tight">Expert Suppliers</div>
-            <div class="w-[29.67px] h-[29.67px] left-[835.45px] top-[3645.83px] absolute bg-gradient-to-tl from-[#fbba61] to-white rounded-full"></div>
-            <div class="w-[29.67px] h-[29.67px] left-[845.96px] top-[3653.96px] absolute origin-top-left rotate-[-8.58deg] bg-gradient-to-tl from-white via-[#facdbf] to-[#f15928] rounded-full"></div>
-            <div class="w-[63.02px] h-[37.47px] left-[847.37px] top-[3645.83px] absolute text-[#1d4289] text-[34.07px] font-normal font-['Lexend'] leading-[34.07px]">95+</div>
-            <div class="w-[110.71px] left-[849.08px] top-[3679.89px] absolute text-[#898995] text-xs font-light font-['Lexend'] leading-tight">Expert Supervisors</div>
-            <div class="w-[29.67px] h-[29.67px] left-[981.93px] top-[3645.83px] absolute bg-gradient-to-tl from-[#fbba61] to-white rounded-full"></div>
-            <div class="w-[29.67px] h-[29.67px] left-[992.44px] top-[3653.96px] absolute origin-top-left rotate-[-8.58deg] bg-gradient-to-tl from-white via-[#facdbf] to-[#f15928] rounded-full"></div>
-            <div class="w-[125.19px] h-[37.47px] left-[993.78px] top-[3645.83px] absolute text-[#1d4289] text-[34.07px] font-normal font-['Lexend'] leading-[34.07px]">500+</div>
-            <div class="w-[110.71px] left-[995.48px] top-[3679.89px] absolute text-[#898995] text-xs font-light font-['Lexend'] leading-tight">Product Categories</div>
-            <div class="w-[29.67px] h-[29.67px] left-[1141.18px] top-[3645.83px] absolute bg-gradient-to-tl from-[#fbba61] to-white rounded-full"></div>
-            <div class="w-[29.67px] h-[29.67px] left-[1151.69px] top-[3653.96px] absolute origin-top-left rotate-[-8.58deg] bg-gradient-to-tl from-white via-[#facdbf] to-[#f15928] rounded-full"></div>
-            <div class="w-[68.13px] h-[37.47px] left-[1153.11px] top-[3645.83px] absolute text-[#1d4289] text-[34.07px] font-normal font-['Lexend'] leading-[34.07px]">75+</div>
-            <div class="w-[110.71px] left-[1154.73px] top-[3679.89px] absolute text-[#898995] text-xs font-light font-['Lexend'] leading-tight">Countries Delivered</div>
-            <div class="w-[604.66px] left-0 top-[3622.83px] absolute text-[#1d4289] text-xl font-light font-['Lexend'] leading-relaxed">Discover tailored solutions for your business! Request a catalog customized to your specific needs and explore a wide range of offerings from our carefully curated industries</div>
-            <div class="w-[408.78px] h-[422.41px] left-[854.19px] top-[3134px] absolute bg-[#dde8f0]"></div>
-            <div class="w-[408.78px] h-[422.41px] left-[428.37px] top-[3134px] absolute bg-[#dde8f0]"></div>
-            <div class="w-[408.78px] h-[422.41px] left-[2.55px] top-[3134px] absolute bg-[#dde8f0]"></div>
-            <img class="w-[1262.12px] h-[422.41px] left-[0.85px] top-[1808.01px] absolute" src="{{URL::asset('assets/thumb-nails/xiaomi 1.png')}}" />
-            <div class="left-[77.50px] top-[1981.74px] absolute text-white text-xl font-light font-['Lexend']">Now Trending</div>
-            <div class="left-[314.25px] top-[1994.52px] absolute text-white text-[27.25px] font-normal font-['Lexend']">Xioami Bass Speaker V2</div>
-            <div class="left-[77.50px] top-[2008.14px] absolute text-[#ff0000] text-[17.03px] font-normal font-['Lexend']">Shop Now</div>
-            <div class="w-[11.92px] h-[11.92px] left-[610.62px] top-[2141px] absolute bg-[#a49b9b] rounded-full"></div>
-            <div class="w-[11.92px] h-[11.92px] left-[578.26px] top-[2141px] absolute bg-white rounded-full"></div>
-            <div class="w-[11.92px] h-[11.92px] left-[642.98px] top-[2141px] absolute bg-[#a49b9b] rounded-full"></div>
-            <div class="w-[11.92px] h-[11.92px] left-[675.34px] top-[2141px] absolute bg-[#a49b9b] rounded-full"></div>
-            <div class="w-[510.98px] h-[571.44px] left-[2.55px] top-[2323.25px] absolute bg-[#babec1]"></div>
-            <div class="w-[749.43px] h-[283.59px] left-[513.53px] top-[2611.10px] absolute bg-[#d3d3d3]"></div>
-            <div class="w-[749.43px] h-[287.85px] left-[513.53px] top-[2323.25px] absolute bg-[#dde8f0]"></div>
-            <div class="left-[580.81px] top-[2428.85px] absolute text-[#00243d] text-3xl font-thin font-['Lexend'] leading-[30.66px]">Men</div>
-            <div class="left-[580.81px] top-[2716.70px] absolute text-[#00243d] text-3xl font-thin font-['Lexend'] leading-[30.66px]">Shoes</div>
-            <div class="left-[71.54px] top-[2428.85px] absolute text-[#00243d] text-3xl font-thin font-['Lexend'] leading-[30.66px]">Women</div>
-            <div class="left-[582.52px] top-[2404.15px] absolute text-[#898995] text-[10.22px] font-light font-['Lexend'] leading-[30.66px]">Collection - Winter/Fall 2025</div>
-            <div class="left-[582.52px] top-[2692px] absolute text-[#898995] text-[10.22px] font-light font-['Lexend'] leading-[30.66px]">Collection - Winter/Fall 2025</div>
-            <div class="left-[73.24px] top-[2404.15px] absolute text-[#898995] text-[10.22px] font-light font-['Lexend'] leading-[30.66px]">Collection - Winter/Fall 2025</div>
-            <div class="left-[581.66px] top-[2545.52px] absolute text-[#ff0000] text-xs font-light font-['Lexend'] leading-[30.66px]">Shop now</div>
-            <div class="left-[581.66px] top-[2833.37px] absolute text-[#ff0000] text-xs font-light font-['Lexend'] leading-[30.66px]">Shop now</div>
-            <div class="left-[72.39px] top-[2545.52px] absolute text-[#ff0000] text-xs font-light font-['Lexend'] leading-[30.66px]">Shop now</div>
-            <div class="left-[71.54px] top-[3340.09px] absolute text-[#00243d] text-3xl font-thin font-['Lexend'] leading-[30.66px]">Women</div>
-            <div class="left-[73.24px] top-[3315.40px] absolute text-[#898995] text-[10.22px] font-light font-['Lexend'] leading-[30.66px]">Collection - Winter/Fall 2025</div>
-            <div class="left-[72.39px] top-[3456.77px] absolute text-[#ff0000] text-xs font-light font-['Lexend'] leading-[30.66px]">Shop now</div>
-            <div class="left-[502.46px] top-[3340.09px] absolute text-[#00243d] text-3xl font-thin font-['Lexend'] leading-[30.66px]">Women</div>
-            <div class="left-[504.17px] top-[3315.40px] absolute text-[#898995] text-[10.22px] font-light font-['Lexend'] leading-[30.66px]">Collection - Winter/Fall 2025</div>
-            <div class="left-[503.31px] top-[3456.77px] absolute text-[#ff0000] text-xs font-light font-['Lexend'] leading-[30.66px]">Shop now</div>
-            <div class="left-[925.72px] top-[3340.09px] absolute text-[#00243d] text-3xl font-thin font-['Lexend'] leading-[30.66px]">Women</div>
-            <div class="left-[927.43px] top-[3315.40px] absolute text-[#898995] text-[10.22px] font-light font-['Lexend'] leading-[30.66px]">Collection - Winter/Fall 2025</div>
-            <div class="left-[926.57px] top-[3456.77px] absolute text-[#ff0000] text-xs font-light font-['Lexend'] leading-[30.66px]">Shop now</div>
-            <div class="left-[964.04px] top-[2996.04px] absolute text-[#003c97] text-xl font-normal font-['Lexend'] leading-[18.74px]">Returns<br/>Exchange</div>
-            <div class="w-[53.65px] h-[53.65px] left-[896.77px] top-[2987.52px] absolute rounded-full border-4 border-[#003c97]"></div>
-            
-            <div class="left-[272.52px] top-[2996.04px] absolute text-[#003c97] text-xl font-normal font-['Lexend'] leading-[18.74px]">Customed<br/>Boxing</div>
-            <div class="w-[53.65px] h-[53.65px] left-[205.24px] top-[2987.52px] absolute rounded-full border-4 border-[#003c97]"></div>
-            <div class="left-[627.65px] top-[2996.04px] absolute text-[#003c97] text-xl font-normal font-['Lexend'] leading-[18.74px]">Global<br/>Delivery</div>
-            <div class="w-[53.65px] h-[53.65px] left-[560.37px] top-[2987.52px] absolute rounded-full border-4 border-[#003c97]"></div>
-            <div class="w-[238.46px] h-[340.65px] left-[769.02px] top-[572.30px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[187.36px] h-[174.58px] left-[798.83px] top-[647.24px] absolute" src="{{URL::asset('assets/thumb-nails/AdobeStock-UHKqMBNmSc 1.png')}}" />
-            <div class="left-[839.71px] top-[866.11px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[870.37px] top-[878.88px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[833.75px] top-[714.52px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[889.10px] top-[714.52px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[887.40px] top-[692.38px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Buy from Store</div>
-            <div class="w-[238.46px] h-[340.65px] left-[2.55px] top-[572.30px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[187.36px] h-[174.58px] left-[32.36px] top-[647.24px] absolute" src="{{URL::asset('assets/thumb-nails/AdobeStock-UHKqMBNmSc 1.png')}}" />
-            <div class="left-[73.24px] top-[866.11px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[103.90px] top-[878.88px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[67.28px] top-[714.52px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[122.63px] top-[714.52px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[120.93px] top-[692.38px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Buy from Store</div>
-            <div class="w-[238.46px] h-[340.65px] left-[258.04px] top-[933.39px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[187.36px] h-[174.58px] left-[287.85px] top-[1008.33px] absolute" src="https://via.placeholder.com/187x175" />
-            <div class="left-[328.73px] top-[1227.20px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[359.39px] top-[1239.97px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[322.77px] top-[1075.61px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[378.12px] top-[1075.61px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[376.42px] top-[1053.47px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Buy from Store</div>
-            <div class="w-[238.46px] h-[340.65px] left-[513.53px] top-[1294.48px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[187.36px] h-[174.58px] left-[543.34px] top-[1369.42px] absolute" src="https://via.placeholder.com/187x175" />
-            <div class="left-[584.22px] top-[1588.29px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[614.88px] top-[1601.06px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[578.26px] top-[1436.70px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[633.61px] top-[1436.70px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[631.91px] top-[1414.56px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Buy from Store</div>
-            <div class="w-[238.46px] h-[340.65px] left-[258.04px] top-[211.20px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[179.69px] h-[206.95px] left-[286.15px] top-[250.38px] absolute" src="https://via.placeholder.com/180x207" />
-            <div class="left-[328.73px] top-[505.02px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[359.39px] top-[517.79px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[322.77px] top-[353.43px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[378.12px] top-[353.43px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[376.42px] top-[331.28px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Buy from Store</div>
-            <div class="w-[238.46px] h-[340.65px] left-[2.55px] top-[933.39px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[179.69px] h-[206.95px] left-[30.66px] top-[972.56px] absolute" src="https://via.placeholder.com/180x207" />
-            <div class="left-[73.24px] top-[1227.20px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[103.90px] top-[1239.97px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[67.28px] top-[1075.61px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[122.63px] top-[1075.61px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[120.93px] top-[1053.47px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Buy from Store</div>
-            <div class="w-[238.46px] h-[340.65px] left-[1024.51px] top-[1294.48px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[179.69px] h-[206.95px] left-[1052.61px] top-[1333.65px] absolute" src="https://via.placeholder.com/180x207" />
-            <div class="left-[1095.20px] top-[1588.29px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[1125.85px] top-[1601.06px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[1089.23px] top-[1436.70px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[1144.59px] top-[1436.70px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[1142.89px] top-[1414.56px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Buy from Store</div>
-            <div class="w-[238.46px] h-[340.65px] left-[258.04px] top-[1294.48px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[179.69px] h-[206.95px] left-[286.15px] top-[1333.65px] absolute" src="https://via.placeholder.com/180x207" />
-            <div class="left-[328.73px] top-[1588.29px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[359.39px] top-[1601.06px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[322.77px] top-[1436.70px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[378.12px] top-[1436.70px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[376.42px] top-[1414.56px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Buy from Store</div>
-            <div class="w-[238.46px] h-[340.65px] left-[769.02px] top-[933.39px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[179.69px] h-[206.95px] left-[797.13px] top-[972.56px] absolute" src="https://via.placeholder.com/180x207" />
-            <div class="left-[839.71px] top-[1227.20px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[870.37px] top-[1239.97px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[833.75px] top-[1075.61px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[889.10px] top-[1075.61px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[887.40px] top-[1053.47px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Buy from Store</div>
-            <div class="w-[238.46px] h-[340.65px] left-[1024.51px] top-[572.30px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[179.69px] h-[206.95px] left-[1052.61px] top-[611.47px] absolute" src="https://via.placeholder.com/180x207" />
-            <div class="left-[1095.20px] top-[866.11px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[1125.85px] top-[878.88px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[1089.23px] top-[714.52px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[1144.59px] top-[714.52px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[1142.89px] top-[692.38px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Buy from Store</div>
-            <div class="w-[238.46px] h-[340.65px] left-[513.53px] top-[572.30px] absolute bg-white rounded-lg shadow-[6.813040733337402px_4.258150577545166px_9.19760513305664px_-4.258150577545166px_rgba(0,0,0,0.14)]"></div>
-            <img class="w-[179.69px] h-[206.95px] left-[541.64px] top-[611.47px] absolute" src="https://via.placeholder.com/180x207" />
-            <div class="left-[584.22px] top-[866.11px] absolute text-[#7f8081] text-[10.22px] font-normal font-['Inter']">Laced pattern dress</div>
-            <div class="left-[614.88px] top-[878.88px] absolute text-[#0b133a] text-[10.22px] font-medium font-['Inter']">$69.99</div>
-            <div class="w-[110.71px] h-[48.54px] left-[578.26px] top-[714.52px] absolute bg-[#dde8f0]/80"></div>
-            <div class="w-[48.54px] h-[0px] left-[633.61px] top-[714.52px] absolute origin-top-left rotate-90 border border-[#0b133a]"></div>
-            <div class="left-[631.91px] top-[692.38px] absolute text-[#fdfeff] text-[8.52px] font-light font-['Lexend']">Buy from Store</div>
-            <div class="left-[1127.98px] top-[17.03px] absolute text-[#1d4289] text-xl font-light font-['Lexend'] leading-tight">Energy</div>
-            <div class="left-[527.58px] top-[17.03px] absolute text-[#1d4289] text-xl font-light font-['Lexend'] leading-tight">Electronics</div>
-            <div class="left-[677.05px] top-[17.03px] absolute text-[#1d4289] text-xl font-light font-['Lexend'] leading-tight">Household</div>
-            <div class="left-[825.66px] top-[17.03px] absolute text-[#1d4289] text-xl font-light font-['Lexend'] leading-tight">Automobile</div>
-            <div class="left-[981.93px] top-[17.03px] absolute text-[#1d4289] text-xl font-light font-['Lexend'] leading-tight">Machinery</div>
-            <div class="left-[213.76px] top-[10.22px] absolute text-[#1d4289] text-[8.52px] font-light font-['Lexend'] leading-tight">TM</div>
-            <div class="left-0 top-[10.22px] absolute"><span class="text-[#1d4289] text-[27.25px] font-light font-['Lexend']">Sphere</span><span class="text-[#1d4289] text-[27.25px] font-normal font-['Lexend']">Shopping</span></div>
-            <div class="w-[22.14px] h-[22.99px] left-[1240.83px] top-[15.33px] absolute bg-[#d3d3d3]/40 rounded border border-[#004581]"></div>
-            <div class="w-[113.27px] h-[36.62px] left-[368.76px] top-[8.52px] absolute bg-[#01274e] rounded-[34.07px]"></div>
-            <div class="left-[387.49px] top-[22.14px] absolute text-white text-xl font-light font-['Lexend'] leading-[10.22px]">Fashion</div>
-            <div class="w-[926.57px] h-[63.02px] left-[353.43px] top-0 absolute border border-[#ff0000]"></div>
-          </div>
-   
-   
-</section>
+    <section class='max-w-6xl mx-auto pt-[90px] px-4 sm:px-6 lg:px-8  bg-white'>
+        <div class="flex flex-col">
+            <div class="flex flex-col justify-center py-3.5 pr-3.5 pl-3.5 max-w-full text-sm font-light leading-none bg-white rounded-md border border-solid border-sky-950 min-h-[37px] text-sky-950 w-[150px]"
+                role="heading" aria-level="1" tabindex="0">
+                <div class="w-full">Media category</div>
+            </div>
+            <div class="flex flex-col mt-14 w-full max-md:mt-10 max-md:max-w-full">
+                <div class="flex flex-col w-full text-blue-900 max-md:max-w-full">
+                    <div
+                        class="flex flex-col items-start px-16 pt-96 pb-12 w-full bg-slate-200 bg-opacity-50 max-md:px-5 max-md:pt-24 max-md:max-w-full">
+                        <div class="flex gap-5 items-end">
+                            <div class="flex gap-2.5 items-center text-xs font-light leading-3 w-[183px]">
+                                <img loading="lazy"
+                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c1a3f2701ee29b79da4bd9e348ea7012896a452954b54fa3f0c3d6b09eb1172?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
+                                    alt="Profile photo of Dorcas Boadu"
+                                    class="object-contain shrink-0 self-stretch my-auto rounded-full aspect-square w-[33px]" />
+                                <div class="my-auto w-[133px]">
+                                    <span class="font-medium">Dorcas Boadu</span>
+                                    <br />
+                                    <span class="text-xs">Digital Communications Manager</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col lg:w-[177px]">
+                                <div class="flex gap-1 items-center self-start text-xs whitespace-nowrap">
+                                    <img loading="lazy"
+                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/f1b5dd2a242d66423b1f9cc15dbf6a7be349a54357a055b965d0832f355da1d8?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
+                                        alt=""
+                                        class="object-contain shrink-0 self-stretch my-auto aspect-square w-[5px]" />
+                                    <div class="self-stretch my-auto ">Introduction</div>
+                                </div>
+                                <div class="text-base leading-none">Company introduction</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-5 items-center mt-11 w-full max-md:mt-10 max-md:max-w-full" role="list">
+                    <div class="flex grow shrink self-stretch my-auto bg-slate-200 bg-opacity-50 h-[120px] min-w-[240px] w-[278px]"
+                        role="listitem" tabindex="0"></div>
+                    <div class="flex grow shrink self-stretch my-auto bg-slate-200 bg-opacity-50 h-[120px] min-w-[240px] w-[278px]"
+                        role="listitem" tabindex="0"></div>
+                    <div class="flex grow shrink self-stretch my-auto bg-slate-200 bg-opacity-50 h-[120px] min-w-[240px] w-[278px]"
+                        role="listitem" tabindex="0"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Strategic vision and mission  -->
+
+    <section class='max-w-6xl mx-auto pt-[118px] px-4 sm:px-6 lg:px-8  '>
+        <div class="flex flex-col" role="region" aria-label="Strategic Vision and Mission">
+            <div class="flex flex-col max-w-full w-[598px]">
+                <h1 class="text-3xl text-blue-900 max-md:max-w-full">
+                    Strategic vision and mission
+                </h1>
+                <p class="mt-12 text-xl font-light leading-7 text-blue-900 max-md:mt-10 max-md:max-w-full">
+                    We exist to speed up success through continuous improvement
+                    <br />
+                    and work together to develop new opportunities
+                </p>
+            </div>
+            <div class="flex flex-wrap gap-10 items-end lg:pl-10 mt-20 w-full max-md:mt-10 max-md:max-w-full">
+                <div class="flex flex-col space-y-[44px] grow shrink min-w-[240px] w-[619px] max-md:max-w-full">
+
+                    @foreach ($Strategicvisions as $Strategicvision)
+                        <div class="flex gap-3.5 items-start self-start max-md:max-w-full">
+                            <img loading="lazy" src={{URL::asset($Strategicvision['icon'])}}
+                                alt={{$Strategicvision['title']}} class="object-contain shrink-0 aspect-[1.18] w-[52px]" />
+                            <div class="flex flex-col min-w-[240px] w-[400px]">
+                                <h2 class="text-3xl font-medium leading-loose text-blue-900">
+                                    {{$Strategicvision['title']}}
+                                </h2>
+                                <p class="mt-3 text-2xl font-light leading-7 text-blue-900">
+                                    {{$Strategicvision['description']}}
+                                </p>
+                            </div>
+                        </div>
+                    @endforeach
+
+                </div>
+                <a href="#" class="flex gap-2 items-start text-xl leading-none text-red-900 min-w-[240px]" role="button"
+                    tabindex="0">
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/90a55239e3962ebb0ba2f20f4c3f31081eb4850b08767d12e0349d4f6af4b82e?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
+                        alt="Download icon" class="object-contain shrink-0 w-3.5 aspect-square" />
+                    <span class="w-[223px]">Download our strategy</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
 
+    <!--Our commitment  -->
 
-    
+    <section class='max-w-6xl mx-auto pt-[118px] px-4 sm:px-6 lg:px-8 '>
+        <div class="flex flex-col lg:justify-center px-4 py-px" role="region" aria-label="Our commitment">
+            <div class="flex flex-wrap gap-10 justify-between items-start max-md:max-w-full">
+                <div class="flex relative flex-col w-[171px]">
+                    <div class="flex absolute -bottom-3.5 z-0 flex-col px-3 pt-2 pb-0.5 h-[50px] left-[-17px] w-[59px]"
+                        aria-hidden="true">
+                        <div class="flex shrink-0 w-full h-10 rounded-full"></div>
+                    </div>
+                    <h2 class="z-0 text-3xl text-blue-900">Our commitment</h2>
+                </div>
+                <div class="text-xl font-light leading-7 text-sky-800 w-[713px] max-md:max-w-full">
+                    Our policies commissions us to serve strategically for the growth and success of our clients. Select
+                    to download.
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap gap-4 pt-[106px] items-center">
+            <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/91dae6f362dec36778a57707dd4cd86ed83658535858a69309b7aad3ffc3ac73?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
+                alt="Gallery image 1"
+                class="object-contain shrink-0 self-stretch my-auto aspect-[0.72] min-w-[240px] w-[257px]" />
+            <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/8fa851a6f92406a2f202ceaa9b6d7bc3f3f8f39daad6a7eba36d236172a8464b?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
+                alt="Gallery image 2"
+                class="object-contain shrink-0 self-stretch my-auto aspect-[0.72] min-w-[240px] w-[257px]" />
+            <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/a17b669ae3832c6fc0c70629f891ad95979897fae7f4673b9b616634202fefaa?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
+                alt="Gallery image 3"
+                class="object-contain shrink-0 self-stretch my-auto aspect-[0.72] min-w-[240px] w-[257px]" />
+            <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/91c0f385cb6a300a72801ccdf57596ed2ed96b83b79534074c29ed6bda70d3f1?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
+                alt="Gallery image 4"
+                class="object-contain shrink-0 self-stretch my-auto aspect-[0.72] min-w-[240px] w-[257px]" />
+        </div>
+    </section>
+
+    <!-- Revolutionalizeing -->
+
+    <section class='max-w-6xl mx-auto pt-[129px] px-4 sm:px-6 lg:px-8 '>
+        <div class="flex flex-col items-start" role="region" aria-label="Company Timeline">
+            <div class="flex relative items-start w-[59px]">
+                <div class="flex z-0 flex-col items-start px-1.5 pt-2 pb-0.5 my-auto w-[59px]">
+                    <div class="flex shrink-0 w-full h-10 rounded-full bg-blue-900" aria-hidden="true"></div>
+                </div>
+                <h1
+                    class="absolute z-0 self-start h-20 text-3xl leading-10 text-blue-900 bottom-[-30px] right-[-324px] w-[355px]">
+                    Revolutionizing supply chain since 2018
+                </h1>
+            </div>
+            <div class="flex flex-wrap gap-0.5 items-end self-stretch mt-20 w-full max-md:mt-10 max-md:max-w-full">
+                <div class="flex flex-col grow shrink w-[170px]">
+                    <div class="text-8xl font-light leading-none text-blue-900 max-md:text-4xl"
+                        aria-label="Founded in 2018">
+                        2018
+                    </div>
+                    <div class="flex flex-col justify-center items-start px-1.5 py-1 mt-12 w-[25px] max-md:mt-10">
+                        <div class="flex shrink-0 w-full h-4 rounded-full bg-blue-900" aria-hidden="true"></div>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-10 items-center min-w-[240px] max-md:max-w-full" role="list">
+                    <div class="flex flex-col self-stretch my-auto w-[141px]" role="listitem">
+                        <div class="text-2xl font-light leading-3 text-blue-900">2018 - 2020</div>
+                        <div class="flex flex-col justify-center items-start px-1.5 py-1 mt-5 w-[25px]">
+                            <div class="flex shrink-0 w-full h-4 rounded-full bg-blue-900" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col self-stretch my-auto w-[141px]" role="listitem">
+                        <div class="text-2xl font-light leading-3 text-blue-900">2021 - 2023</div>
+                        <div class="flex flex-col justify-center items-start px-1.5 py-1 mt-5 w-[25px]">
+                            <div class="flex shrink-0 w-full h-4 rounded-full bg-blue-900" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col self-stretch my-auto w-[63px]" role="listitem">
+                        <div class="text-2xl font-light leading-3 text-blue-900">2024</div>
+                        <div class="flex flex-col justify-center items-start px-1.5 py-1 mt-5 w-[25px]">
+                            <div class="flex shrink-0 w-full h-4 rounded-full bg-blue-900" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col self-stretch my-auto w-[154px]" role="listitem">
+                        <div class="text-2xl font-light leading-3 text-blue-900">2025 - 2030</div>
+                        <div class="flex flex-col justify-center items-start px-1.5 py-1 mt-5 w-[25px]">
+                            <div class="flex shrink-0 w-full h-4 rounded-full bg-blue-900" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grow shrink h-px border border-blue-900 border-solid min-w-[240px] w-[1019px]"
+                    aria-hidden="true"></div>
+            </div>
+            <div class="flex flex-col mt-20 max-w-full w-[795px] max-md:mt-10">
+                <div class="flex relative flex-col items-start max-w-full w-[232px]">
+                    <div class="flex z-0 flex-col justify-center items-start px-2 py-1 w-9">
+                        <div class="flex shrink-0 w-full h-6 rounded-full bg-blue-900" aria-hidden="true"></div>
+                    </div>
+                    <h2
+                        class="absolute -right-3 z-0 text-2xl leading-none text-blue-900 bottom-[5px] h-[21px] w-[232px]">
+                        Our founding vision
+                    </h2>
+                </div>
+                <div class="mt-5 text-xl font-light leading-7 text-blue-900 max-md:max-w-full">
+                    ThinQSphere was founded in 2018 with a bold vision: to redefine supply chain management by
+                    delivering seamless, efficient, and tailored solutions.
+                    <br />
+                    Our founder, driven by a deep understanding of the challenges businesses face in procurement,
+                    logistics, and distribution across certain regions, set out to create an integrated approach that
+                    would elevate businesses across industries. From day one,
+                    <span class="font-medium">ThinQSphere</span>
+                    has been dedicated to optimizing every step of the supply chain, ensuring that businesses not only
+                    meet their goals but exceed them.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+
+    <section class='max-w-7xl mx-auto pt-[129px] px-4 sm:px-6 lg:px-8 '>
+        <div class="flex flex-col" role="region" aria-label="Team Contact Information">
+            <div class="text-4xl font-semibold leading-10 text-blue-900 max-md:max-w-full">
+                <span class="">We're here to listen.</span>
+                <span class="text-neutral-400">Feel free to</span>
+                <br />
+                <span class="text-neutral-400">email or call us at anytime.</span>
+            </div>
+            <div class="flex flex-wrap gap-5 items-center w-full max-md:max-w-full">
+                <div
+                    class="flex flex-col grow shrink self-stretch my-auto text-base min-w-[240px] w-[558px] max-md:max-w-full">
+                    <div class="flex flex-wrap gap-10 items-center w-full text-white max-md:max-w-full">
+                        <div class="flex flex-col grow shrink self-stretch my-auto text-center min-w-[240px] w-[218px]"
+                            tabindex="0">
+                            <div class="flex relative flex-col w-full rounded-full aspect-[1.004]">
+                                <img loading="lazy"
+                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/8f4b047df57a07369e061e57b9a3c61b9af3870a77ce8587c6bcfe2de47e0152?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
+                                    class="object-cover absolute inset-0 size-full"
+                                    alt="Portrait of Anarkwah Eric, Managing Director" />
+                                <div
+                                    class="flex relative flex-col items-center px-14 pt-40 pb-14 rounded-full max-md:px-5 max-md:pt-24">
+                                    <div class="font-semibold leading-loose">Anarkwah Eric</div>
+                                    <div class="mt-5 font-light leading-none">Managing Director</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col grow shrink self-stretch my-auto min-w-[240px] w-[261px]"
+                            tabindex="0">
+                            <div class="flex relative flex-col w-full rounded-full aspect-square">
+                                <img loading="lazy"
+                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/8afee3b74f3702ac9bcb0f68c5ff09cc5e6878bc6ae53420f91e50fe035095b3?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
+                                    class="object-cover absolute inset-0 size-full"
+                                    alt="Portrait of Joanne McCalis, Marketing Director" />
+                                <div
+                                    class="flex relative flex-col items-center px-16 pt-52 pb-16 rounded-full max-md:px-5 max-md:pt-24">
+                                    <div class="font-semibold leading-loose">Joanne McCalis</div>
+                                    <div class="mt-4 font-light leading-none text-center">
+                                        Marketing Director
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-14 leading-7 text-blue-900 max-md:mt-10 max-md:max-w-full"
+                        aria-label="Customer Testimonial">
+                        <span class="font-light">
+                            In the construction industry, delays are costly.
+                        </span>
+                        <span class="font-medium">ThinQSphere</span>
+                        <span class="font-light">
+                            has become an invaluable partner, ensuring our heavy machinery and
+                            parts arrive when and where we need them. Their proactive
+                            communication and streamlined processes have made them an essential
+                            part of our projects' success
+                        </span>
+                    </div>
+                </div>
+                <div class="flex flex-col grow shrink self-stretch my-auto text-white min-w-[240px] w-[334px]"
+                    tabindex="0">
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/6d9466a3472f7c0ab4f9ffd22ccb40adb748dc002db3678c795b5f2bb2ed7122?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
+                        class="object-contain max-w-full aspect-square w-[246px]"
+                        alt="Company logo or decorative element" />
+                    <div class="flex flex-col mt-16 max-w-full w-[418px] max-md:mt-10">
+                        <div class="flex relative flex-col w-full rounded-full aspect-[1.002]">
+                            <img loading="lazy"
+                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/89c82b8de9ea166ec8c2490f7da2f46aabbdf79305df68c2f2fab3a108911ff9?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
+                                class="object-cover absolute inset-0 size-full"
+                                alt="Portrait of Philip McCarthy, Managing Director of Sales" />
+                            <div
+                                class="flex relative flex-col items-center px-20 pt-72 pb-20 rounded-full max-md:px-5 max-md:pt-24">
+                                <div class="flex flex-col ml-2.5 max-w-full w-[186px]">
+                                    <div class="mr-3.5 ml-4 text-xl font-semibold leading-none max-md:mx-2.5">
+                                        Philip McCarthy
+                                    </div>
+                                    <div class="mt-1 text-base font-light leading-none">
+                                        Managing Director, Sales
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- world map -->
+    <section class=' pt-[129px] '>
+        <div class="flex flex-col px-11 py-5 max-w-full w-[598px]">
+            <h1 class="text-3xl text-blue-900 max-md:max-w-full">
+                Administration
+            </h1>
+            <p class="mt-12 text-xl font-light leading-7 text-blue-900 max-md:mt-10 max-md:max-w-full">
+                Connect with our expert global administrator support services for executive updates current news,
+                industry updates, and future services
+            </p>
+        </div>
+        <div class="flex flex-col text-xl font-light leading-none text-white whitespace-nowrap" role="region"
+            aria-label="Connect Section">
+            <div
+                class="flex relative flex-col items-start px-20 pt-96 pb-16 w-full min-h-[509px] max-md:px-5 max-md:pt-24 max-md:max-w-full">
+                <img loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/9a9dc34a5792307b235301837bc8ccfd57bad4ac2eeb6443a2eb8ea5dd5db3df?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
+                    class="object-cover absolute inset-0 size-full" alt="" />
+                <div class="flex mt-48 md:mt-0 relative flex-col justify-center px-11 py-5 max-w-full bg-sky-950 min-h-[56px] rounded-[40px] w-[200px] max-md:px-5"
+                    role="button" tabindex="0" aria-label="Connect button" onclick="handleConnect()"
+                    onkeypress="(e) => e.key === 'Enter' && handleConnect()">
+                    <div class="flex gap-2.5 items-center">
+                        <div class="self-stretch my-auto w-20">Connect</div>
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/7cb98acc8e088be1559996904faee48ae85fffd86a3264b4c3b245bf0702384a?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
+                            class="object-contain shrink-0 self-stretch my-auto w-3 aspect-square" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </x-layout>
