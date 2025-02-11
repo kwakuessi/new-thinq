@@ -95,6 +95,11 @@
     ];
 @endphp
 
+<style>
+    h2{
+        font-weight: 400 !important;
+    }
+</style>
 
 <x-layout>
     <x-slot name="title">Logistics</x-slot>
@@ -409,9 +414,9 @@
     <div class="flex flex-col mt-[118px]" role="region" aria-label="Logistics Statistics">
         <div
             class="z-10 mt-0   px-4 lg:ml-24 text-4xl font-light leading-10 text-neutral-400 w-[638px] max-md:max-w-full">
-            <span class="text-blue-900">Logistics that builds business trust,</span>
+            <span class="text-blue-900 font-normal">Logistics that builds business trust,</span>
             we've delivered in over
-            <span class="text-blue-900">65+ countries</span>
+            <span class="text-blue-900 font-normal">65+ countries</span>
             worldwide
         </div>
         <div class="flex relative flex-col items-center px-20 pt-14 w-full min-h-[462px] max-md:px-5 max-md:max-w-full">
@@ -426,7 +431,7 @@
                 class="flex max-w-4xl mx-auto relative z-20 flex-wrap gap-10 justify-between items-center mt-20 w-full  max-md:mt-10 max-md:max-w-full">
                 <div class="flex gap-10 items-center self-stretch my-auto min-w-[240px]">
                     <div class="flex flex-col self-stretch my-auto w-[135px]">
-                        <div class="text-6xl leading-none text-blue-900 max-md:text-4xl"
+                        <div class="text-6xl font-normal leading-none text-blue-900 max-md:text-4xl"
                             aria-label="220 plus advanced systems">
                             220+
                         </div>
@@ -435,7 +440,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col self-stretch my-auto w-[140px]">
-                        <div class="text-6xl leading-none text-blue-900 max-md:text-4xl"
+                        <div class="text-6xl font-normal leading-none text-blue-900 max-md:text-4xl"
                             aria-label="580 plus customers trust us">
                             580+
                         </div>
@@ -447,15 +452,15 @@
                 <div
                     class="flex gap-10 items-center self-stretch my-auto text-base font-light leading-loose min-w-[240px]">
                     <button
-                        class="flex gap-1 items-end px-7 pt-2.5 pb-5 w-36 text-white bg-sky-950 min-h-[46px] rounded-[40px] max-md:px-5"
+                        class="flex gap-1 px-7 pt-2.5 pb-2.5 w-36 text-white bg-sky-950 min-h-[40px] rounded-[40px] max-md:px-5 items-center"
                         aria-label="Book now">
-                        <span>Book now</span>
+                        <span class="">Book now</span>
                         <img loading="lazy"
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/ed6bbd871148fba6e924192815b4c706b11659efef4609ac0676a37618cbd8be?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
                             class="object-contain shrink-0 w-2 aspect-[1.14]" alt="" aria-hidden="true" />
                     </button>
                     <button
-                        class="flex gap-0.5 items-end px-5 pt-2.5 pb-5 w-36 whitespace-nowrap border border-solid border-sky-950 min-h-[46px] rounded-[40px] text-sky-950 max-md:px-5"
+                        class="flex gap-0.5 px-5 pt-2.5 pb-2.5 w-36 whitespace-nowrap border border-solid border-sky-950 min-h-[40px] rounded-[40px] text-sky-950 max-md:px-5 items-center"
                         aria-label="Support">
                         <img loading="lazy"
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/e5c78093d28fe80721e154d30cf71422e6a2acd686436fd53a10124f3270208b?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
@@ -474,7 +479,7 @@
 
     <section class='max-w-7xl mx-auto mt-[94px] w-full px-4'>
         <div class="flex flex-col">
-            <div class="text-3xl text-blue-900 max-md:max-w-full" role="heading" aria-level="2">Sphere Insights</div>
+            <div class="text-3xl text-blue-900 max-md:max-w-full font-medium" role="heading" aria-level="2">Sphere Insights</div>
             <div class="flex flex-wrap items-center mt-8 w-full max-md:max-w-full">
                 <div
                     class="grow shrink self-stretch my-auto text-base leading-7 text-blue-900 w-[556px] max-md:max-w-full">
@@ -497,27 +502,27 @@
         </div>
     </section>
 
-    <div class="grid grid-cols-1 mt-20px lg:mt-[96px] lg:grid-cols-2  max-w-5xl mx-auto gap-5  text-blue-900"
+    <div class="grid grid-cols-1 mt-20px lg:mt-[96px] lg:grid-cols-2  max-w-7xl mx-auto gap-5 text-white mb-[70px]"
         role="region" aria-label="Blog Posts">
-        <div class="flex flex-col items-start self-stretch px-7 pt-80 pb-6  rounded-xl bg-slate-200 min-h-[460px] min-w-[240px]  max-md:px-5 max-md:pt-24 max-md:max-w-full"
+        <div class="bg-log_dev bg-cover bg-center flex flex-col items-start self-stretch px-7 pt-80 pb-6  rounded-xl bg-slate-200 min-h-[460px] min-w-[240px]  max-md:px-5 max-md:pt-24 max-md:max-w-full"
             role="article">
-            <div class="flex flex-col max-w-full w-[412px]">
+            <div class=" flex flex-col max-w-full w-[500px]">
                 <div class="flex gap-1 items-center self-start text-xs">
                     <img loading="lazy"
                         src="https://cdn.builder.io/api/v1/image/assets/TEMP/f1b5dd2a242d66423b1f9cc15dbf6a7be349a54357a055b965d0832f355da1d8?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
                         class="object-contain shrink-0 self-stretch my-auto aspect-square w-[5px]" alt="" />
-                    <div class="self-stretch my-auto w-[134px]">
+                    <div class="self-stretch  my-auto w-[134px]">
                         Integrated Logistics - Jan 15 2025
                     </div>
                 </div>
                 <div class="flex flex-col pl-2.5 mt-2.5 w-full">
                     <div class="flex flex-col">
-                        <h2 class="text-base leading-none">
+                        <h2 class="font-medium text-base leading-none">
                             Logistics development trends for 2025
                         </h2>
                         <div class="mt-6 text-xs font-light leading-tight">
-                            What companies should expect in 2025? How various logistics will
-                            move this year?
+                        Key developments and questions arising from various sectors in the logistics industry
+                        What companies should expect in 2025? How various logistics will move this year?
                         </div>
                     </div>
                     <div class="flex gap-2.5 items-center self-start mt-4 text-xs font-light leading-3">
@@ -536,20 +541,20 @@
         </div>
         <div class="flex flex-col self-stretch  min-w-[240px]  max-md:max-w-full">
             <div class="flex flex-wrap gap-5 items-center w-full max-md:max-w-full">
-                <div class="flex flex-col grow shrink self-stretch px-5 pt-24 pb-7  rounded-xl bg-slate-200 min-h-[220px] min-w-[240px] w-[204px]"
+                <div class="bg-our_ev bg-cover bg-center flex flex-col grow shrink self-stretch px-5 pt-24 pb-7  rounded-xl bg-slate-200 min-h-[220px] min-w-[240px] w-[204px]"
                     role="article">
-                    <div class="flex flex-col w-full max-w-[209px]">
+                    <div class="flex flex-col w-full max-w-[250px]">
                         <div class="flex gap-1 items-center self-start text-xs">
                             <img loading="lazy"
                                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/f1b5dd2a242d66423b1f9cc15dbf6a7be349a54357a055b965d0832f355da1d8?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
-                                class="object-contain shrink-0 self-stretch my-auto aspect-square w-[5px]" alt="" />
+                                class="object-contain shrink-0 self-stretch my-auto aspect-square w-[5px] text-white" alt="" />
                             <div class="self-stretch my-auto w-[134px]">
-                                Integrated Logistics - Jan 15 2025
+                                Sustainability - Jan 15 2025
                             </div>
                         </div>
                         <div class="flex flex-col mt-2.5 max-md:mr-2 max-md:ml-2.5">
-                            <h2 class="text-base leading-none">Logistics development</h2>
-                            <div class="text-xs font-light leading-tight">
+                            <h2 class="font-medium text-base ">Our environment, our cargo </h2>
+                            <div class="text-xs font-light">
                                 What companies should expect in 2025?
                             </div>
                         </div>
@@ -567,8 +572,8 @@
                     </div>
                 </div>
                 <div class="flex flex-col grow shrink self-stretch  rounded-xl min-w-[240px] w-[204px]" role="article">
-                    <div class="flex flex-col px-7 pt-24 pb-7 rounded-xl bg-slate-200 min-h-[220px] max-md:px-5">
-                        <div class="flex flex-col w-full max-w-[202px]">
+                    <div class="bg-dig bg-cover bg-center flex flex-col px-7 pt-24 pb-7 rounded-xl bg-slate-200 min-h-[220px] max-md:px-5">
+                        <div class="flex flex-col w-full max-w-[250px]">
                             <div class="flex gap-1 items-center self-start text-xs">
                                 <img loading="lazy"
                                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/f1b5dd2a242d66423b1f9cc15dbf6a7be349a54357a055b965d0832f355da1d8?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
@@ -578,8 +583,8 @@
                                 </div>
                             </div>
                             <div class="flex flex-col mt-2.5 max-md:ml-2.5">
-                                <h2 class="text-base leading-none">Logistics development</h2>
-                                <div class="text-xs font-light leading-tight">
+                                <h2 class="font-medium text-base ">Digitizing all logistics</h2>
+                                <div class="text-xs font-light">
                                     What companies should expect in 2025?
                                 </div>
                             </div>
@@ -599,20 +604,20 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col items-start px-7 pt-16 pb-7 mt-5 w-full rounded-xl bg-slate-200 min-h-[220px] max-md:px-5 max-md:max-w-full"
+            <div class="bg-log_dev_2 bg-cover bg-center flex flex-col items-start px-7 pt-16 pb-7 mt-5 w-full rounded-xl bg-slate-200 min-h-[220px] max-md:px-5 max-md:max-w-full"
                 role="article">
-                <div class="flex flex-col max-w-full w-[411px]">
+                <div class=" flex flex-col max-w-full w-[500px]">
                     <div class="flex gap-1 items-center self-start text-xs">
                         <img loading="lazy"
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/f1b5dd2a242d66423b1f9cc15dbf6a7be349a54357a055b965d0832f355da1d8?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
                             class="object-contain shrink-0 self-stretch my-auto aspect-square w-[5px]" alt="" />
                         <div class="self-stretch my-auto w-[134px]">
-                            Integrated Logistics - Jan 15 2025
+                            Freight Sustainability - Jan 15 2025
                         </div>
                     </div>
                     <div class="flex flex-col pl-2 mt-2.5 w-full">
                         <div class="flex flex-col">
-                            <h2 class="text-base leading-none">
+                            <h2 class="font-medium text-base leading-none">
                                 Logistics development trends for 2025
                             </h2>
                             <div class="flex flex-col mt-2 w-full text-xs font-light leading-tight">
