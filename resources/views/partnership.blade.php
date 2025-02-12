@@ -130,23 +130,39 @@
         ],
     ];
     $partnerTestimonials = [
-        ['name' => 'Philip McCarthy', 'description' => 'Procurement Director CityPharma', 'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/5483596b968307c9a4e73a849caaab7ebb21ee07635230571ffb069130f393b6?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
+        ['name' => 'Philip McCarthy', 
+        'description' => 'Procurement Director CityPharma', 
+        'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/5483596b968307c9a4e73a849caaab7ebb21ee07635230571ffb069130f393b6?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
 
-        ['name' => 'Dr. Philip Sikayena', 'description' => 'Director of Construction Urban Planners Inc.', 'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/ca60119c3ef5b6b9bffbec05cac722182f9a3ca266934f39186b7f8920d5b716?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
+        ['name' => 'Dr. Philip Sikayena', 
+        'description' => 'Director of Construction Urban Planners Inc.', 
+        'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/ca60119c3ef5b6b9bffbec05cac722182f9a3ca266934f39186b7f8920d5b716?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
 
-        ['name' => 'Richard Hajerson', 'description' => 'Snr. Managing Partner Dulbrich LLC', 'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/36cf8f29720d02bd739d335b11d91fce04d68f6c97647fc2a27e3a5f4f05369c?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
+        ['name' => 'Richard Hajerson', 
+        'description' => 'Snr. Managing Partner Dulbrich LLC', 
+        'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/36cf8f29720d02bd739d335b11d91fce04d68f6c97647fc2a27e3a5f4f05369c?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
 
-        ['name' => 'Roberto Adriantini', 'description' => 'CEO, AgroBranch', 'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/c538e9b7ef829815ad7813ee1eaba824ea123b20ae2b7de92d15abc9bdd349f5?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
+        ['name' => 'Roberto Adriantini', 
+        'description' => 'CEO, AgroBranch', 
+        'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/c538e9b7ef829815ad7813ee1eaba824ea123b20ae2b7de92d15abc9bdd349f5?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
     ];
 
     $supplyChainServices = [
-        ['name' => 'Customs Services', 'description' => 'Seamlessly incorporate customs into your full supply chain logistics. Our experienced team works with you to streamline processes.', 'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/6d9a5431802b981b80031e98dffa6ead0f645486b43bd6c219b3ef983e532c75?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
+        ['name' => 'Customs Services', 
+        'description' => 'Seamlessly incorporate customs into your full supply chain logistics. Our experienced team works with you to streamline processes.', 
+        'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/6d9a5431802b981b80031e98dffa6ead0f645486b43bd6c219b3ef983e532c75?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
 
-        ['name' => 'Supply Chain Management', 'description' => 'Our team of supply chain experts collaborate with you to pinpoint critical areas for improvement, driving business objectives.', 'icon' => ''],
+        ['name' => 'Supply Chain Management', 
+        'description' => 'Our team of supply chain experts collaborate with you to pinpoint critical areas for improvement, driving business objectives.', 
+        'icon' => 'assets/thumb-nails/Supply-thumb.png'],
 
-        ['name' => 'E-Commerce Logistics', 'description' => 'Optimise your end-to-end e-commerce logistics with our efficiency artificial intelligence technology to fulfill orders last-mile and cross-border delivery.', 'icon' => ''],
+        ['name' => 'E-Commerce Logistics', 
+        'description' => 'Optimise your end-to-end e-commerce logistics with our efficiency artificial intelligence technology to fulfill orders last-mile and cross-border delivery.', 
+        'icon' => 'assets/thumb-nails/e-commerce.png'],
 
-        ['name' => 'Contract Logistics', 'description' => 'Complete warehousing and distribution requirements, efficiently managed through our strategic network of storage facilities worldwide.', 'icon' => ''],
+        ['name' => 'Contract Logistics', 
+        'description' => 'Complete warehousing and distribution requirements, efficiently managed through our strategic network of storage facilities worldwide.', 
+        'icon' => 'assets/thumb-nails/contract-thumb.png'],
     ];
 @endphp
 
@@ -186,6 +202,10 @@
         <div class="flex flex-wrap justify-between items-start text-blue-900" role="region"
             aria-label="Choose Us Section">
             <div class="px-3 pt-0.5 pb-6 text-3xl w-[173px]" role="heading" aria-level="2">Choose us</div>
+
+
+
+            
             <div class="text-xl font-light leading-7 w-[589px] max-md:max-w-full">
                 <span class="font-medium">ThinQSphere</span>
                 has forged strategic partnerships with suppliers and distributors and form
@@ -562,14 +582,14 @@
             </div>
         </div>
 
-        <div class='grid grid-cols-2 lg:grid-cols-4 gap-5 mt-10' role="list" aria-label="Supply Chain Services">
+        <div class='grid grid-cols-2 lg:grid-cols-4  mt-10' role="list" aria-label="Supply Chain Services">
             @foreach($supplyChainServices as $supplyChainService)
 
-                <div class="flex flex-col text-blue-900 max-w-[219px]">
+                <div class="flex flex-col text-blue-900 max-w-[250px]">
                     <div class="flex flex-col pb-5 w-full rounded-xl border border-blue-900 border-solid" role="article">
                         <img loading="lazy" src="{{URL::asset($supplyChainService['icon'])}}"
                             alt={{$supplyChainService['name']}} class="object-contain w-full rounded-t-xl aspect-[1.51]" />
-                        <div class="flex flex-col self-center mt-3.5 w-full max-w-[184px] px-2">
+                        <div class="flex flex-col self-center mt-3.5 w-full max-w-[184px]">
                             <h2 class="text-xs lg:text-sm text-sky-950">{{$supplyChainService['name']}}</h2>
                             <p class="mt-2.5 text-xs font-light h-[85px]">
                                 {{$supplyChainService['description']}}
@@ -581,6 +601,8 @@
                                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/8d3ad36d8bb31fbd5af7530c0b4938f524ae4ec15dd9ca34b88890febac47512?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
                                     alt="" class="object-contain shrink-0 self-stretch my-auto w-1.5 aspect-square" />
                             </div>
+                            <br>
+
                         </div>
                     </div>
                 </div>
