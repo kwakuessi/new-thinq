@@ -162,7 +162,7 @@ $navlinks = [
             <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/da8504039e74f440e300bcd31960b00ae0339f36e82c0f0ff0ba138d80259b98?apiKey=b1bd84c8cfcf466eb7283d9b13fee064&" class="object-contain self-stretch my-auto aspect-square w-[70px]" alt="Initiation process icon" />
           </div>
         </div>
-        <div class="mt-14 text-2xl text-center text-sky-950 max-md:mt-10">Initiation</div>
+        <div class="mt-14 text-2xl text-center text-blue-900 max-md:mt-10">Initiation</div>
       </div>
       <div class="flex flex-col mt-16 max-md:mt-10">
         <div class="flex gap-2.5 items-center p-2.5 w-full">
@@ -170,7 +170,7 @@ $navlinks = [
             <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f044e6730e211a32ad13e526779df69a76dd40b9ae4b369479431ff63bd86501?apiKey=b1bd84c8cfcf466eb7283d9b13fee064&" class="object-contain aspect-[1.11] w-[78px]" alt="Sourcing process icon" />
           </div>
         </div>
-        <div class="mt-5 text-2xl text-center text-sky-950">Sourcing</div>
+        <div class="mt-5 text-2xl text-center text-blue-900">Sourcing</div>
       </div>
 
       <div class="flex flex-col mt-20 max-md:mt-10">
@@ -179,7 +179,7 @@ $navlinks = [
             <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/bb4cfba00cf69c57a26ac0ea5f40728bf5887665664abac4806c0497533def5a?apiKey=b1bd84c8cfcf466eb7283d9b13fee064&" class="object-contain aspect-[1.1] w-[77px]" alt="Negotiation process icon" />
           </div>
         </div>
-        <div class="text-2xl text-right text-sky-950">Negotiation</div>
+        <div class="text-2xl text-right text-blue-900">Negotiation</div>
       </div>
 
       <div class="flex flex-col mt-20 max-md:mt-10">
@@ -191,7 +191,7 @@ $navlinks = [
             <div class="flex absolute z-0 shrink-0 self-start bottom-[30px] h-[70px] left-[34px] w-[63px]"></div>
           </div>
         </div>
-        <div class="text-2xl text-center text-sky-950">Compliance</div>
+        <div class="text-2xl text-center text-blue-900">Compliance</div>
       </div>
 
       <div class="flex flex-col mt-16 max-md:mt-10">
@@ -201,7 +201,7 @@ $navlinks = [
             <div class="flex shrink-0 w-11 rounded-full h-[43px]"></div>
           </div>
         </div>
-        <div class="mt-5 text-2xl text-sky-950">Production</div>
+        <div class="mt-5 text-2xl text-blue-900">Production</div>
       </div>
 
       <div class="flex flex-col mt-5">
@@ -210,7 +210,7 @@ $navlinks = [
             <img loading="lazy" src="{{ asset('assets/icons/supply-chain.png') }}"  class="object-contain self-stretch my-auto aspect-square w-[70px]" alt="Initiation process icon" />
           </div>
         </div>
-        <div class="mt-14 text-2xl text-center text-sky-950 max-md:mt-10">Supply Chain</div>
+        <div class="mt-14 text-2xl text-center text-blue-900 max-md:mt-10">Supply Chain</div>
       </div>
 
     </div>
@@ -219,7 +219,7 @@ $navlinks = [
       <button class="flex flex-col justify-center px-6 py-4 w-full bg-sky-950 max-w-[224px] min-h-[56px] rounded-[40px] max-md:px-5 hover:bg-sky-900 focus:outline-none focus:ring-2 focus:ring-sky-600" aria-label="Request Proposal">
         <div class="flex gap-2 items-center">
           <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/99548511d1ce437ec14297e39c97193b8f3b8441e187ecf7c5c77336e11616dc?apiKey=b1bd84c8cfcf466eb7283d9b13fee064&" class="object-contain shrink-0 self-stretch my-auto aspect-[0.79] w-[19px]" alt="" />
-          <span class="self-stretch my-auto w-[135px]">Request Proposal</span>
+          <span class="self-stretch my-auto w-[135px] text-white">Request Proposal</span>
           <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/26bf23af38959559c4bef05b9621bc943f3365b5a91b88a9afea425b4d3001bb?apiKey=b1bd84c8cfcf466eb7283d9b13fee064&" class="object-contain shrink-0 self-stretch my-auto aspect-[0.9] w-[9px]" alt="" />
         </div>
       </button>
@@ -311,7 +311,7 @@ $navlinks = [
 <div class="mb-[157px] flex flex-col">
   <div class="flex flex-col bg-[#DDE8F0] lg:bg-[#FFFFFF] p-6 rounded items-center w-full max-md:max-w-full">
     <div class="grid grid-cols-3 gap-10 items-center w-full max-md:max-w-full">
-      <div class="span-cols-2 self-stretch my-auto text-3xl font-medium leading-9 text-sky-950 w-[572px] max-md:max-w-full">
+      <div class="span-cols-2 self-stretch my-auto text-3xl font-medium leading-9 text-blue-900 w-[572px] max-md:max-w-full">
         <span class="text-zinc-500">Expert in deep supply chain</span>
         operations capability and experience
       </div>
@@ -475,7 +475,7 @@ $navlinks = [
 <!-- <div class="flex flex-col">
   <div class="flex flex-wrap items-start w-full max-md:max-w-full">
     <div
-      class="grow shrink text-3xl font-medium leading-9 text-sky-950 w-[598px] max-md:max-w-full"
+      class="grow shrink text-3xl font-medium leading-9 text-blue-900 w-[598px] max-md:max-w-full"
       role="heading"
       aria-level="2"
     >
@@ -532,7 +532,7 @@ $navlinks = [
 <div class="flex flex-col">
   <div class="flex flex-wrap justify-between items-start w-full max-md:max-w-full">
     <div
-      class="grow shrink text-3xl font-medium leading-9 text-sky-950 w-[598px] max-md:max-w-full"
+      class="grow shrink text-3xl font-medium leading-9 text-blue-900 w-[598px] max-md:max-w-full"
       role="heading"
       aria-level="2"
     >
@@ -578,29 +578,24 @@ $navlinks = [
       >
         <img
           loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/92e2137cae33e30b503efeed21c367afd2aa27e67e42fdce83650a39a0cabf46?placeholderIfAbsent=true&apiKey=7a62a3bc0ec34c60a1ee6236375d4957"
+          src="{{ asset('assets/thumb-nails/talk-banner.png') }}"
           class="object-cover h-[309px] absolute top-0 inset-0 size-full"
           alt="Background image for expert consultation section"
         />
         <!-- <span class="relative z-10">Talk to an industry expert</span> -->
-        <div class="flex relative flex-col min-w-[240px] ">
+        <div class="flex relative flex-col ">
                     <div class="flex absolute -bottom-3 -left-6 z-0 flex-col px-3 -pt-1 pb-0.5 h-[50px] w-[59px]"
                         role="presentation" aria-hidden="true">
                         <div class="flex shrink-0 w-full h-10 rounded-full"><img loading="lazy"
                             src="{{ asset('assets/icons/backdrop.png') }}"
                             alt="Quality Assurance icon" class="object-contain aspect-[1.2] w-[42px]" /></div>
                     </div>
-                    <div class="z-0 text-3xl font-medium " role="heading" aria-level="2">Talk to an industry expert
-                    </div>
-                </div>
+                    <div class="z-0 text-3xl font-medium " role="heading" aria-level="2">Talk to an industry expert </div>
+                    
+          </div>
       </div>
     </div>
-    <img
-      loading="lazy"
-      src="https://cdn.builder.io/api/v1/image/assets/TEMP/1745b5491186c3cb3a56997f389b1ebb0017b4e4434be3ba11a134cb2948512a?placeholderIfAbsent=true&apiKey=7a62a3bc0ec34c60a1ee6236375d4957"
-      class="object-contain grow shrink self-stretch my-auto aspect-[1.28] min-w-[240px] w-[262px]"
-      alt="Industry expertise illustration"
-    />
+    
   </div>
 </div>
 

@@ -127,7 +127,7 @@ $navlinks = [
 
 
        
-        <section id="Focusing on quality" class="py-20">
+<section id="Focusing on quality" class="py-20">
 
        
 <div class=" relative max-md:px-5">
@@ -184,7 +184,7 @@ $navlinks = [
 
             <div class=" bg-[#FFFFFF] p-10">
             <img loading="lazy"
-                    src="{{ asset('assets/icons/customization.png') }}"
+                    src="{{ asset('assets/icons/customization-i.png') }}"
                     alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
                 <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
                     Customization
@@ -198,7 +198,7 @@ $navlinks = [
 
             <div class="bg-[#FFFFFF] p-10">
             <img loading="lazy"
-                    src="{{ asset('assets/icons/innovation.png') }}"
+                    src="{{ asset('assets/icons/innovation-i.png') }}"
                     alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
                 <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
                     Innovation & Technology
@@ -228,7 +228,7 @@ $navlinks = [
 
             <div class="bg-[#FFFFFF] p-10 rounded-bl-lg ">
             <img loading="lazy"
-                    src="{{ asset('assets/icons/wide.png') }}"
+                    src="{{ asset('assets/icons/wide-i.png') }}"
                     alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
                 <div class="mt-3 text-xl font-medium leading-relaxed text-blue-900">
                     Wide Range Industries
@@ -241,7 +241,7 @@ $navlinks = [
 
             <div class="bg-[#FFFFFF] p-10 rounded-br-lg ">
             <img loading="lazy"
-                    src="{{ asset('assets/icons/reliable.png') }}"
+                    src="{{ asset('assets/icons/reliable-i.png') }}"
                     alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
                 <div class="mt-3 text-xl font-medium leading-relaxed text-blue-900">
                     Reliable Delivery

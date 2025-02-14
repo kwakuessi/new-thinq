@@ -2,28 +2,39 @@
     $chooseus = [
         [
             'title' => 'Quality Assurance',
-            'description' => 'We ensure that every procurement has strict quality checks and assurances
-                                                                                                                                                                                                                                                                            with rigorous testing at every production stage.',
+            'description' => 'We ensure that every procurement has strict quality checks and assurances with rigorous testing at every production stage.',
             'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/3597c50efd05fe3a1222d2bb768217196ed1538d74f54a3ff4346bea1ee1b15f?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'
         ],
 
-        ['title' => 'Recognized Brands', 'description' => 'Globally recognized brands that meet international and regional standards, complying with industry standards, and certifications to validate quality.', 'icon' => ''],
+        ['title' => 'Recognized Brands', 
+        'description' => 'Globally recognized brands that meet international and regional standards, complying with industry standards, and certifications to validate quality.', 
+        'icon' => 'assets/icons/recognize.svg'],
 
         [
             'title' => 'Transparent Manufacturing',
             'description' => 'Open communication about manufacturing and sourcing methods, ensuring ethical and sustainable supply chains.',
-            'icon' => ''
+            'icon' => 'assets/icons/transport.png'
         ],
 
-        ['title' => 'Customization', 'description' => 'Offering customization with unique configurations or features tailored to meet specific needs or preferences of customers.', 'icon' => ''],
+        ['title' => 'Customization', 
+        'description' => 'Offering customization with unique configurations or features tailored to meet specific needs or preferences of customers.', 
+        'icon' => 'assets/icons/customization-i.png'],
 
-        ['title' => 'Innovation & Technology', 'description' => 'Ensuring that manufacturers or producers utilizes cutting edge technology in their production processes to meet evolving customer demands.', 'icon' => ''],
+        ['title' => 'Innovation & Technology', 
+        'description' => 'Ensuring that manufacturers or producers utilizes cutting edge technology in their production processes to meet evolving customer demands.', 
+        'icon' => 'assets/icons/innovation-i.png'],
 
-        ['title' => 'Cost-Effective Solutions', 'description' => 'Offering the best balance of quality and cost through the implementation of cost-efficient productions with value-added services.', 'icon' => ''],
+        ['title' => 'Cost-Effective Solutions', 
+        'description' => 'Offering the best balance of quality and cost through the implementation of cost-efficient productions with value-added services.', 
+        'icon' => 'assets/icons/cost.png'],
 
-        ['title' => 'Wide Range Industries', 'description' => 'Source products from diverse range of industries, ensuring superior quality and affordability.', 'icon' => ''],
+        ['title' => 'Wide Range Industries', 
+        'description' => 'Source products from diverse range of industries, ensuring superior quality and affordability.', 
+        'icon' => 'assets/icons/wide-i.png'],
 
-        ['title' => 'Reliable Delivery', 'description' => 'Streamlined logistics to ensure on-time delivery with flexible return and exchange policies.', 'icon' => ''],
+        ['title' => 'Reliable Delivery', 
+        'description' => 'Streamlined logistics to ensure on-time delivery with flexible return and exchange policies.', 
+        'icon' => 'assets/icons/reliable-i.png'],
 
 
     ];
@@ -119,23 +130,39 @@
         ],
     ];
     $partnerTestimonials = [
-        ['name' => 'Philip McCarthy', 'description' => 'Procurement Director CityPharma', 'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/5483596b968307c9a4e73a849caaab7ebb21ee07635230571ffb069130f393b6?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
+        ['name' => 'Philip McCarthy', 
+        'description' => 'Procurement Director CityPharma', 
+        'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/5483596b968307c9a4e73a849caaab7ebb21ee07635230571ffb069130f393b6?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
 
-        ['name' => 'Dr. Philip Sikayena', 'description' => 'Director of Construction Urban Planners Inc.', 'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/ca60119c3ef5b6b9bffbec05cac722182f9a3ca266934f39186b7f8920d5b716?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
+        ['name' => 'Dr. Philip Sikayena', 
+        'description' => 'Director of Construction Urban Planners Inc.', 
+        'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/ca60119c3ef5b6b9bffbec05cac722182f9a3ca266934f39186b7f8920d5b716?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
 
-        ['name' => 'Richard Hajerson', 'description' => 'Snr. Managing Partner Dulbrich LLC', 'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/36cf8f29720d02bd739d335b11d91fce04d68f6c97647fc2a27e3a5f4f05369c?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
+        ['name' => 'Richard Hajerson', 
+        'description' => 'Snr. Managing Partner Dulbrich LLC', 
+        'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/36cf8f29720d02bd739d335b11d91fce04d68f6c97647fc2a27e3a5f4f05369c?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
 
-        ['name' => 'Roberto Adriantini', 'description' => 'CEO, AgroBranch', 'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/c538e9b7ef829815ad7813ee1eaba824ea123b20ae2b7de92d15abc9bdd349f5?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
+        ['name' => 'Roberto Adriantini', 
+        'description' => 'CEO, AgroBranch', 
+        'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/c538e9b7ef829815ad7813ee1eaba824ea123b20ae2b7de92d15abc9bdd349f5?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
     ];
 
     $supplyChainServices = [
-        ['name' => 'Customs Services', 'description' => 'Seamlessly incorporate customs into your full supply chain logistics. Our experienced team works with you to streamline processes.', 'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/6d9a5431802b981b80031e98dffa6ead0f645486b43bd6c219b3ef983e532c75?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
+        ['name' => 'Customs Services', 
+        'description' => 'Seamlessly incorporate customs into your full supply chain logistics. Our experienced team works with you to streamline processes.', 
+        'icon' => 'https://cdn.builder.io/api/v1/image/assets/TEMP/6d9a5431802b981b80031e98dffa6ead0f645486b43bd6c219b3ef983e532c75?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03'],
 
-        ['name' => 'Supply Chain Management', 'description' => 'Our team of supply chain experts collaborate with you to pinpoint critical areas for improvement, driving business objectives.', 'icon' => ''],
+        ['name' => 'Supply Chain Management', 
+        'description' => 'Our team of supply chain experts collaborate with you to pinpoint critical areas for improvement, driving business objectives.', 
+        'icon' => 'assets/thumb-nails/Supply-thumb.png'],
 
-        ['name' => 'E-Commerce Logistics', 'description' => 'Optimise your end-to-end e-commerce logistics with our efficiency artificial intelligence technology to fulfill orders last-mile and cross-border delivery.', 'icon' => ''],
+        ['name' => 'E-Commerce Logistics', 
+        'description' => 'Optimise your end-to-end e-commerce logistics with our efficiency artificial intelligence technology to fulfill orders last-mile and cross-border delivery.', 
+        'icon' => 'assets/thumb-nails/e-commerce.png'],
 
-        ['name' => 'Contract Logistics', 'description' => 'Complete warehousing and distribution requirements, efficiently managed through our strategic network of storage facilities worldwide.', 'icon' => ''],
+        ['name' => 'Contract Logistics', 
+        'description' => 'Complete warehousing and distribution requirements, efficiently managed through our strategic network of storage facilities worldwide.', 
+        'icon' => 'assets/thumb-nails/contract-thumb.png'],
     ];
 @endphp
 
@@ -175,6 +202,10 @@
         <div class="flex flex-wrap justify-between items-start text-blue-900" role="region"
             aria-label="Choose Us Section">
             <div class="px-3 pt-0.5 pb-6 text-3xl w-[173px]" role="heading" aria-level="2">Choose us</div>
+
+
+
+            
             <div class="text-xl font-light leading-7 w-[589px] max-md:max-w-full">
                 <span class="font-medium">ThinQSphere</span>
                 has forged strategic partnerships with suppliers and distributors and form
@@ -206,39 +237,152 @@
     <!--  -->
 
     <section class='max-w-7xl mx-auto mt-[80px] px-4 sm:px-6 lg:px-8 '>
-        <ul class="grid grid-cols-2 md:grid-cols-3  gap-5 md:gap-10 mt-10" role="list" aria-label="Choose us">
-            @foreach($chooseus as $us)
-
-                <div class="flex flex-col max-w-[270px]" role="article">
-                    <img loading="lazy" src="{{URL::asset($us['icon'])}}" class="object-contain aspect-[1.14] w-[42px]"
-                        alt={{$us['title']}} />
-                    <div class="flex flex-col mt-1.5 w-full">
-                        <h2 class="text-xl font-medium leading-relaxed text-blue-900">
-                            {{$us['title']}}
-                        </h2>
-                        <p class="mt-5 text-base font-light leading-6 text-sky-800">
-                            {{$us['description']}}
-                        </p>
-                    </div>
+        
+          
+<div class=" relative max-md:px-5">
+    <img loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/56e7855a1c1b0142e05b95c52c475611d0c6c79aa9048b9a7c55f7922d6755be?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
+        alt="Decorative background pattern"
+        class="object-contain hidden md:absolute right-0 bottom-0 z-0 aspect-[1.26] h-[854px] w-[1080px] max-md:max-w-full" />
+    <div class=" elative z-0  max-md:max-w-full">
+        <div class="grid lg:grid-cols-2 lg:grid-cols-3  z-0 items-start w-full max-md:max-w-full">
+            <div class="bg-[#FFFFFF] p-10 rounded-tl-lg ">
+            <img loading="lazy"
+                    src="{{ asset('assets/icons/quality.svg') }}"
+                    alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
+                <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
+                    Quality Assurance
                 </div>
-            @endforeach
-        </ul>
-
-        <div class="flex justify-end">
-            <div class="flex flex-col justify-center px-6 py-4 text-base font-light leading-none text-white bg-sky-950 max-w-[224px] rounded-[40px]"
-                role="button" tabindex="0" aria-label="Request Proposal Button" onclick="handleRequestProposal()">
-                <div class="flex gap-2 items-center">
-                    <img loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/5749f071e34ba4eab6cf45006dc5994a6c5b7fd503a314029f717f20c53c10bf?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
-                        class="object-contain shrink-0 self-stretch my-auto aspect-[0.86] w-[19px]"
-                        alt="Request Proposal Icon" />
-                    <div class="self-stretch my-auto w-[135px]">Request Proposal</div>
-                    <img loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/5870a40e4e29d8486975c6912c28260144c1c53667870c893c1da4f7916b8b24?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
-                        class="object-contain shrink-0 self-stretch my-auto aspect-square w-[9px]" alt="Arrow Icon" />
+                
+                <div class="mt-3.5 text-base font-light leading-6 text-sky-800">
+                    We ensure that every procurement has strict quality checks and
+                    assurances with rigorous testing at every production stage.
+                    <br>
+                    <br>
                 </div>
             </div>
+
+            <div class=" bg-[#FFFFFF] p-10">
+            <img loading="lazy"
+                    src="{{ asset('assets/icons/recognize.svg') }}"
+                    alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
+                <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
+                    Recognized Brands
+                </div>
+                
+                <div class="mt-3.5 text-base font-light leading-6 text-sky-800">
+                    Globally recognized brands that meet international and regional
+                    standards, complying with industry standards, and certifications to
+                    validate quality.
+                </div>
+            </div>
+
+            <div class="bg-[#FFFFFF] p-10 rounded-tr-lg ">
+                <img loading="lazy"
+                    src="{{ asset('assets/icons/transport.png') }}"
+                    alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
+                <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
+                    Transparent Manufacturing
+                </div>
+                <div class="mt-3.5 text-base font-light leading-6 text-sky-800">
+                    Open communication about manufacturing and sourcing methods, ensuring
+                    ethical and sustainable supply chains.
+
+                </div>
+            </div>
+
+            <div class=" bg-[#FFFFFF] p-10">
+            <img loading="lazy"
+                    src="{{ asset('assets/icons/customization-i.png') }}"
+                    alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
+                <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
+                    Customization
+                </div>
+                <div class="mt-3.5 text-base font-light leading-6 text-sky-800">
+                    Offering customization with unique configurations or features tailored
+                    to meet specific needs or preferences of customers.
+
+                </div>
+            </div>
+
+            <div class="bg-[#FFFFFF] p-10">
+            <img loading="lazy"
+                    src="{{ asset('assets/icons/innovation-i.png') }}"
+                    alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
+                <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
+                    Innovation & Technology
+                </div>
+                <div class="mt-3.5 text-base font-light leading-6 text-sky-800">
+                    Ensuring that manufacturers or producers utilizes cutting edge
+                    technology in their production processes to meet evolving customer
+                    demands.
+
+
+                </div>
+            </div>
+
+            <div class="   m bg-[#FFFFFF] p-10">
+                    <img loading="lazy"
+                    src="{{ asset('assets/icons/cost.png') }}"
+                    alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
+                <div class="mt-3.5 text-xl font-medium leading-relaxed text-blue-900">
+                    Cost-Effective Solutions
+                </div>
+                <div class="mt-3.5 text-base font-light leading-6 text-sky-800">
+                    Offering the best balance of quality and cost through the
+                    implementation of cost-efficient productions with value-added
+                    services.
+                </div>
+            </div>
+
+            <div class="bg-[#FFFFFF] p-10 rounded-bl-lg ">
+            <img loading="lazy"
+                    src="{{ asset('assets/icons/wide-i.png') }}"
+                    alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
+                <div class="mt-3 text-xl font-medium leading-relaxed text-blue-900">
+                    Wide Range Industries
+                </div>
+                <div class="mt-3 text-base font-light leading-6 text-sky-800">
+                    Source products from diverse range of industries, ensuring superior
+                    quality and affordability.
+                </div>
+            </div>
+
+            <div class="bg-[#FFFFFF] p-10 rounded-br-lg ">
+            <img loading="lazy"
+                    src="{{ asset('assets/icons/reliable-i.png') }}"
+                    alt="Recognized Brands icon" class="object-contain aspect-[1.2] w-[42px]" />
+                <div class="mt-3 text-xl font-medium leading-relaxed text-blue-900">
+                    Reliable Delivery
+                </div>
+                <div class="mt-3 text-base font-light leading-6 text-sky-800">
+                    Streamlined logistics to ensure on-time delivery with ible return
+                    and exchange policies.
+
+                </div>
+            </div>
+
+              <div class="flex flex-col grow shrink min-w-[240px] w-[268px] mt-10 place-items-start self-start lg:place-items-end lg:self-end">
+                    
+                    <button
+                    class="flex flex-col px-6 py-4 w-56 max-w-full h-14 text-base font-light leading-none text-white bg-sky-950 bottom-[-92px] min-h-[56px] right-[-27px] rounded-[40px] max-md:px-5"
+                    tabindex="0">
+                    <div class="flex gap-2 items-center">
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/b2134c5a134ff4655f031bc9369dc233d3d965fdd0626543c55b14863ad1621c?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
+                            alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[0.79] w-[19px]" />
+                        <div class="self-stretch my-auto w-[135px]">Request Proposal</div>
+                        <img loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/a33848d0f85e53432f4a0f1a86cf8c0d2cf07be42e57bc905f20fc73a802a9dd?apiKey=f9b31430640f4f25af6eace5cd8bec03&"
+                            alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[0.9] w-[9px]" />
+                    </div>
+                    </button>
+                    
+                </div>
         </div>
+      
+    </div>
+</div>
 
     </section>
 
@@ -259,24 +403,24 @@
         <div class='flex flex-wrap justify-between items-start mt-[84px] max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
             <ol class="relative border-s border-[#1D4289]">
 
-                <li class="mb-10 ms-6">
-                    <span class="absolute flex items-center justify-center w-6 h-6  rounded-full -start-3 ">
+                <li class="mb-10  ms-6">
+                    <span class="absolute flex items-center justify-center w-[49px] h-[40px]  rounded-full -start-6 -mt-2 ">
                         <img loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/9e8218e9ff5bea711e2eae223202d441456164c11f7887172da8a69121bec214?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
+                            src="{{ asset('assets/icons/general-i.png') }}"
                             alt="General Information Icon"
                             class="object-contain shrink-0 self-stretch my-auto aspect-[1.18] w-[59px]" />
                     </span>
-                    <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 ">General
+                    <h3 class="flex items-center mb-1 text-lg font-semibold  text-blue-900 ">General
                     </h3>
                 </li>
 
 
                 @foreach($Generals as $General)
 
-                    <li class="mb-10 ms-4">
-                        <div class="absolute w-3 h-3 bg-[#1D4289] rounded-full mt-1.5 -start-1.5 border ">
-                        </div>
-                        <h3 class="mb-1 text-lg font-semibold text-gray-900 leading-none ">{{$General['title']}}</h3>
+                    <li class="mb-10 last:-mb-1 ms-4">
+                    <div class="absolute w-3 h-3 bg-[#1D4289] rounded-full mt-1.5 -start-1.5 border ">
+                    </div>
+                        <h3 class="mb-1 text-lg  text-blue-900 leading-none ">{{$General['title']}}</h3>
                     </li>
 
                 @endforeach
@@ -286,23 +430,23 @@
             <ol class="relative border-s border-[#1D4289]">
 
                 <li class="mb-10 ms-6">
-                    <span class="absolute flex items-center justify-center w-6 h-6  rounded-full -start-3 ">
+                    <span class="absolute flex items-center justify-center w-[49px] h-[40px]  rounded-full -start-6 -mt-2  ">
                         <img loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/9e8218e9ff5bea711e2eae223202d441456164c11f7887172da8a69121bec214?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
+                            src="{{ asset('assets/icons/supplier-i.png') }}"
                             alt="General Information Icon"
                             class="object-contain shrink-0 self-stretch my-auto aspect-[1.18] w-[59px]" />
                     </span>
-                    <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 ">General
+                    <h3 class="flex items-center mb-1 text-lg font-semibold  text-blue-900 ">Supplier
                     </h3>
                 </li>
 
 
                 @foreach($GeneralSuppliers as $GeneralSupplier)
 
-                    <li class="mb-10 ms-4">
+                    <li class="mb-10 last:-mb-1 ms-4">
                         <div class="absolute w-3 h-3 bg-[#1D4289] rounded-full mt-1.5 -start-1.5 border ">
                         </div>
-                        <h3 class="mb-1 text-lg font-semibold text-gray-900 leading-none ">{{$GeneralSupplier['title']}}
+                        <h3 class="mb-1 text-lg  text-blue-900 leading-none ">{{$GeneralSupplier['title']}}
                         </h3>
                     </li>
 
@@ -313,13 +457,13 @@
             <ol class="relative border-s border-[#1D4289]">
 
                 <li class="mb-10 ms-6">
-                    <span class="absolute flex items-center justify-center w-6 h-6  rounded-full -start-3 ">
+                    <span class="absolute flex items-center justify-center w-[49px] h-[40px]  rounded-full -start-6 -mt-2 ">
                         <img loading="lazy"
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/9e8218e9ff5bea711e2eae223202d441456164c11f7887172da8a69121bec214?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
+                            src="{{ asset('assets/icons/health-i.png') }}"
                             alt="General Information Icon"
                             class="object-contain shrink-0 self-stretch my-auto aspect-[1.18] w-[59px]" />
                     </span>
-                    <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 ">General
+                    <h3 class="flex items-center mb-1 text-lg font-semibold text-blue-900 ">Healthcare
                     </h3>
                 </li>
 
@@ -327,10 +471,10 @@
                 <div>
                     @foreach($HealthPharmas as $HealthPharma)
 
-                        <li class="mb-10 ms-4">
+                        <li class="mb-10 last:-mb-1 ms-4">
                             <div class="absolute w-3 h-3 bg-[#1D4289] rounded-full mt-1.5 -start-1.5 border ">
                             </div>
-                            <h3 class="mb-1 text-lg font-semibold text-gray-900 leading-none ">{{$HealthPharma['title']}}
+                            <h3 class="mb-1 text-lg  text-blue-900 leading-none ">{{$HealthPharma['title']}}
                             </h3>
                         </li>
 
@@ -438,14 +582,14 @@
             </div>
         </div>
 
-        <div class='grid grid-cols-2 lg:grid-cols-4 gap-5 mt-10' role="list" aria-label="Supply Chain Services">
+        <div class='grid grid-cols-2 lg:grid-cols-4  mt-10' role="list" aria-label="Supply Chain Services">
             @foreach($supplyChainServices as $supplyChainService)
 
-                <div class="flex flex-col text-blue-900 max-w-[219px]">
+                <div class="flex flex-col text-blue-900 max-w-[250px]">
                     <div class="flex flex-col pb-5 w-full rounded-xl border border-blue-900 border-solid" role="article">
                         <img loading="lazy" src="{{URL::asset($supplyChainService['icon'])}}"
                             alt={{$supplyChainService['name']}} class="object-contain w-full rounded-t-xl aspect-[1.51]" />
-                        <div class="flex flex-col self-center mt-3.5 w-full max-w-[184px] px-2">
+                        <div class="flex flex-col self-center mt-3.5 w-full max-w-[184px]">
                             <h2 class="text-xs lg:text-sm text-sky-950">{{$supplyChainService['name']}}</h2>
                             <p class="mt-2.5 text-xs font-light h-[85px]">
                                 {{$supplyChainService['description']}}
@@ -457,6 +601,8 @@
                                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/8d3ad36d8bb31fbd5af7530c0b4938f524ae4ec15dd9ca34b88890febac47512?placeholderIfAbsent=true&apiKey=f9b31430640f4f25af6eace5cd8bec03"
                                     alt="" class="object-contain shrink-0 self-stretch my-auto w-1.5 aspect-square" />
                             </div>
+                            <br>
+
                         </div>
                     </div>
                 </div>
