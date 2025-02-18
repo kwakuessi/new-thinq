@@ -45,6 +45,15 @@ class RegisterUser extends Component
 
     public function render()
     {
-        return view('livewire.register-user');
+
+        // $industries = Industry::all();
+
+        // $product_industries = ProductIndustry::all();
+      
+
+        return view('livewire.register-user',[
+            // "industries"=> $industries,
+            // "product_industries"=> $product_industries
+           ]);
     }
 }
