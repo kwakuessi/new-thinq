@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\RegisterUser;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -40,4 +41,15 @@ Route::get('/supplychain', function () {
 Route::get('/company', function () {
     return view('company');
 });
+
+Route::get('/information-access', function () {
+    return view('information-access');
+});
+
+Route::get('/register', RegisterUser::class)->name('register');
+
+Route::post('/register', [RegisterUser::class,'create'])->name('register');
+
+// Route::get('/information-access', RegisterUser::class)->name('information-access');
+
 
