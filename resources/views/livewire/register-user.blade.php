@@ -53,7 +53,7 @@
                @foreach ($product_industries as $product_industry)
                             
                             <label>
-                              <x-filament::input.checkbox name='{{$product_industry->name}}'  value="{{ $product_industry->id }}" />
+                              <x-filament::input.checkbox name='product_industry_{{$product_industry->name}}'  value="{{ $product_industry->id }}" />
                                 <span>{{$product_industry->name}}</span>
                             </label>
            
